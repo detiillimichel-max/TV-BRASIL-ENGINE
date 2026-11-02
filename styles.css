@@ -106,3 +106,6 @@ body{background:radial-gradient(ellipse at 50% -15%,#18352d 0,transparent 42%),#
 .main-tab .tab-label{background:transparent;padding:0;border-radius:0;color:inherit;font-size:11px}
 .main-tab b{font-size:9px;padding:2px 7px;border-radius:20px;background:#202a24;color:#a9b8ae}
 @media(max-width:760px){.main-tab .tab-label{font-size:10px}}
+
+/* Corrige o placeholder sobre o vídeo: o atributo hidden deve prevalecer sobre display:flex */
+.featured-placeholder[hidden]{display:none!important}
