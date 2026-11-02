@@ -35,6 +35,9 @@ jobs:
       - name: Validar playlists HLS e segmentos
         run: python scripts/validate_hls.py
 
+      - name: Consolidar catálogo final para o PWA
+        run: python scripts/build_final_catalog.py
+
       - name: Salvar catálogos e relatórios
         run: |
           git config user.name "github-actions[bot]"
