@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "id": "iptv-org",
+      "name": "IPTV-org Brasil",
+      "repository": "https://github.com/iptv-org/iptv.git",
+      "playlist": "https://iptv-org.github.io/iptv/countries/br.m3u",
+      "enabled": true
+    },
+    {
+      "id": "free-tv-brasil",
+      "name": "Free TV Brasil",
+      "repository": null,
+      "enabled": false
+    },
+    {
+      "id": "catalogo-global",
+      "name": "Catálogo global",
+      "repository": null,
+      "enabled": false
+    }
+  ]
+}
