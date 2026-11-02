@@ -2,7 +2,7 @@
   "use strict";
   const CATALOG_URL = "https://raw.githubusercontent.com/detiillimichel-max/TV-BRASIL-ENGINE/main/data/catalog-final.json";
   const $ = (id) => document.getElementById(id);
-  const state = { channels: [], results: new Map(), selectedId: null, hls: null, mediaTimer: null };
+  const state = { channels: [], results: new Map(), selectedId: null, hls: null, mediaTimer: null, videoCheckTimer: null };
   const video = $("video");
 
   function setPill(el, type, label) {
@@ -11,7 +11,9 @@
   }
   function stopPlayback() {
     if (state.mediaTimer) clearTimeout(state.mediaTimer);
+    if (state.videoCheckTimer) clearTimeout(state.videoCheckTimer);
     state.mediaTimer = null;
+    state.videoCheckTimer = null;
     if (state.hls) { state.hls.destroy(); state.hls = null; }
     video.pause();
     video.removeAttribute("src");
@@ -23,8 +25,9 @@
     const vals = [...state.results.values()];
     const ok = vals.filter(x => x.status === "playing").length;
     const fail = vals.filter(x => x.status === "failed").length;
+    const audio = vals.filter(x => x.status === "audio_only").length;
     $("tested-count").textContent = vals.length;
-    $("tested-detail").textContent = ok + " reproduziram · " + fail + " falharam";
+    $("tested-detail").textContent = ok + " com vídeo · " + audio + " só áudio · " + fail + " falharam";
   }
   function setResult(id, status, message) {
     state.results.set(id, {status, message, at: Date.now()});
@@ -56,7 +59,7 @@
     $("channel-grid").innerHTML = list.length ? list.map(c => {
       const result = state.results.get(c.id);
       const selected = state.selectedId === c.id;
-      const resultClass = result?.status === "playing" ? "ok" : result?.status === "failed" ? "bad" : "";
+      const resultClass = result?.status === "playing" ? "ok" : result?.status === "failed" ? "bad" : result?.status === "audio_only" ? "warn" : "";
       const resultLabel = result ? result.message : "Ainda não testado";
       const initials = escapeHtml((c.name || "TV").replace(/[^\p{L}\p{N} ]/gu,"").split(/\s+/).slice(0,2).map(x=>x[0]||"").join("").toUpperCase());
       return '<article class="channel-card '+(selected?'selected':'')+'"><div class="channel-logo">'+(c.logo ? '<img loading="lazy" src="'+escapeHtml(c.logo)+'" alt="" onerror="this.remove();this.parentElement.innerHTML=\'<span class=&quot;logo-fallback&quot;>'+initials+'</span>\'">' : '<span class="logo-fallback">'+initials+'</span>')+'</div><div class="channel-info"><div class="channel-name">'+escapeHtml(c.name)+'</div><div class="channel-meta"><span>'+escapeHtml(categoryList(c)[0])+'</span><span class="tag">'+escapeHtml(c.format || "formato?")+'</span></div><div class="result-line"><span class="result-text '+resultClass+'">'+escapeHtml(resultLabel)+'</span><button class="test-btn" data-test="'+escapeHtml(c.id)+'">Testar</button></div></div></article>';
@@ -100,10 +103,26 @@
 
     const onPlaying = () => {
       if (state.selectedId !== id) return;
-      setPill($("playback-status"), "ok", "Reproduzindo");
-      $("diagnostic-message").textContent = "Sucesso: o vídeo começou a reproduzir neste navegador e nesta rede.";
-      updateTechnical("PLAYING confirmado | " + channel.url);
-      setResult(id, "playing", "Reproduziu");
+      setPill($("playback-status"), "pending", "Verificando imagem");
+      $("diagnostic-message").textContent = "O fluxo iniciou. Agora estamos verificando se o navegador recebeu quadros de vídeo, além do áudio.";
+      if (state.videoCheckTimer) clearTimeout(state.videoCheckTimer);
+      state.videoCheckTimer = setTimeout(() => {
+        if (state.selectedId !== id) return;
+        const width = video.videoWidth || 0;
+        const height = video.videoHeight || 0;
+        if (width > 0 && height > 0) {
+          setPill($("playback-status"), "ok", "Vídeo e áudio detectados");
+          $("diagnostic-message").textContent = "Imagem confirmada: o navegador recebeu vídeo em " + width + " × " + height + ". O áudio também iniciou.";
+          updateTechnical("VIDEO confirmado | " + width + "x" + height + " | " + channel.url);
+          setResult(id, "playing", "Vídeo + áudio");
+        } else {
+          setPill($("playback-status"), "pending", "Somente áudio detectado");
+          $("diagnostic-message").textContent = "O áudio iniciou, mas nenhum quadro de vídeo foi detectado após 5 segundos. Pode ser uma playlist somente de áudio, vídeo/codec incompatível ou falha na entrega dos segmentos de vídeo.";
+          const codecs = state.hls?.levels?.map(level => level.videoCodec || "sem codec de vídeo informado").filter(Boolean).join(", ") || "codec de vídeo não identificado";
+          updateTechnical("AUDIO sem quadro de vídeo | videoWidth=" + width + " | videoHeight=" + height + " | " + codecs + " | " + channel.url);
+          setResult(id, "audio_only", "Somente áudio");
+        }
+      }, 5000);
     };
     const onError = () => {
       if (state.selectedId !== id) return;
