@@ -32,6 +32,9 @@ jobs:
       - name: Validar transmissões
         run: python scripts/validate_streams.py
 
+      - name: Validar playlists HLS e segmentos
+        run: python scripts/validate_hls.py
+
       - name: Salvar catálogos e relatórios
         run: |
           git config user.name "github-actions[bot]"
