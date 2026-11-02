@@ -20,3 +20,20 @@
 .channel-card.active{border-color:var(--blue);box-shadow:0 0 0 1px #3987ff33}
 @media(max-width:760px){.channel-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.mini-player-head{align-items:flex-start;flex-direction:column}.mini-actions{flex-direction:column}}
 @media(max-width:390px){.channel-grid{grid-template-columns:1fr}}
+
+/* Biblioteca de canais aprovados e navegação */
+.main-tabs{display:flex;gap:8px;margin:0 0 14px;padding:5px;border:1px solid var(--line);border-radius:13px;background:#0d1420}
+.main-tab{display:flex;align-items:center;justify-content:center;gap:8px;flex:1;min-height:43px;border:1px solid transparent;border-radius:9px;background:transparent;color:var(--muted);font:700 12px inherit;cursor:pointer}
+.main-tab svg{width:17px;height:17px;stroke-width:2}
+.main-tab span{font-size:10px;padding:3px 7px;border-radius:20px;background:#1b293a;color:#a9bdd6}
+.main-tab.active{background:#1b2b40;border-color:#314762;color:#eef5ff}
+.favorite-btn{width:30px;height:30px;display:grid;place-items:center;border:1px solid #35516f;border-radius:8px;background:#15263a;color:#9fc5ff;cursor:pointer;flex:none}
+.favorite-btn svg{width:16px;height:16px}
+.favorite-btn.saved{color:#45d69b;border-color:#277a5b;background:#10291f}
+.channel-actions{display:flex;align-items:center;gap:7px}
+.external-btn{background:#26364b;color:#dbe9fb;border:1px solid #3b526e;border-radius:8px;padding:8px 10px;font-size:10px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+.external-btn svg{width:14px;height:14px}
+.library-section[hidden],#catalog-section[hidden]{display:none}
+.library-card-actions{display:flex;gap:7px;margin-top:10px}
+.library-card-actions button{flex:1}
+@media(max-width:760px){.main-tab{font-size:11px}.main-tabs{position:sticky;top:116px;z-index:4}}
