@@ -16,7 +16,7 @@ const $=id=>document.getElementById(id);
 const state={channels:[],results:new Map(),favorites:new Set(),activeId:null,hls:null,video:null,mediaTimer:null,frameTimer:null,activeTab:"catalog"};
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const cats=c=>Array.isArray(c.categories)&&c.categories.length?c.categories:[c.category||"Undefined"];
-function setStatus(el,type,label){el.className="mini-status "+type;el.textContent=label;}
+function setStatus(el,type,label){if(el.id==="api-status"){el.className="status-pill "+type;el.innerHTML="<i></i>"+label;}else{el.className="mini-status "+type;el.textContent=label;}}
 function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify([...state.results.entries()]));}catch(e){console.warn("Falha ao salvar histórico",e);}}
 function restore(){try{const a=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");if(Array.isArray(a))a.forEach(pair=>{if(Array.isArray(pair)&&typeof pair[0]==="string"&&pair[1])state.results.set(pair[0],pair[1]);});}catch(e){console.warn("Histórico local inválido",e);}}
 function cls(s){return s==="playing"?"ok":s==="failed"?"bad":s==="audio_only"?"warn":"";}
