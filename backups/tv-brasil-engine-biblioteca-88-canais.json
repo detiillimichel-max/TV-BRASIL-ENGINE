@@ -1,0 +1,1695 @@
+{
+  "schema_version": 1,
+  "source": "TV-BRASIL-ENGINE",
+  "exported_at": "2026-11-02T21:17:45.173Z",
+  "total": 88,
+  "description": "Backup completo da Minha biblioteca, com dados do catálogo e diagnóstico local de cada canal.",
+  "channels": [
+    {
+      "id": "PlusMaisUm.br@HD",
+      "name": "+MaisUm (720p)",
+      "logo": "https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment",
+        "General",
+        "Movies",
+        "Music"
+      ],
+      "source": "iptv-org",
+      "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://stream.ichibansys.com:3230/hybrid/play.m3u8",
+        "at": 1793647907552
+      }
+    },
+    {
+      "id": "1001Noites.br@SD",
+      "name": "1001 Noites (480p)",
+      "logo": "https://i.imgur.com/dWA9y2J.png",
+      "category": "Shop",
+      "categories": [
+        "Shop"
+      ],
+      "source": "iptv-org",
+      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+        "at": 1793647423705
+      }
+    },
+    {
+      "id": "AngelTV.in@Portuguese",
+      "name": "Angel TV Portuguese (720p)",
+      "logo": "https://i.imgur.com/qKLEGU7.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8",
+        "at": 1793634520099
+      }
+    },
+    {
+      "id": "ArarunaTV.br@SD",
+      "name": "Araruna TV",
+      "logo": "https://i.imgur.com/jl39ula.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8",
+        "at": 1793634534670
+      }
+    },
+    {
+      "id": "AWTV.br@HD",
+      "name": "AWTV (1080p) [Geo-blocked]",
+      "logo": "https://i.imgur.com/2tdMyef.png",
+      "category": "Classic",
+      "categories": [
+        "Classic",
+        "Series"
+      ],
+      "source": "iptv-org",
+      "url": "https://awtv.nuvemplay.live/hls/stream.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://awtv.nuvemplay.live/hls/stream.m3u8",
+        "at": 1793634739187
+      }
+    },
+    {
+      "id": "BemMaisTV.br@HD",
+      "name": "Bem Mais TV (1080p)",
+      "logo": "https://bemmaistv.com.br/wp-content/uploads/2025/08/0LASAmOtt4-150x150.jpg",
+      "category": "Culture",
+      "categories": [
+        "Culture",
+        "Education"
+      ],
+      "source": "iptv-org",
+      "url": "https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
+        "at": 1793634953866
+      }
+    },
+    {
+      "id": "CanalFDR.br@SD",
+      "name": "Canal FDR",
+      "logo": "https://i.imgur.com/7SE4CkE.png",
+      "category": "Education",
+      "categories": [
+        "Education",
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8",
+        "at": 1793635239084
+      }
+    },
+    {
+      "id": "CanalMetropolitanodeNoticias.br@SD",
+      "name": "Canal Metropolitano de Noticias",
+      "logo": "https://i.imgur.com/G0x4xqa.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8",
+        "at": 1793635661685
+      }
+    },
+    {
+      "id": "CatveFM.br@SD",
+      "name": "Catve FM (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/w89yw36.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
+        "at": 1793635918414
+      }
+    },
+    {
+      "id": "CatveMasterTV.br@SD",
+      "name": "Catve Master TV (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/4m7Iazm.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
+        "at": 1793635934619
+      }
+    },
+    {
+      "id": "Catve2.br@SD",
+      "name": "Catve2 (720p)",
+      "logo": "https://i.imgur.com/qiVfsfB.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
+        "at": 1793635952754
+      }
+    },
+    {
+      "id": "ChromaTV.br@SD",
+      "name": "Chroma TV (480p)",
+      "logo": "https://i.imgur.com/SnaIMgj.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://5c483b9d1019c.streamlock.net/8054/8054/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 854x480 | https://5c483b9d1019c.streamlock.net/8054/8054/playlist.m3u8",
+        "at": 1793636087768
+      }
+    },
+    {
+      "id": "ClassiqueTV.br@SD",
+      "name": "Classique TV (360p)",
+      "logo": "https://i.imgur.com/rHxcraT.png",
+      "category": "Movies",
+      "categories": [
+        "Movies"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvif.com/classique/classique/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.srvif.com/classique/classique/playlist.m3u8",
+        "at": 1793636156699
+      }
+    },
+    {
+      "id": "ComedyCentralBrasil.br@SD",
+      "name": "Comedy Central Brasil (480p)",
+      "logo": "https://comcastadvertising.com/wp-content/uploads/2021/10/Comedy-Central-White.png",
+      "category": "Comedy",
+      "categories": [
+        "Comedy"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 854x480 | https://stmv2.srvif.com/gafeab/gafeab/playlist.m3u8",
+        "at": 1793636271013
+      }
+    },
+    {
+      "id": "ConectaMaisTV.br@SD",
+      "name": "Conecta Mais TV (720p)",
+      "logo": "https://i.imgur.com/qHwTWlz.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8",
+        "at": 1793636769596
+      }
+    },
+    {
+      "id": "ConecTVBrasil.br@SD",
+      "name": "ConecTV Brasil (720p)",
+      "logo": "https://i.imgur.com/XN6jjMR.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8",
+        "at": 1793636831147
+      }
+    },
+    {
+      "id": "CulturaFast.br@SD",
+      "name": "Cultura Fast (720p)",
+      "logo": "https://eitv6.cdn.broadpeak.io/account351-i1438/channel/53/quadrada_-3-_pequeno-1723832301.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8",
+        "at": 1793637219558
+      }
+    },
+    {
+      "id": "DespertarTV.br@HD",
+      "name": "Despertar TV (720p)",
+      "logo": "https://res.cloudinary.com/dpkehkbpv/image/upload/v1721839192/logo/mixtv/despertar_tv_ieb2l3.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://br.conectmy.com.br/DespertarTV/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://br.conectmy.com.br/DespertarTV/index.m3u8",
+        "at": 1793637240624
+      }
+    },
+    {
+      "id": "ElyTV.br@SD",
+      "name": "ElyTV (360p)",
+      "logo": "https://i.imgur.com/1eHNe91.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
+        "at": 1793638599318
+      }
+    },
+    {
+      "id": "FalaLitoral.br@SD",
+      "name": "Fala Litoral (480p)",
+      "logo": "https://i.imgur.com/NF6PL8O.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 854x480 | https://5c483b9d1019c.streamlock.net/falalitoraltv/falalitoraltv/playlist.m3u8",
+        "at": 1793638828347
+      }
+    },
+    {
+      "id": "FIFAPlus.uk@Portuguese",
+      "name": "FIFA+ Portuguese (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_(2025).svg/960px-FIFA%2B_(2025).svg.png",
+      "category": "Sports",
+      "categories": [
+        "Sports"
+      ],
+      "source": "iptv-org",
+      "url": "https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 384x216 | https://e3be9ac5.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/TEctYnJfRklGQVBsdXNQb3J0dWd1ZXNlX0hMUw/playlist.m3u8",
+        "at": 1793638776747
+      }
+    },
+    {
+      "id": "FonteTV.br@SD",
+      "name": "Fonte TV",
+      "logo": "https://i.imgur.com/7q2BmNc.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
+        "at": 1793638879801
+      }
+    },
+    {
+      "id": "GospelCartoon.br@SD",
+      "name": "Gospel Cartoon (360p)",
+      "logo": "https://i.imgur.com/yxjPno5.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 854x480 | https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8",
+        "at": 1793638953192
+      }
+    },
+    {
+      "id": "GospelMovieTV.br@SD",
+      "name": "Gospel Movie TV (360p)",
+      "logo": "https://i.imgur.com/cQN3nWt.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8",
+        "at": 1793638968908
+      }
+    },
+    {
+      "id": "ISTV.br@SD",
+      "name": "ISTV (Brazil) (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/RUKVrOH.png",
+      "category": "Education",
+      "categories": [
+        "Education"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvstm.com/sistema7933/sistema7933/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://stmv1.srvstm.com/sistema7933/sistema7933/playlist.m3u8",
+        "at": 1793639745790
+      }
+    },
+    {
+      "id": "J3NEWSTV.br@SD",
+      "name": "J3NEWS TV",
+      "logo": "https://i.imgur.com/lezIQyL.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://video01.brascast.com/d92ebb4f/d92ebb4f/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video01.brascast.com/d92ebb4f/d92ebb4f/playlist.m3u8",
+        "at": 1793639792992
+      }
+    },
+    {
+      "id": "LamoreRockShowWebTV.br@SD",
+      "name": "Lamore Rock Show WebTV (720p)",
+      "logo": "https://www.lamorerockshowwebtv.com.br/wp-content/uploads/2024/11/logo_rockshow.avif",
+      "category": "Music",
+      "categories": [
+        "Music"
+      ],
+      "source": "iptv-org",
+      "url": "https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8",
+        "at": 1793640044453
+      }
+    },
+    {
+      "id": "Loading.br@SD",
+      "name": "Loading (720p)",
+      "logo": "https://i.imgur.com/R0aflu1.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://stmv1.srvif.com/loadingtv/loadingtv/playlist.m3u8",
+        "at": 1793640106777
+      }
+    },
+    {
+      "id": "MyTimeMovieNetwork.br@SD",
+      "name": "MyTime Movie Network (Brazil) (720p)",
+      "logo": "https://i.imgur.com/aiGQtzI.png",
+      "category": "Movies",
+      "categories": [
+        "Movies"
+      ],
+      "source": "iptv-org",
+      "url": "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8",
+        "at": 1793640513230
+      }
+    },
+    {
+      "id": "Nickelodeon.br@SD",
+      "name": "Nickelodeon (Brazil) (480p)",
+      "logo": "https://i.imgur.com/E84jnP8.png",
+      "category": "Kids",
+      "categories": [
+        "Kids"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv2.srvif.com/nicktoons/nicktoons/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 854x480 | https://stmv2.srvif.com/nicktoons/nicktoons/playlist.m3u8",
+        "at": 1793640625640
+      }
+    },
+    {
+      "id": "NTV.br@SD",
+      "name": "NTV (Brazil) (720p)",
+      "logo": "https://i.imgur.com/n79nkVC.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment",
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn.livespanel.com/nossatv/nossatv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://cdn.livespanel.com/nossatv/nossatv/playlist.m3u8",
+        "at": 1793640793865
+      }
+    },
+    {
+      "id": "ODiaTV.br@SD",
+      "name": "O Dia TV",
+      "logo": "https://i.imgur.com/1LUbAVP.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://6836041ea1117.streamlock.net/tvodia/tvodia/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 800x450 | https://6836041ea1117.streamlock.net/tvodia/tvodia/playlist.m3u8",
+        "at": 1793640851129
+      }
+    },
+    {
+      "id": "PetloversTV.br@SD",
+      "name": "Petlovers TV",
+      "logo": "https://petloverstv.com.br/storage/357/config/yqP4nOugWRxRFCmgLqXF4gRKyM9ybsAOfHgUaqPt.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8",
+        "at": 1793640989006
+      }
+    },
+    {
+      "id": "RBATV.br@SD",
+      "name": "RBATV (720p)",
+      "logo": "https://i.imgur.com/ZWFxlU1.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8",
+        "at": 1793641679457
+      }
+    },
+    {
+      "id": "RedeBrasil.br@SD",
+      "name": "Rede Brasil (1080p)",
+      "logo": "https://i.imgur.com/TXJKwzZ.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://redebrasil.nuvemplay.live/hls/stream.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://redebrasil.nuvemplay.live/hls/stream.m3u8",
+        "at": 1793641781026
+      }
+    },
+    {
+      "id": "RedeGospel.br@SD",
+      "name": "Rede Gospel (1080p)",
+      "logo": "https://i.imgur.com/mttSwgO.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://cdn.live.br1.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
+        "at": 1793641827780
+      }
+    },
+    {
+      "id": "RedeMeioNorte.br@SD",
+      "name": "Rede Meio Norte (720p)",
+      "logo": "https://i.imgur.com/KVdTi0M.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://maystreaming.cloudecast.com/redemeio/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://maystreaming.cloudecast.com/redemeio/index.m3u8",
+        "at": 1793641841580
+      }
+    },
+    {
+      "id": "RedeMinas.br@SD",
+      "name": "Rede Minas (720p)",
+      "logo": "https://i.imgur.com/MtQWAHv.png",
+      "category": "Education",
+      "categories": [
+        "Education"
+      ],
+      "source": "iptv-org",
+      "url": "https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://8hzcavccys.zoeweb.tv/redeminas/ngrp:redeminas_all/playlist.m3u8",
+        "at": 1793641864511
+      }
+    },
+    {
+      "id": "RedeNGT.br@SD",
+      "name": "Rede NGT (1080p)",
+      "logo": "https://i.imgur.com/ZFN1R4B.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://isaocorp.cloudecast.com/ngt/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://isaocorp.cloudecast.com/ngt/index.m3u8",
+        "at": 1793641880414
+      }
+    },
+    {
+      "id": "RedeSPTV.br@SD",
+      "name": "Rede SPTV (360p)",
+      "logo": "https://i.imgur.com/kh3LGAP.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8",
+        "at": 1793641939157
+      }
+    },
+    {
+      "id": "RedeTVMais.br@SD",
+      "name": "Rede TV! Mais",
+      "logo": "https://i.ibb.co/F0Tm2WP/2103f4c07b851d64b4c96955765a9a95.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8",
+        "at": 1793641954818
+      }
+    },
+    {
+      "id": "RetroCartoon.br@SD",
+      "name": "Retro Cartoon (720p)",
+      "logo": "https://i.imgur.com/hIlEfhl.png",
+      "category": "Classic",
+      "categories": [
+        "Classic"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
+        "at": 1793642032594
+      }
+    },
+    {
+      "id": "SBTNews.br@SD",
+      "name": "SBT News (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/42/SBT_News_2025.svg",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://dai.google.com/linear/hls/event/1XSOdtQ0SH2G8OEmEfGgjQ/master.m3u8",
+        "at": 1793642181470
+      }
+    },
+    {
+      "id": "SBTNovaMutum.br@SD",
+      "name": "SBT Nova Mutum",
+      "logo": "https://upload.wikimedia.org/wikipedia/pt/d/d0/Logotipo_do_SBT_Nova_Mutum.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8",
+        "at": 1793642207780
+      }
+    },
+    {
+      "id": "SBTRondonopolis.br@SD",
+      "name": "SBT Rondonopolis",
+      "logo": "https://upload.wikimedia.org/wikipedia/pt/d/d5/Logotipo_do_SBT_Rondon%C3%B3polis.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8",
+        "at": 1793642255283
+      }
+    },
+    {
+      "id": "SICTV.br@SD",
+      "name": "SIC TV (720p)",
+      "logo": "https://i.imgur.com/mHxQyB2.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8",
+        "at": 1793642267495
+      }
+    },
+    {
+      "id": "STZTV.br@SD",
+      "name": "STZ TV (1080p)",
+      "logo": "https://i.imgur.com/SeF2I7q.png",
+      "category": "Culture",
+      "categories": [
+        "Culture",
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8",
+        "at": 1793644097819
+      }
+    },
+    {
+      "id": "TikTokRadioBrasil.br@HD",
+      "name": "TikTok Radio Brasil (1080p)",
+      "logo": "https://static.wikia.nocookie.net/logopedia/images/f/f4/TikTok_Radio.svg",
+      "category": "Music",
+      "categories": [
+        "Music"
+      ],
+      "source": "iptv-org",
+      "url": "https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992529",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99992529",
+        "at": 1793644374348
+      }
+    },
+    {
+      "id": "TraceBrazuca.fr@HD",
+      "name": "Trace Brazuca HD (1080p)",
+      "logo": "https://i.imgur.com/DFBocPu.png",
+      "category": "Music",
+      "categories": [
+        "Music"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracebrazuca-samsungbr/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracebrazuca-samsungbr/playlist.m3u8",
+        "at": 1793644743390
+      }
+    },
+    {
+      "id": "TVACritica.br@SD",
+      "name": "TV A Critica",
+      "logo": "https://i.imgur.com/j51rBro.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8",
+        "at": 1793644812719
+      }
+    },
+    {
+      "id": "TVAFolha.br@SD",
+      "name": "TV A Folha (720p)",
+      "logo": "https://i.imgur.com/I7XGMhj.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
+        "at": 1793644832401
+      }
+    },
+    {
+      "id": "TVAldeia.br@SD",
+      "name": "TV Aldeia (720p)",
+      "logo": "https://i.imgur.com/rsfnv4Z.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.samcast.com.br/giovane7843/giovane7843/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.samcast.com.br/giovane7843/giovane7843/playlist.m3u8",
+        "at": 1793644880078
+      }
+    },
+    {
+      "id": "TVAliancaCatarinense.br@SD",
+      "name": "TV Alianca Catarinense (720p)",
+      "logo": "https://i.imgur.com/eqmOhtP.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://video01.logicahost.com.br/tvalianca/tvalianca/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 856x480 | https://video01.logicahost.com.br/tvalianca/tvalianca/playlist.m3u8",
+        "at": 1793644952817
+      }
+    },
+    {
+      "id": "TVAlternativa.br@SD",
+      "name": "TV Alternativa (410p)",
+      "logo": "https://i.imgur.com/wM9xXhc.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8",
+        "at": 1793644974031
+      }
+    },
+    {
+      "id": "TVBRICSPortuguese.br@SD",
+      "name": "TV BRICS Portuguese (1080p)",
+      "logo": "https://i.imgur.com/vLpm8tN.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8",
+        "at": 1793645204882
+      }
+    },
+    {
+      "id": "TVBrusque.br@SD",
+      "name": "TV Brusque (720p)",
+      "logo": "https://i.imgur.com/J2EAZPS.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
+        "at": 1793645232403
+      }
+    },
+    {
+      "id": "TVCamara.br@SD",
+      "name": "TV Camara (Brazil) (1080p)",
+      "logo": "https://i.imgur.com/Sdou1Ab.png",
+      "category": "Legislative",
+      "categories": [
+        "Legislative"
+      ],
+      "source": "iptv-org",
+      "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://stream3.camara.gov.br/tv1/manifest.m3u8",
+        "at": 1793645587616
+      }
+    },
+    {
+      "id": "TVCidadeVerdeCuiaba.br@SD",
+      "name": "TV Cidade Verde Cuiaba",
+      "logo": "https://i.imgur.com/e67h04h.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://televisaocidadeverde.brasilstream.com.br/hls/televisaocidadeverde/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://televisaocidadeverde.brasilstream.com.br/hls/televisaocidadeverde/index.m3u8",
+        "at": 1793645628560
+      }
+    },
+    {
+      "id": "TVClube.br@SD",
+      "name": "TV Clube (720p)",
+      "logo": "https://i.imgur.com/CpXjcyE.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8",
+        "at": 1793645648548
+      }
+    },
+    {
+      "id": "TVCuruca.br@SD",
+      "name": "TV Curuca (360p)",
+      "logo": "https://i.imgur.com/JdCKNZ4.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8",
+        "at": 1793645799600
+      }
+    },
+    {
+      "id": "TVDifusao.br@SD",
+      "name": "TV Difusao (720p)",
+      "logo": "https://storage.googleapis.com/soultv-prod-media/media/brand/LOGO_TV_DIFUS%C3%83O_100x100px_doiivZN.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://tvdsoultv.acessaradios.com.br/tvdsoultv/tvdsoultv.stream/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://tvdsoultv.acessaradios.com.br/tvdsoultv/tvdsoultv.stream/playlist.m3u8",
+        "at": 1793645823286
+      }
+    },
+    {
+      "id": "TVFronteira.br@SD",
+      "name": "TV Fronteira (480i)",
+      "logo": "https://i.imgur.com/NtcoW6G.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8",
+        "at": 1793645988695
+      }
+    },
+    {
+      "id": "TVGuarapari.br@SD",
+      "name": "TV Guarapari (720p)",
+      "logo": "https://i.imgur.com/eDNzwK0.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8",
+        "at": 1793646224814
+      }
+    },
+    {
+      "id": "TVLifeAmerica.br@HD",
+      "name": "TV Life America (720p)",
+      "logo": "https://i.imgur.com/HZI0ilU.png",
+      "category": "Culture",
+      "categories": [
+        "Culture"
+      ],
+      "source": "iptv-org",
+      "url": "https://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8",
+        "at": 1793646277663
+      }
+    },
+    {
+      "id": "TVLitoralRN.br@SD",
+      "name": "TV Litoral RN (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3e/TV_LITORAL_RN.jpg",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
+        "at": 1793646292486
+      }
+    },
+    {
+      "id": "TVMaisMarica.br@SD",
+      "name": "TV Mais Marica (1080p)",
+      "logo": "https://i.imgur.com/lgCRX7q.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5cf4a2c2512a2.streamlock.net/tvmaismarica/tvmaismarica/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://5cf4a2c2512a2.streamlock.net/tvmaismarica/tvmaismarica/playlist.m3u8",
+        "at": 1793646318590
+      }
+    },
+    {
+      "id": "TVManaBrasil.pt@SD",
+      "name": "TV Mana Brasil (1080p)",
+      "logo": "https://i.imgur.com/AFb712e.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/playlist.m3u8",
+        "at": 1793646351284
+      }
+    },
+    {
+      "id": "TVMarajoara.br@SD",
+      "name": "TV Marajoara (720p)",
+      "logo": "https://i.imgur.com/9d9vBN7.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://tv02.zas.media:1936/tvmarajoara/tvmarajoara/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://tv02.zas.media:1936/tvmarajoara/tvmarajoara/playlist.m3u8",
+        "at": 1793646367295
+      }
+    },
+    {
+      "id": "TVMetropole.br@SD",
+      "name": "TV Metropole (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/bJyjLpg.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8",
+        "at": 1793646379789
+      }
+    },
+    {
+      "id": "TVPadreCicero.br@SD",
+      "name": "TV Padre Cicero (720p)",
+      "logo": "https://i.imgur.com/Y7b29VG.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8",
+        "at": 1793646467519
+      }
+    },
+    {
+      "id": "TVPantanalMS.br@SD",
+      "name": "TV Pantanal MS (360p) [Not 24/7]",
+      "logo": "https://i.imgur.com/0FOmktl.png",
+      "category": "Undefined",
+      "categories": [
+        "Undefined"
+      ],
+      "source": "iptv-org",
+      "url": "https://5a2b083e9f360.streamlock.net/tvpantanal/tvpantanal.sdp/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 480x360 | https://5a2b083e9f360.streamlock.net/tvpantanal/tvpantanal.sdp/playlist.m3u8",
+        "at": 1793646490680
+      }
+    },
+    {
+      "id": "TVParaense.br@HD",
+      "name": "TV Paraense (720p)",
+      "logo": "https://duckduckgo.com/i/e408ea02.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment",
+        "Family",
+        "General",
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u",
+        "at": 1793646518269
+      }
+    },
+    {
+      "id": "TVPassoFundo.br@SD",
+      "name": "TV Passo Fundo (720p)",
+      "logo": "https://i.imgur.com/QFE6TiV.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://5a57bda70564a.streamlock.net/tvpasso/tvpasso.sdp/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://5a57bda70564a.streamlock.net/tvpasso/tvpasso.sdp/playlist.m3u8",
+        "at": 1793646681242
+      }
+    },
+    {
+      "id": "TVPetropolis.br@SD",
+      "name": "TV Petropolis (720p)",
+      "logo": "https://web2.petropolis.rj.gov.br/imc/film-commission/uploads/profissional/perfil/785b645d9c574b4d88504a85dbd6ef37.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
+        "at": 1793646722977
+      }
+    },
+    {
+      "id": "TVSaoRaimundo.br@SD",
+      "name": "TV Sao Raimundo (268p)",
+      "logo": "https://i.imgur.com/f34CQIG.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.voxtvhd.com.br/9030/9030/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 720x480 | https://stmv1.voxtvhd.com.br/9030/9030/playlist.m3u8",
+        "at": 1793646744798
+      }
+    },
+    {
+      "id": "TVSeries.br@SD",
+      "name": "TV Series (480p)",
+      "logo": "https://i.imgur.com/Ff5mj0o.png",
+      "category": "Series",
+      "categories": [
+        "Series"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 640x360 | https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
+        "at": 1793646815081
+      }
+    },
+    {
+      "id": "TVSimSaoMateus.br@SD",
+      "name": "TV Sim Sao Mateus (720p)",
+      "logo": "https://i.imgur.com/t5oUK3C.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
+        "at": 1793646889333
+      }
+    },
+    {
+      "id": "TVTerceiroAnjo.br@SD",
+      "name": "TV Terceiro Anjo (360p)",
+      "logo": "https://i.imgur.com/PExKWNv.png",
+      "category": "Religious",
+      "categories": [
+        "Religious"
+      ],
+      "source": "iptv-org",
+      "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
+        "at": 1793646952204
+      }
+    },
+    {
+      "id": "TVUFOP.br@HD",
+      "name": "TV UFOP (1080p)",
+      "logo": "https://raw.githubusercontent.com/daniloroxette/tvufop/refs/heads/main/images/tvufop_logo.png",
+      "category": "Culture",
+      "categories": [
+        "Culture",
+        "Education",
+        "Public"
+      ],
+      "source": "iptv-org",
+      "url": "https://app.tvufop.com.br/hls/tvufop.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://app.tvufop.com.br/hls/tvufop.m3u8",
+        "at": 1793646969993
+      }
+    },
+    {
+      "id": "TVPlusPet.br@SD",
+      "name": "TV+Pet",
+      "logo": "https://www.tvmaispet.com.br/images/tvpet-logo.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://stmv5.samcast.com.br/tvmaispet6354/tvmaispet6354/playlist.m3u8",
+        "at": 1793647083738
+      }
+    },
+    {
+      "id": "TVCRio.br@SD",
+      "name": "TVC-Rio",
+      "logo": "https://i.imgur.com/WDiikWv.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://video05.logicahost.com.br/comunitariario/comunitariario/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://video05.logicahost.com.br/comunitariario/comunitariario/playlist.m3u8",
+        "at": 1793647105053
+      }
+    },
+    {
+      "id": "TVCOMMaceio.br@SD",
+      "name": "TVCOM Maceio (480p)",
+      "logo": "https://i.imgur.com/IE7IZzi.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 854x480 | https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8",
+        "at": 1793647120252
+      }
+    },
+    {
+      "id": "TVideoNews.br@SD",
+      "name": "TVideoNews (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/vstHOYx.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://video01.logicahost.com.br/tvideonews/tvideonews/playlist.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://video01.logicahost.com.br/tvideonews/tvideonews/playlist.m3u8",
+        "at": 1793647135940
+      }
+    },
+    {
+      "id": "TVitape.br@SD",
+      "name": "TVitape (720p)",
+      "logo": "https://i.imgur.com/XeqcwKe.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://stream01.msolutionbrasil.com.br/hls/tvitape/live.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://stream01.msolutionbrasil.com.br/hls/tvitape/live.m3u8",
+        "at": 1793647166382
+      }
+    },
+    {
+      "id": "TVLatinaSat.br@HD",
+      "name": "TVLatinaSat (720p)",
+      "logo": "https://latinasat.com.br/logo.png",
+      "category": "General",
+      "categories": [
+        "General"
+      ],
+      "source": "iptv-org",
+      "url": "https://www.latinasat.com.br/hls/live/stream/index.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://www.latinasat.com.br/hls/live/stream/index.m3u8",
+        "at": 1793647183974
+      }
+    },
+    {
+      "id": "UMATV.br@HD",
+      "name": "UMA TV",
+      "logo": "https://i.imgur.com/m0RVb79.png",
+      "category": "Entertainment",
+      "categories": [
+        "Entertainment"
+      ],
+      "source": "iptv-org",
+      "url": "https://umatv.nuvemplay.live/hls/stream.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://umatv.nuvemplay.live/hls/stream.m3u8",
+        "at": 1793647240515
+      }
+    },
+    {
+      "id": "UnisulTV.br@SD",
+      "name": "Unisul TV (720p)",
+      "logo": "https://i.imgur.com/N0TvAFz.png",
+      "category": "Culture",
+      "categories": [
+        "Culture",
+        "Education"
+      ],
+      "source": "iptv-org",
+      "url": "https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token=",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1280x720 | https://sitetv.brasilstream.com.br/hls/sitetv/index.m3u8?token=",
+        "at": 1793647256228
+      }
+    },
+    {
+      "id": "VEJAPlusTV.br@HD",
+      "name": "VEJA+ TV (1080p)",
+      "logo": "https://i.imgur.com/n0pxHo4.png",
+      "category": "News",
+      "categories": [
+        "News"
+      ],
+      "source": "iptv-org",
+      "url": "https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8",
+      "format": "hls",
+      "playback_check": "hls_playlist_and_first_segment_ok",
+      "validation": {
+        "status": "playing",
+        "message": "Vídeo + áudio",
+        "detail": "VIDEO confirmado | 1920x1080 | https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8",
+        "at": 1793647281988
+      }
+    }
+  ]
+}
