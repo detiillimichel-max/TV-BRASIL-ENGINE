@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-02T11:46:44.216599+00:00",
+  "updated_at": "2026-11-02T12:01:22.204583+00:00",
   "total_tested": 397,
-  "total_media_detected": 276,
+  "total_media_detected": 277,
   "results": {
-    "media_detected": 276,
-    "unavailable": 96,
+    "media_detected": 277,
+    "unavailable": 95,
     "blocked": 24,
     "unknown": 1
   },
@@ -588,9 +588,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CatveMasterTV.br@SD",
@@ -599,9 +599,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "Catve2.br@SD",
@@ -610,9 +610,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CazeTV.br@SD",
@@ -4185,9 +4185,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVERS.br@SD",
@@ -4196,9 +4196,9 @@
       "category": "Culture;Education",
       "source": "iptv-org",
       "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVideoNews.br@SD",

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-02T11:46:44.216599+00:00",
-  "total_channels": 276,
+  "updated_at": "2026-11-02T12:01:22.204583+00:00",
+  "total_channels": 277,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -350,6 +350,39 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "http://45.162.64.114/CARTOON_NETWORK/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "CatveFM.br@SD",
+      "name": "Catve FM (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/w89yw36.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "CatveMasterTV.br@SD",
+      "name": "Catve Master TV (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/4m7Iazm.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "Catve2.br@SD",
+      "name": "Catve2 (720p)",
+      "logo": "https://i.imgur.com/qiVfsfB.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2924,28 +2957,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVEBahia.br@SD",
-      "name": "TVE Bahia (1080p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/960px-TVE_Bahia_logo.svg.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVERS.br@SD",
-      "name": "TVE RS (1080p)",
-      "logo": "https://i.imgur.com/MQ6lJpS.png",
-      "category": "Culture;Education",
-      "source": "iptv-org",
-      "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
