@@ -3,7 +3,55 @@
 const CATALOG_URL="https://raw.githubusercontent.com/detiillimichel-max/TV-BRASIL-ENGINE/main/data/catalog-final.json";
 const STORAGE_KEY="tv-brasil-engine-test-results-v2";
 const LIBRARY_KEY="tv-brasil-engine-approved-library-v1";
-function restoreFavorites(){try{const a=JSON.parse(localStorage.getItem(LIBRARY_KEY)||"[]");if(Array.isArray(a))a.forEach(id=>{if(typeof id==="string")state.favorites.add(id);});}catch(e){}}
+function restoreFavorites(){
+try{
+const raw=localStorage.getItem(LIBRARY_KEY);
+if(raw===null)return false;
+const saved=JSON.parse(raw);
+if(!Array.isArray(saved))return false;
+saved.forEach(id=>{if(typeof id==="string"&&id)state.favorites.add(id);});
+return true;
+}catch(e){console.warn("Biblioteca local inválida; será tentada a recuperação pelo Blob.",e);return false;}
+}
+async function recoverLibraryFromBlob(restoreAll){
+const backupUrl="https://osqdup2f2kumsdtb.public.blob.vercel-storage.com/backups/tv-brasil-engine-biblioteca-88-canais-2026-11-02T21-41-46-360Z.json";
+try{
+const response=await fetch(backupUrl,{cache:"no-store"});
+if(!response.ok)throw new Error("HTTP "+response.status);
+const backup=await response.json();
+if(backup.total!==88||!Array.isArray(backup.channels)||backup.channels.length!==88)throw new Error("Backup não contém exatamente 88 canais.");
+const ids=backup.channels.map(c=>c&&c.id);
+if(ids.some(id=>typeof id!=="string"||!id)||new Set(ids).size!==88)throw new Error("Backup com IDs ausentes ou duplicados.");
+const catalogIds=new Set(state.channels.map(c=>c.id));
+let recovered=0;
+backup.channels.forEach(channel=>{
+const shouldRestore=restoreAll||state.favorites.has(channel.id);
+if(shouldRestore&&!catalogIds.has(channel.id)){
+state.channels.push(channel);
+catalogIds.add(channel.id);
+}
+if(restoreAll){
+state.favorites.add(channel.id);
+if(channel.validation&&channel.validation.status==="playing")state.results.set(channel.id,channel.validation);
+recovered++;
+}else if(state.favorites.has(channel.id)&&channel.validation&&channel.validation.status==="playing"&&!state.results.has(channel.id)){
+state.results.set(channel.id,channel.validation);
+}
+});
+if(restoreAll){
+saveFavorites();
+save();
+state.libraryRecovered=true;
+console.info("Biblioteca recuperada do Blob:",recovered,"canais.");
+}else if(recovered===0&&state.favorites.size){
+save();
+}
+return restoreAll?recovered:true;
+}catch(error){
+console.warn("Não foi possível recuperar a biblioteca pelo Blob:",error);
+return false;
+}
+}
 function saveFavorites(){try{localStorage.setItem(LIBRARY_KEY,JSON.stringify([...state.favorites]));}catch(e){}}
 function refreshIcons(){if(window.lucide&&window.lucide.createIcons)window.lucide.createIcons();}
 function switchTab(tab){const lib=tab==="library";$("catalog-section").hidden=lib;$("library-section").hidden=!lib;document.querySelectorAll(".main-tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));state.activeTab=tab;renderLibrary();refreshIcons();}
@@ -36,30 +84,12 @@ link.remove();
 setTimeout(()=>URL.revokeObjectURL(url),1500);
 alert("Backup gerado: "+channels.length+" canais completos. Confira a pasta Downloads do seu celular e não apague a biblioteca original ainda.");
 }
-function exportApprovedLibrary(){
-const ids=[...state.favorites];
-const channels=state.channels.filter(c=>state.favorites.has(c.id));
-const missing=ids.filter(id=>!state.channels.some(c=>c.id===id));
-if(!ids.length){alert("A biblioteca está vazia neste navegador. Nenhum arquivo foi criado.");return;}
-if(missing.length||channels.length!==ids.length){alert("Backup interrompido para evitar arquivo incompleto. IDs salvos: "+ids.length+"; canais encontrados: "+channels.length+"; não encontrados: "+missing.length+".");return;}
-const payload={schema_version:1,source:"TV-BRASIL-ENGINE",exported_at:new Date().toISOString(),total:channels.length,description:"Backup completo da Minha biblioteca, com dados do catálogo e diagnóstico local de cada canal.",channels:channels.map(channel=>({...channel,validation:state.results.get(channel.id)||null}))};
-const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json;charset=utf-8"});
-const url=URL.createObjectURL(blob);
-const link=document.createElement("a");
-link.href=url;
-link.download="tv-brasil-engine-biblioteca-"+channels.length+"-canais.json";
-document.body.appendChild(link);
-link.click();
-link.remove();
-setTimeout(()=>URL.revokeObjectURL(url),1500);
-alert("Backup gerado com "+channels.length+" canais completos. Confira Downloads no celular. Não apague a biblioteca original ainda.");
-}
 function renderLibrary(){const list=state.channels.filter(c=>state.favorites.has(c.id));$("library-count").textContent=list.length;$("library-total").textContent=list.length+" canais";$("library-grid").innerHTML=list.length?list.map(c=>'<article class="channel-card"><div class="channel-logo">'+(c.logo?'<img loading="lazy" src="'+esc(c.logo)+'" alt="">':'<span class="logo-fallback">TV</span>')+'</div><div class="channel-info"><div class="channel-name">'+esc(c.name)+'</div><div class="channel-meta">'+esc(cats(c)[0])+' · HLS</div><div class="library-card-actions"><button class="button primary" data-lib-play="'+esc(c.id)+'">Reproduzir</button><button class="button secondary" data-lib-remove="'+esc(c.id)+'">Remover</button></div></div></article>').join(""):'<div class="empty-state">Nenhum canal salvo ainda. Teste uma emissora e adicione-a quando vídeo e áudio forem confirmados.</div>';$("library-grid").querySelectorAll("[data-lib-play]").forEach(b=>b.addEventListener("click",()=>{const id=b.dataset.libPlay;switchTab("catalog");renderChannels();testChannel(id);}));$("library-grid").querySelectorAll("[data-lib-remove]").forEach(b=>b.addEventListener("click",()=>toggleFavorite(b.dataset.libRemove)));refreshIcons();}
 function isYouTube(url){try{const u=new URL(url);return /(^|\.)youtube\.com$|(^|\.)youtu\.be$/.test(u.hostname);}catch(e){return false;}}
 function showExternalFallback(id){const c=findCard(id);const ch=state.channels.find(x=>x.id===id);if(!c||!ch||!ch.url)return;const actions=c.querySelector(".mini-actions");if(!actions||actions.querySelector("[data-external]"))return;const a=document.createElement("a");a.className="external-btn";a.dataset.external="1";a.href=ch.url;a.target="_blank";a.rel="noopener noreferrer";a.innerHTML=isYouTube(ch.url)?'<i data-lucide="external-link"></i> Abrir no YouTube':'<i data-lucide="external-link"></i> Abrir externamente';actions.insertBefore(a,actions.lastElementChild);refreshIcons();}
 
 const $=id=>document.getElementById(id);
-const state={channels:[],results:new Map(),favorites:new Set(),activeId:null,hls:null,video:null,mediaTimer:null,frameTimer:null,activeTab:"catalog"};
+const state={channels:[],results:new Map(),favorites:new Set(),activeId:null,hls:null,video:null,mediaTimer:null,frameTimer:null,activeTab:"catalog",libraryRecovered:false};
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const cats=c=>Array.isArray(c.categories)&&c.categories.length?c.categories:[c.category||"Undefined"];
 function setStatus(el,type,label){if(el.id==="api-status"){el.className="status-pill "+type;el.innerHTML="<i></i>"+label;}else{el.className="mini-status "+type;el.textContent=label;}}
@@ -88,6 +118,6 @@ const playing=()=>{if(state.activeId!==id)return;clearTimeout(state.mediaTimer);
 v.addEventListener("playing",playing,{once:true});v.addEventListener("error",()=>{if(state.activeId===id)fail(id,"O navegador não conseguiu reproduzir. Possíveis causas: CORS, bloqueio HTTP, geográfico ou incompatibilidade.","Erro de mídia | "+ch.url);},{once:true});
 state.mediaTimer=setTimeout(()=>{if(state.activeId===id&&v.paused)fail(id,"A transmissão não começou em 20 segundos. Verifique playlist, CORS, rede e segmentos.","Timeout 20s | "+ch.url);},20000);
 if(window.Hls&&Hls.isSupported()){state.hls=new Hls({enableWorker:true,lowLatencyMode:false,manifestLoadingTimeOut:15000,fragLoadingTimeOut:15000});state.hls.on(Hls.Events.ERROR,(_e,d)=>{if(!d.fatal||state.activeId!==id)return;const info="HLS fatal: "+d.type+" / "+d.details+" | "+ch.url;if(d.type===Hls.ErrorTypes.NETWORK_ERROR)state.hls.startLoad();else if(d.type===Hls.ErrorTypes.MEDIA_ERROR)state.hls.recoverMediaError();else fail(id,"HLS.js encontrou erro fatal. Verifique playlist e segmentos.",info);});state.hls.on(Hls.Events.MANIFEST_PARSED,()=>{tech.textContent="Playlist carregada; aguardando reprodução. "+ch.url;v.play().catch(()=>{setStatus(status,"pending","Toque em play");diag.textContent="Playlist carregada. Toque no play deste player para continuar.";});});state.hls.loadSource(ch.url);state.hls.attachMedia(v);}else if(v.canPlayType("application/vnd.apple.mpegurl")){v.src=ch.url;v.play().catch(()=>{setStatus(status,"pending","Toque em play");diag.textContent="Toque no play do player para iniciar.";});}else fail(id,"Este navegador não oferece suporte HLS e HLS.js não está disponível.");}
-async function loadCatalog(){stopActive("Catálogo atualizado.");$("channel-grid").innerHTML='<div class="empty-state">Buscando catálogo...</div>';try{setStatus($("api-status"),"pending","Carregando catálogo");const r=await fetch(CATALOG_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const data=await r.json();if(!Array.isArray(data.channels))throw new Error("JSON sem lista channels");state.channels=data.channels;restore();restoreFavorites();const valid=new Set(state.channels.map(c=>c.id));for(const id of state.results.keys())if(!valid.has(id))state.results.delete(id);save();$("total-count").textContent=state.channels.length;$("catalog-tab-count").textContent=state.channels.length;$("hls-count").textContent=state.channels.filter(c=>c.format==="hls").length;$("ts-count").textContent=state.channels.filter(c=>c.format==="mpegts").length;$("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date(data.updated_at).toLocaleString("pt-BR"):"data não informada");renderFilters();renderChannels();renderLibrary();counts();setStatus($("api-status"),"ok","Catálogo conectado");refreshIcons();}catch(e){setStatus($("api-status"),"bad","Catálogo indisponível");$("channel-grid").innerHTML='<div class="empty-state">Não foi possível carregar o catálogo: '+esc(e.message)+'</div>';}}
-$("export-library-btn").addEventListener("click",exportApprovedLibrary);$("export-library-btn").addEventListener("click",exportApprovedLibrary);$("reload-btn").addEventListener("click",loadCatalog);document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));["search-input","category-filter","format-filter","result-filter"].forEach(id=>$(id).addEventListener(id==="search-input"?"input":"change",renderChannels));loadCatalog();
+async function loadCatalog(){stopActive("Catálogo atualizado.");$("channel-grid").innerHTML='<div class="empty-state">Buscando catálogo...</div>';try{setStatus($("api-status"),"pending","Carregando catálogo");const r=await fetch(CATALOG_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const data=await r.json();if(!Array.isArray(data.channels))throw new Error("JSON sem lista channels");state.channels=data.channels;restore();const hasLocalLibrary=restoreFavorites();if(!hasLocalLibrary||[...state.favorites].some(id=>!state.channels.some(c=>c.id===id)))await recoverLibraryFromBlob(!hasLocalLibrary);const valid=new Set(state.channels.map(c=>c.id));for(const id of state.results.keys())if(!valid.has(id))state.results.delete(id);save();$("total-count").textContent=state.channels.length;$("catalog-tab-count").textContent=state.channels.length;$("hls-count").textContent=state.channels.filter(c=>c.format==="hls").length;$("ts-count").textContent=state.channels.filter(c=>c.format==="mpegts").length;$("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date(data.updated_at).toLocaleString("pt-BR"):"data não informada");renderFilters();renderChannels();renderLibrary();counts();setStatus($("api-status"),"ok","Catálogo conectado");refreshIcons();}catch(e){setStatus($("api-status"),"bad","Catálogo indisponível");$("channel-grid").innerHTML='<div class="empty-state">Não foi possível carregar o catálogo: '+esc(e.message)+'</div>';}}
+$("export-library-btn").addEventListener("click",exportApprovedLibrary);$("reload-btn").addEventListener("click",loadCatalog);document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));["search-input","category-filter","format-filter","result-filter"].forEach(id=>$(id).addEventListener(id==="search-input"?"input":"change",renderChannels));loadCatalog();
 })();
