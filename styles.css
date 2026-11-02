@@ -101,3 +101,8 @@ body{background:radial-gradient(ellipse at 50% -15%,#18352d 0,transparent 42%),#
 .station-card{flex-basis:138px}
 .feed-player-mode .featured-stage{aspect-ratio:9/14;max-height:66vh}
 }
+
+/* Ajuste fino dos rótulos e contadores das quatro abas */
+.main-tab .tab-label{background:transparent;padding:0;border-radius:0;color:inherit;font-size:11px}
+.main-tab b{font-size:9px;padding:2px 7px;border-radius:20px;background:#202a24;color:#a9b8ae}
+@media(max-width:760px){.main-tab .tab-label{font-size:10px}}
