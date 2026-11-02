@@ -1,4 +1,4 @@
-const CACHE_NAME = "tv-brasil-engine-shell-v1";
+const CACHE_NAME = "tv-brasil-engine-shell-v2";
 const APP_SHELL = [
   "./",
   "./index.html",
@@ -13,7 +13,7 @@ const APP_SHELL = [
 self.addEventListener("install", event => {
   event.waitUntil((async () => {
     const cache = await caches.open(CACHE_NAME);
-    await cache.addAll(APP_SHELL);
+    await Promise.all(APP_SHELL.map(async path => { try { await cache.add(path); } catch (error) { console.warn("Recurso não entrou no cache inicial:", path, error); } }));
     await self.skipWaiting();
   })());
 });
