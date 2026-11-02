@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#090d14">
+  <meta name="theme-color" content="#0b0d10">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="TV Brasil">
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" href="./icons/icon-192.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icons/icon-192.svg">
   <meta name="description" content="Painel individual de diagnóstico e reprodução do catálogo TV-BRASIL-ENGINE.">
   <title>TV-BRASIL-ENGINE · Central de testes</title>
   <link rel="stylesheet" href="./styles.css?v=2.4.1">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-  <script src="./app.js?v=2.4.0" defer></script>
+  <script src="./app.js?v=2.4.1" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -76,5 +83,10 @@
     </section>
   </main>
   <footer><span>TV-BRASIL-ENGINE</span><span id="updated-at">Catálogo independente do TV OIO</span></footer>
+  <script>
+    if ("serviceWorker" in navigator && location.protocol === "https:") {
+      window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(error => console.warn("Service Worker:", error)));
+    }
+  </script>
 </body>
 </html>
