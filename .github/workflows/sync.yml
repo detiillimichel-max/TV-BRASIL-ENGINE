@@ -1,5 +1,4 @@
-
-name: TV Brasil - Sincronização diária
+name: TV Brasil - Sincronização e validação
 
 on:
   schedule:
@@ -27,20 +26,23 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Executar sincronizador
+      - name: Sincronizar canais
         run: python scripts/sync_sources.py
 
-      - name: Salvar catálogo atualizado
+      - name: Validar transmissões
+        run: python scripts/validate_streams.py
+
+      - name: Salvar catálogos e relatórios
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/catalog.json reports/sync-report.json
+          git add data/ reports/
 
           if ! git diff --cached --quiet; then
-            git commit -m "Atualização automática do catálogo"
+            git commit -m "Atualização e validação dos canais"
             git push
           else
-            echo "Nenhuma alteração no catálogo."
+            echo "Nenhuma alteração encontrada."
           fi
           
