@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d14">
+  <title>Backup seguro · TV-BRASIL-ENGINE</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:#090d14;color:#eef3fa;font:16px system-ui,sans-serif;display:grid;place-items:center;padding:20px}
+    main{width:min(100%,520px);background:#111a27;border:1px solid #28364a;border-radius:18px;padding:24px}
+    h1{font-size:22px;margin:0 0 8px}p{color:#aab8c9;line-height:1.5}
+    label{display:block;margin:22px 0 8px;font-size:14px;color:#cbd5e1}
+    input{width:100%;padding:14px;border-radius:10px;border:1px solid #34445b;background:#0b1220;color:#fff;font-size:16px}
+    button{width:100%;margin-top:14px;padding:14px;border:0;border-radius:10px;background:#2879e8;color:white;font-weight:700;font-size:16px}
+    button:disabled{opacity:.6}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#0b1220;border-radius:10px;padding:14px;color:#d4e2f4;min-height:60px}
+    small{color:#93a4b8}
+  </style>
+</head>
+<body>
+<main>
+  <h1>Backup da biblioteca de 88 canais</h1>
+  <p>Esta página chama a API protegida do Vercel. A chave é enviada somente no cabeçalho da requisição e não fica gravada no site.</p>
+  <form id="backup-form">
+    <label for="backup-key">Chave de autorização</label>
+    <input id="backup-key" type="password" autocomplete="off" required placeholder="Cole a chave privada">
+    <button id="run-backup" type="submit">Enviar e conferir os 88 canais</button>
+  </form>
+  <p><small>O arquivo original do GitHub não será alterado. Um novo backup será criado no Blob.</small></p>
+  <pre id="result" aria-live="polite">Aguardando autorização.</pre>
+</main>
+<script>
+const form=document.getElementById("backup-form");
+const keyInput=document.getElementById("backup-key");
+const button=document.getElementById("run-backup");
+const output=document.getElementById("result");
+form.addEventListener("submit",async(event)=>{
+  event.preventDefault();
+  const key=keyInput.value.trim();
+  if(!key)return;
+  button.disabled=true;
+  output.textContent="Executando backup e conferindo os IDs…";
+  try{
+    const response=await fetch("/api/backup-library",{
+      method:"POST",
+      headers:{Authorization:"Bearer "+key}
+    });
+    const data=await response.json();
+    output.textContent=JSON.stringify(data,null,2);
+    if(response.ok&&data.ok&&data.verified)keyInput.value="";
+  }catch(error){
+    output.textContent="Falha de comunicação: "+error.message;
+  }finally{button.disabled=false;}
+});
+</script>
+</body>
+</html>
