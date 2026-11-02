@@ -1,199 +1,36 @@
 (() => {
-  "use strict";
-  const CATALOG_URL = "https://raw.githubusercontent.com/detiillimichel-max/TV-BRASIL-ENGINE/main/data/catalog-final.json";
-  const $ = (id) => document.getElementById(id);
-  const state = { channels: [], results: new Map(), selectedId: null, hls: null, mediaTimer: null, videoCheckTimer: null };
-  const video = $("video");
-
-  function setPill(el, type, label) {
-    el.className = "status-pill " + type;
-    el.innerHTML = "<i></i>" + label;
-  }
-  function stopPlayback() {
-    if (state.mediaTimer) clearTimeout(state.mediaTimer);
-    if (state.videoCheckTimer) clearTimeout(state.videoCheckTimer);
-    state.mediaTimer = null;
-    state.videoCheckTimer = null;
-    if (state.hls) { state.hls.destroy(); state.hls = null; }
-    video.pause();
-    video.removeAttribute("src");
-    video.load();
-    $("video-placeholder").hidden = false;
-    $("stop-btn").disabled = true;
-  }
-  function resultCounts() {
-    const vals = [...state.results.values()];
-    const ok = vals.filter(x => x.status === "playing").length;
-    const fail = vals.filter(x => x.status === "failed").length;
-    const audio = vals.filter(x => x.status === "audio_only").length;
-    $("tested-count").textContent = vals.length;
-    $("tested-detail").textContent = ok + " com vídeo · " + audio + " só áudio · " + fail + " falharam";
-  }
-  function setResult(id, status, message) {
-    state.results.set(id, {status, message, at: Date.now()});
-    resultCounts();
-    renderChannels();
-  }
-  function categoryList(channel) {
-    return Array.isArray(channel.categories) && channel.categories.length ? channel.categories : [channel.category || "Undefined"];
-  }
-  function renderFilters() {
-    const cats = [...new Set(state.channels.flatMap(categoryList))].sort((a,b)=>a.localeCompare(b,"pt-BR"));
-    $("category-filter").innerHTML = '<option value="">Todas as categorias</option>' + cats.map(c=>'<option value="'+escapeHtml(c)+'">'+escapeHtml(c)+'</option>').join("");
-  }
-  function escapeHtml(value) {
-    return String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-  }
-  function renderChannels() {
-    const q = $("search-input").value.trim().toLocaleLowerCase("pt-BR");
-    const cat = $("category-filter").value;
-    const fmt = $("format-filter").value;
-    const filter = $("result-filter").value;
-    const list = state.channels.filter(c => {
-      const result = state.results.get(c.id);
-      return (!q || (c.name+" "+c.id).toLocaleLowerCase("pt-BR").includes(q)) &&
-        (!cat || categoryList(c).includes(cat)) && (!fmt || c.format === fmt) &&
-        (!filter || (filter === "untested" ? !result : result?.status === filter));
-    });
-    $("visible-count").textContent = list.length + " canais";
-    $("channel-grid").innerHTML = list.length ? list.map(c => {
-      const result = state.results.get(c.id);
-      const selected = state.selectedId === c.id;
-      const resultClass = result?.status === "playing" ? "ok" : result?.status === "failed" ? "bad" : result?.status === "audio_only" ? "warn" : "";
-      const resultLabel = result ? result.message : "Ainda não testado";
-      const initials = escapeHtml((c.name || "TV").replace(/[^\p{L}\p{N} ]/gu,"").split(/\s+/).slice(0,2).map(x=>x[0]||"").join("").toUpperCase());
-      return '<article class="channel-card '+(selected?'selected':'')+'"><div class="channel-logo">'+(c.logo ? '<img loading="lazy" src="'+escapeHtml(c.logo)+'" alt="" onerror="this.remove();this.parentElement.innerHTML=\'<span class=&quot;logo-fallback&quot;>'+initials+'</span>\'">' : '<span class="logo-fallback">'+initials+'</span>')+'</div><div class="channel-info"><div class="channel-name">'+escapeHtml(c.name)+'</div><div class="channel-meta"><span>'+escapeHtml(categoryList(c)[0])+'</span><span class="tag">'+escapeHtml(c.format || "formato?")+'</span></div><div class="result-line"><span class="result-text '+resultClass+'">'+escapeHtml(resultLabel)+'</span><button class="test-btn" data-test="'+escapeHtml(c.id)+'">Testar</button></div></div></article>';
-    }).join("") : '<div class="empty-state">Nenhuma emissora corresponde aos filtros.</div>';
-    $("channel-grid").querySelectorAll("[data-test]").forEach(btn => btn.addEventListener("click", () => testChannel(btn.dataset.test)));
-  }
-  function updateTechnical(text) { $("technical-info").textContent = text; }
-  function fail(id, message, detail) {
-    setPill($("playback-status"), "bad", "Falha na reprodução");
-    $("diagnostic-message").textContent = message;
-    updateTechnical(detail || message);
-    setResult(id, "failed", message);
-  }
-  function testChannel(id) {
-    const channel = state.channels.find(c => c.id === id);
-    if (!channel) return;
-    stopPlayback();
-    state.selectedId = id;
-    $("selected-name").textContent = channel.name;
-    $("selected-meta").textContent = categoryList(channel).join(" · ") + " · " + String(channel.format || "formato desconhecido").toUpperCase();
-    setPill($("playback-status"), "pending", "Iniciando teste");
-    $("diagnostic-message").textContent = "Conectando à transmissão. Aguarde o navegador tentar carregar o vídeo.";
-    updateTechnical("URL: " + channel.url + " | Formato: " + channel.format);
-    $("video-placeholder").hidden = true;
-    $("stop-btn").disabled = false;
-    renderChannels();
-
-    if (channel.format === "mpegts") {
-      fail(id, "MPEG-TS não é reproduzido diretamente por este player web. O canal foi preservado; precisa de gateway autorizado para conversão.", "Formato MPEG-TS | URL: " + channel.url);
-      return;
-    }
-    if (!channel.url || !/^https?:\/\//i.test(channel.url)) {
-      fail(id, "Endereço da transmissão inválido ou ausente.");
-      return;
-    }
-    const isHls = channel.format === "hls" || /\.m3u8($|\?)/i.test(channel.url);
-    if (!isHls) {
-      fail(id, "Formato ainda não suportado pelo teste HLS.", "Formato informado: " + channel.format);
-      return;
-    }
-
-    const onPlaying = () => {
-      if (state.selectedId !== id) return;
-      setPill($("playback-status"), "pending", "Verificando imagem");
-      $("diagnostic-message").textContent = "O fluxo iniciou. Agora estamos verificando se o navegador recebeu quadros de vídeo, além do áudio.";
-      if (state.videoCheckTimer) clearTimeout(state.videoCheckTimer);
-      state.videoCheckTimer = setTimeout(() => {
-        if (state.selectedId !== id) return;
-        const width = video.videoWidth || 0;
-        const height = video.videoHeight || 0;
-        if (width > 0 && height > 0) {
-          setPill($("playback-status"), "ok", "Vídeo e áudio detectados");
-          $("diagnostic-message").textContent = "Imagem confirmada: o navegador recebeu vídeo em " + width + " × " + height + ". O áudio também iniciou.";
-          updateTechnical("VIDEO confirmado | " + width + "x" + height + " | " + channel.url);
-          setResult(id, "playing", "Vídeo + áudio");
-        } else {
-          setPill($("playback-status"), "pending", "Somente áudio detectado");
-          $("diagnostic-message").textContent = "O áudio iniciou, mas nenhum quadro de vídeo foi detectado após 5 segundos. Pode ser uma playlist somente de áudio, vídeo/codec incompatível ou falha na entrega dos segmentos de vídeo.";
-          const codecs = state.hls?.levels?.map(level => level.videoCodec || "sem codec de vídeo informado").filter(Boolean).join(", ") || "codec de vídeo não identificado";
-          updateTechnical("AUDIO sem quadro de vídeo | videoWidth=" + width + " | videoHeight=" + height + " | " + codecs + " | " + channel.url);
-          setResult(id, "audio_only", "Somente áudio");
-        }
-      }, 5000);
-    };
-    const onError = () => {
-      if (state.selectedId !== id) return;
-      fail(id, "O navegador não conseguiu reproduzir. Possíveis causas: CORS, conteúdo misto HTTP/HTTPS, bloqueio geográfico, URL expirada ou incompatibilidade do servidor.", "Erro de mídia do navegador | URL: " + channel.url);
-    };
-    video.addEventListener("playing", onPlaying, {once:true});
-    video.addEventListener("error", onError, {once:true});
-    state.mediaTimer = setTimeout(() => {
-      if (state.selectedId === id && video.paused) {
-        fail(id, "A transmissão não começou em 15 segundos. Verifique CORS, rede, playlist e segmentos.", "Timeout de reprodução (15s) | URL: " + channel.url);
-      }
-    }, 15000);
-
-    if (window.Hls && Hls.isSupported()) {
-      state.hls = new Hls({enableWorker:true, lowLatencyMode:false, manifestLoadingTimeOut:12000, fragLoadingTimeOut:12000});
-      state.hls.on(Hls.Events.ERROR, (_event, data) => {
-        if (!data.fatal || state.selectedId !== id) return;
-        const detail = "HLS fatal: " + data.type + " / " + data.details + " | URL: " + channel.url;
-        if (data.type === Hls.ErrorTypes.NETWORK_ERROR) state.hls.startLoad();
-        else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) state.hls.recoverMediaError();
-        else fail(id, "HLS.js encontrou um erro fatal. Pode ser CORS, playlist ou segmentos inacessíveis.", detail);
-      });
-      state.hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        updateTechnical("Playlist HLS carregada; aguardando decodificação e reprodução. " + channel.url);
-        video.play().catch(() => {
-          $("diagnostic-message").textContent = "Playlist carregada. Toque no botão de reprodução do vídeo para concluir o teste.";
-          setPill($("playback-status"), "pending", "Aguardando toque");
-        });
-      });
-      state.hls.loadSource(channel.url);
-      state.hls.attachMedia(video);
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = channel.url;
-      video.play().catch(() => setPill($("playback-status"), "pending", "Toque para reproduzir"));
-    } else {
-      fail(id, "Este navegador não oferece suporte HLS nativo e HLS.js não está disponível. Confira a conexão com a biblioteca do player.");
-    }
-  }
-  async function loadCatalog() {
-    stopPlayback();
-    setPill($("api-status"), "pending", "Carregando catálogo");
-    $("channel-grid").innerHTML = '<div class="empty-state">Buscando catálogo no TV-BRASIL-ENGINE...</div>';
-    try {
-      const response = await fetch(CATALOG_URL + "?t=" + Date.now(), {cache:"no-store"});
-      if (!response.ok) throw new Error("HTTP " + response.status);
-      const data = await response.json();
-      if (!Array.isArray(data.channels)) throw new Error("O JSON não contém a lista channels.");
-      state.channels = data.channels;
-      state.results.clear();
-      $("total-count").textContent = data.channels.length;
-      $("hls-count").textContent = data.channels.filter(c=>c.format==="hls").length;
-      $("ts-count").textContent = data.channels.filter(c=>c.format==="mpegts").length;
-      $("updated-at").textContent = "Atualizado em " + (data.updated_at ? new Date(data.updated_at).toLocaleString("pt-BR") : "data não informada");
-      renderFilters();
-      renderChannels();
-      setPill($("api-status"), "ok", "Catálogo conectado");
-      $("tested-count").textContent = "0";
-      $("tested-detail").textContent = "nenhum teste iniciado";
-    } catch (error) {
-      setPill($("api-status"), "bad", "Catálogo indisponível");
-      $("channel-grid").innerHTML = '<div class="empty-state">Não foi possível carregar o JSON. Erro: '+escapeHtml(error.message)+'. Verifique se o arquivo está público e se o GitHub Raw está acessível.</div>';
-      updateTechnical("Falha ao buscar catálogo: " + error.message);
-    }
-  }
-  $("reload-btn").addEventListener("click", loadCatalog);
-  $("stop-btn").addEventListener("click", () => {
-    stopPlayback();
-    setPill($("playback-status"), "neutral", "Teste interrompido");
-    $("diagnostic-message").textContent = "Teste interrompido manualmente.";
-  });
-  ["search-input","category-filter","format-filter","result-filter"].forEach(id => $(id).addEventListener(id==="search-input"?"input":"change", renderChannels));
-  video.addEventListener("playing", () => { if(state.mediaTimer) clearTimeout(state.mediaTimer); });
-  loadCatalog();
+"use strict";
+const CATALOG_URL="https://raw.githubusercontent.com/detiillimichel-max/TV-BRASIL-ENGINE/main/data/catalog-final.json";
+const STORAGE_KEY="tv-brasil-engine-test-results-v2";
+const $=id=>document.getElementById(id);
+const state={channels:[],results:new Map(),activeId:null,hls:null,video:null,mediaTimer:null,frameTimer:null};
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const cats=c=>Array.isArray(c.categories)&&c.categories.length?c.categories:[c.category||"Undefined"];
+function setStatus(el,type,label){el.className="mini-status "+type;el.textContent=label;}
+function save(){try{localStorage.setItem(STORAGE_KEY,JSON.stringify([...state.results.entries()]));}catch(e){console.warn("Falha ao salvar histórico",e);}}
+function restore(){try{const a=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");if(Array.isArray(a))a.forEach(pair=>{if(Array.isArray(pair)&&typeof pair[0]==="string"&&pair[1])state.results.set(pair[0],pair[1]);});}catch(e){console.warn("Histórico local inválido",e);}}
+function cls(s){return s==="playing"?"ok":s==="failed"?"bad":s==="audio_only"?"warn":"";}
+function counts(){const a=[...state.results.values()],ok=a.filter(x=>x.status==="playing").length,audio=a.filter(x=>x.status==="audio_only").length,fail=a.filter(x=>x.status==="failed").length;$("tested-count").textContent=a.length;$("tested-detail").textContent=ok+" com vídeo · "+audio+" só áudio · "+fail+" falharam";}
+function setResult(id,status,message,detail){state.results.set(id,{status,message,detail:detail||"",at:Date.now()});save();counts();const card=findCard(id);if(card){const label=card.querySelector("[data-result]");label.textContent=message;label.className="result-text "+cls(status);const diag=card.querySelector("[data-diagnostic]");if(diag)diag.textContent=message;const tech=card.querySelector("[data-technical]");if(tech&&detail)tech.textContent=detail;}}
+function findCard(id){return [...$("channel-grid").querySelectorAll(".channel-card")].find(x=>x.dataset.channelId===id);}
+function stopActive(message){clearTimeout(state.mediaTimer);clearTimeout(state.frameTimer);state.mediaTimer=state.frameTimer=null;if(state.hls){state.hls.destroy();state.hls=null;}if(state.video){state.video.pause();state.video.removeAttribute("src");state.video.load();}if(state.activeId){const c=findCard(state.activeId);if(c){const s=c.querySelector("[data-status]");if(s)setStatus(s,"neutral",message?"Pausado":"Pronto");const d=c.querySelector("[data-diagnostic]");if(d&&message)d.textContent=message;c.classList.remove("active");}}state.activeId=null;state.video=null;}
+function renderFilters(){const a=[...new Set(state.channels.flatMap(cats))].sort((a,b)=>a.localeCompare(b,"pt-BR"));$("category-filter").innerHTML='<option value="">Todas as categorias</option>'+a.map(x=>'<option value="'+esc(x)+'">'+esc(x)+'</option>').join("");}
+function renderChannels(){const q=$("search-input").value.trim().toLocaleLowerCase("pt-BR"),cat=$("category-filter").value,fmt=$("format-filter").value,filter=$("result-filter").value;const list=state.channels.filter(c=>{const r=state.results.get(c.id);return(!q||(c.name+" "+c.id).toLocaleLowerCase("pt-BR").includes(q))&&(!cat||cats(c).includes(cat))&&(!fmt||c.format===fmt)&&(!filter||(filter==="untested"?!r:r?.status===filter));});
+$("visible-count").textContent=list.length+" canais";
+$("channel-grid").innerHTML=list.length?list.map(c=>{const r=state.results.get(c.id);const initials=esc((c.name||"TV").replace(/[^a-zA-Z0-9À-ÿ ]/g,"").split(/\s+/).slice(0,2).map(x=>x[0]||"").join("").toUpperCase());const logo=c.logo?'<img loading="lazy" src="'+esc(c.logo)+'" alt="" onerror="this.remove();this.parentElement.innerHTML=\\'<span class=&quot;logo-fallback&quot;>'+initials+'</span>\\'">':'<span class="logo-fallback">'+initials+'</span>';return '<article class="channel-card" data-channel-id="'+esc(c.id)+'"><div class="channel-logo">'+logo+'</div><div class="channel-info"><div class="channel-name">'+esc(c.name)+'</div><div class="channel-meta"><span>'+esc(cats(c)[0])+'</span><span class="tag">'+esc(c.format||"formato?")+'</span></div><div class="result-line"><span class="result-text '+cls(r?.status)+'" data-result>'+esc(r?.message||"Ainda não testado")+'</span><button class="test-btn" data-test="'+esc(c.id)+'">Testar</button></div></div><section class="channel-player" data-player hidden><div class="mini-player-head"><strong>PLAYER · '+esc(c.name)+'</strong><span class="mini-status neutral" data-status>Pronto para testar</span></div><div class="channel-video-wrap"><video class="channel-video" controls playsinline preload="none"></video><div class="mini-placeholder" data-placeholder>Player individual desta emissora. Toque em Testar.</div></div><p class="mini-diagnostic" data-diagnostic>Diagnóstico aguardando início.</p><div class="mini-technical" data-technical>URL: '+esc(c.url||"ausente")+' | Formato: '+esc(c.format||"desconhecido")+'</div><div class="mini-actions"><button class="button secondary" data-stop disabled>Parar teste</button><button class="button secondary" data-close>Fechar painel</button></div></section></article>';}).join(""):'<div class="empty-state">Nenhuma emissora corresponde aos filtros.</div>';
+$("channel-grid").querySelectorAll("[data-test]").forEach(b=>b.addEventListener("click",()=>testChannel(b.dataset.test)));
+$("channel-grid").querySelectorAll("[data-stop]").forEach(b=>b.addEventListener("click",()=>{const c=b.closest(".channel-card");if(c.dataset.channelId===state.activeId)stopActive("Teste interrompido manualmente.");b.disabled=true;}));
+$("channel-grid").querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>{const c=b.closest(".channel-card");if(c.dataset.channelId===state.activeId)stopActive("Player fechado.");c.querySelector("[data-player]").hidden=true;}));
+}
+function fail(id,msg,detail){const c=findCard(id);if(c){setStatus(c.querySelector("[data-status]"),"bad","Falha na reprodução");c.querySelector("[data-diagnostic]").textContent=msg;c.querySelector("[data-technical]").textContent=detail||msg;c.querySelector("[data-stop]").disabled=true;}setResult(id,"failed",msg,detail);}
+function testChannel(id){const ch=state.channels.find(x=>x.id===id);if(!ch)return;stopActive("Outro canal foi selecionado; este player foi pausado.");const c=findCard(id);if(!c)return;const panel=c.querySelector("[data-player]"),v=c.querySelector("video");panel.hidden=false;c.classList.add("active");state.activeId=id;state.video=v;const status=c.querySelector("[data-status]"),diag=c.querySelector("[data-diagnostic]"),tech=c.querySelector("[data-technical]"),placeholder=c.querySelector("[data-placeholder]"),stop=c.querySelector("[data-stop]");setStatus(status,"pending","Iniciando teste");diag.textContent="Conectando à transmissão. Aguarde o carregamento.";tech.textContent="URL: "+ch.url+" | Formato: "+ch.format;placeholder.hidden=true;stop.disabled=false;panel.scrollIntoView({behavior:"smooth",block:"nearest"});
+if(ch.format==="mpegts"){fail(id,"MPEG-TS não é reproduzido diretamente pelo player HLS. Canal preservado para suporte futuro.","Formato MPEG-TS | "+ch.url);return;}
+if(!ch.url||!/^https?:\/\//i.test(ch.url)){fail(id,"Endereço da transmissão inválido ou ausente.");return;}
+if(!(ch.format==="hls"||/\.m3u8($|\?)/i.test(ch.url))){fail(id,"Formato ainda não suportado.","Formato: "+ch.format);return;}
+const playing=()=>{if(state.activeId!==id)return;clearTimeout(state.mediaTimer);setStatus(status,"pending","Verificando imagem");diag.textContent="Fluxo iniciado. Verificando quadros de vídeo além do áudio.";state.frameTimer=setTimeout(()=>{if(state.activeId!==id)return;const w=v.videoWidth||0,h=v.videoHeight||0;if(w&&h){setStatus(status,"ok","Vídeo + áudio confirmados");diag.textContent="Imagem confirmada: "+w+" × "+h+" pixels. Áudio também iniciado.";tech.textContent="VIDEO confirmado | "+w+"x"+h+" | "+ch.url;setResult(id,"playing","Vídeo + áudio",tech.textContent);}else{setStatus(status,"pending","Somente áudio detectado");diag.textContent="O áudio iniciou, mas nenhum quadro de vídeo foi detectado após 5 segundos.";const codec=state.hls?.levels?.map(x=>x.videoCodec||"codec não informado").join(", ")||"codec de vídeo não identificado";tech.textContent="AUDIO sem quadro de vídeo | "+codec+" | "+ch.url;setResult(id,"audio_only","Somente áudio",tech.textContent);}},5000);};
+v.addEventListener("playing",playing,{once:true});v.addEventListener("error",()=>{if(state.activeId===id)fail(id,"O navegador não conseguiu reproduzir. Possíveis causas: CORS, bloqueio HTTP, geográfico ou incompatibilidade.","Erro de mídia | "+ch.url);},{once:true});
+state.mediaTimer=setTimeout(()=>{if(state.activeId===id&&v.paused)fail(id,"A transmissão não começou em 20 segundos. Verifique playlist, CORS, rede e segmentos.","Timeout 20s | "+ch.url);},20000);
+if(window.Hls&&Hls.isSupported()){state.hls=new Hls({enableWorker:true,lowLatencyMode:false,manifestLoadingTimeOut:15000,fragLoadingTimeOut:15000});state.hls.on(Hls.Events.ERROR,(_e,d)=>{if(!d.fatal||state.activeId!==id)return;const info="HLS fatal: "+d.type+" / "+d.details+" | "+ch.url;if(d.type===Hls.ErrorTypes.NETWORK_ERROR)state.hls.startLoad();else if(d.type===Hls.ErrorTypes.MEDIA_ERROR)state.hls.recoverMediaError();else fail(id,"HLS.js encontrou erro fatal. Verifique playlist e segmentos.",info);});state.hls.on(Hls.Events.MANIFEST_PARSED,()=>{tech.textContent="Playlist carregada; aguardando reprodução. "+ch.url;v.play().catch(()=>{setStatus(status,"pending","Toque em play");diag.textContent="Playlist carregada. Toque no play deste player para continuar.";});});state.hls.loadSource(ch.url);state.hls.attachMedia(v);}else if(v.canPlayType("application/vnd.apple.mpegurl")){v.src=ch.url;v.play().catch(()=>{setStatus(status,"pending","Toque em play");diag.textContent="Toque no play do player para iniciar.";});}else fail(id,"Este navegador não oferece suporte HLS e HLS.js não está disponível.");}
+async function loadCatalog(){stopActive("Catálogo atualizado.");$("channel-grid").innerHTML='<div class="empty-state">Buscando catálogo...</div>';try{setStatus($("api-status"),"pending","Carregando catálogo");const r=await fetch(CATALOG_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const data=await r.json();if(!Array.isArray(data.channels))throw new Error("JSON sem lista channels");state.channels=data.channels;restore();const valid=new Set(state.channels.map(c=>c.id));for(const id of state.results.keys())if(!valid.has(id))state.results.delete(id);save();$("total-count").textContent=state.channels.length;$("hls-count").textContent=state.channels.filter(c=>c.format==="hls").length;$("ts-count").textContent=state.channels.filter(c=>c.format==="mpegts").length;$("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date(data.updated_at).toLocaleString("pt-BR"):"data não informada");renderFilters();renderChannels();counts();setStatus($("api-status"),"ok","Catálogo conectado");}catch(e){setStatus($("api-status"),"bad","Catálogo indisponível");$("channel-grid").innerHTML='<div class="empty-state">Não foi possível carregar o catálogo: '+esc(e.message)+'</div>';}}
+$("reload-btn").addEventListener("click",loadCatalog);["search-input","category-filter","format-filter","result-filter"].forEach(id=>$(id).addEventListener(id==="search-input"?"input":"change",renderChannels));loadCatalog();
 })();
