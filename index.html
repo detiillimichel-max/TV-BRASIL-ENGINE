@@ -6,9 +6,10 @@
   <meta name="theme-color" content="#090d14">
   <meta name="description" content="Painel individual de diagnóstico e reprodução do catálogo TV-BRASIL-ENGINE.">
   <title>TV-BRASIL-ENGINE · Central de testes</title>
-  <link rel="stylesheet" href="./styles.css?v=2.0.0">
+  <link rel="stylesheet" href="./styles.css?v=2.1.0">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
-  <script src="./app.js?v=2.0.0" defer></script>
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script src="./app.js?v=2.1.0" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -36,7 +37,11 @@
       <article class="stat-card"><span>MPEG-TS</span><strong id="ts-count">—</strong><small>precisa de suporte adicional</small></article>
       <article class="stat-card"><span>Testados neste aparelho</span><strong id="tested-count">0</strong><small id="tested-detail">nenhum teste iniciado</small></article>
     </section>
-    <section class="catalog-section">
+    <nav class="main-tabs" aria-label="Navegação do laboratório">
+      <button class="main-tab active" data-tab="catalog" type="button"><i data-lucide="tv"></i> Catálogo <span id="catalog-tab-count">270</span></button>
+      <button class="main-tab" data-tab="library" type="button"><i data-lucide="list-video"></i> Minha biblioteca <span id="library-count">0</span></button>
+    </nav>
+    <section class="catalog-section" id="catalog-section">
       <div class="section-heading">
         <div><p class="eyebrow">CATÁLOGO COMPLETO</p><h2>Emissoras</h2><p class="muted">Os canais não são removidos por falha. Cada resultado é salvo localmente e permanece após fechar ou atualizar a página.</p></div>
         <span id="visible-count" class="count-label">0 canais</span>
@@ -48,6 +53,10 @@
         <select id="result-filter" aria-label="Filtrar por resultado"><option value="">Todos os resultados</option><option value="playing">Vídeo + áudio</option><option value="audio_only">Somente áudio</option><option value="failed">Falhou</option><option value="untested">Não testado</option></select>
       </div>
       <div id="channel-grid" class="channel-grid"><div class="empty-state">Carregando emissoras...</div></div>
+    </section>
+    <section class="catalog-section library-section" id="library-section" hidden>
+      <div class="section-heading"><div><p class="eyebrow">CANAIS APROVADOS</p><h2>Minha biblioteca</h2><p class="muted">Emissoras que já confirmaram vídeo e áudio neste aparelho.</p></div><span id="library-total" class="count-label">0 canais</span></div>
+      <div id="library-grid" class="channel-grid"><div class="empty-state">Nenhum canal salvo ainda. Teste uma emissora e adicione-a à biblioteca quando vídeo e áudio forem confirmados.</div></div>
     </section>
   </main>
   <footer><span>TV-BRASIL-ENGINE</span><span id="updated-at">Catálogo independente do TV OIO</span></footer>
