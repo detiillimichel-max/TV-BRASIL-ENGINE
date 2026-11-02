@@ -37,10 +37,18 @@
       <article class="stat-card"><span>MPEG-TS</span><strong id="ts-count">—</strong><small>precisa de suporte adicional</small></article>
       <article class="stat-card"><span>Testados neste aparelho</span><strong id="tested-count">0</strong><small id="tested-detail">nenhum teste iniciado</small></article>
     </section>
-    <nav class="main-tabs" aria-label="Navegação do laboratório">
-      <button class="main-tab active" data-tab="catalog" type="button"><i data-lucide="tv"></i> Catálogo <span id="catalog-tab-count">270</span></button>
-      <button class="main-tab" data-tab="library" type="button"><i data-lucide="list-video"></i> Minha biblioteca <span id="library-count">0</span></button>
+    <nav class="main-tabs" aria-label="Navegação principal">
+      <button class="main-tab active" data-tab="catalog" type="button"><i data-lucide="layout-grid"></i><span class="tab-label">Catálogo</span><b id="catalog-tab-count">270</b></button>
+      <button class="main-tab" data-tab="library" type="button"><i data-lucide="bookmark"></i><span class="tab-label">Minha biblioteca</span><b id="library-count">0</b></button>
+      <button class="main-tab" data-tab="channels" type="button"><i data-lucide="tv"></i><span class="tab-label">Emissoras</span><b id="approved-tab-count">88</b></button>
+      <button class="main-tab" data-tab="feed" type="button"><i data-lucide="gallery-vertical"></i><span class="tab-label">TV Feed</span></button>
     </nav>
+    <section id="featured-player" class="featured-player" hidden>
+      <div class="featured-heading"><div><p class="eyebrow">TV AO VIVO</p><h2 id="featured-title">Escolha uma emissora</h2><p id="featured-category" class="muted">Transmissão selecionada</p></div><span class="live-pill"><i></i> AO VIVO</span></div>
+      <div id="featured-stage" class="featured-stage"><video id="featured-video" playsinline controls preload="none"></video><div id="featured-placeholder" class="featured-placeholder"><i data-lucide="tv"></i><strong>Seu próximo canal começa aqui</strong><span>Escolha uma das 88 emissoras abaixo</span></div><div class="featured-overlay"><span id="featured-channel-name">TV-BRASIL</span><span class="featured-live">AO VIVO</span></div></div>
+      <div class="featured-controls"><button id="featured-prev" class="icon-control" aria-label="Canal anterior"><i data-lucide="skip-back"></i></button><button id="featured-play" class="icon-control" aria-label="Reproduzir ou pausar"><i data-lucide="play"></i></button><button id="featured-next" class="icon-control" aria-label="Próximo canal"><i data-lucide="skip-forward"></i></button><button id="featured-favorite" class="icon-control" aria-label="Favoritar canal"><i data-lucide="bookmark"></i></button><button id="featured-fullscreen" class="icon-control" aria-label="Tela cheia"><i data-lucide="maximize"></i></button></div>
+      <p id="featured-status" class="featured-status">Pronto para reproduzir.</p>
+    </section>
     <section class="catalog-section" id="catalog-section">
       <div class="section-heading">
         <div><p class="eyebrow">CATÁLOGO COMPLETO</p><h2>Emissoras</h2><p class="muted">Os canais não são removidos por falha. Cada resultado é salvo localmente e permanece após fechar ou atualizar a página.</p></div>
@@ -53,6 +61,14 @@
         <select id="result-filter" aria-label="Filtrar por resultado"><option value="">Todos os resultados</option><option value="playing">Vídeo + áudio</option><option value="audio_only">Somente áudio</option><option value="failed">Falhou</option><option value="untested">Não testado</option></select>
       </div>
       <div id="channel-grid" class="channel-grid"><div class="empty-state">Carregando emissoras...</div></div>
+    </section>
+    <section class="catalog-section channels-section" id="channels-section" hidden>
+      <div class="section-heading"><div><p class="eyebrow">88 CANAIS VERIFICADOS</p><h2>Emissoras ao vivo</h2><p class="muted">Navegue pelas fileiras e escolha uma emissora para assistir.</p></div><span class="count-label">88 canais aprovados</span></div>
+      <div id="channel-rows" class="channel-rows"><div class="empty-state">Carregando as emissoras aprovadas...</div></div>
+    </section>
+    <section class="catalog-section feed-section" id="feed-section" hidden>
+      <div class="section-heading"><div><p class="eyebrow">NAVEGAÇÃO VERTICAL</p><h2>TV Feed</h2><p class="muted">Use os botões ou deslize sobre o player para trocar de emissora.</p></div><span id="feed-position" class="count-label">Canal 1 de 88</span></div>
+      <div id="feed-list" class="feed-list"><div class="empty-state">Carregando o TV Feed...</div></div>
     </section>
     <section class="catalog-section library-section" id="library-section" hidden>
       <div class="section-heading"><div><p class="eyebrow">CANAIS APROVADOS</p><h2>Minha biblioteca</h2><p class="muted">Emissoras que já confirmaram vídeo e áudio neste aparelho.</p><p id="library-recovery-status" class="muted" hidden></p></div><div class="library-heading-actions"><span id="library-total" class="count-label">0 canais</span><button id="export-library-btn" class="button primary" type="button"><i data-lucide="download"></i> Exportar JSON</button></div></div>
