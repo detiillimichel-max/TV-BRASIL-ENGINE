@@ -69,16 +69,24 @@ if(tab==="channels")renderChannelRows();
 if(tab==="feed"){renderTvFeed();if(!state.featuredId&&state.approvedChannels.length)playFeaturedChannel(state.approvedChannels[0].id);}
 refreshIcons();
 }
-function toggleFavorite(id){const r=state.results.get(id),external=state.externalResults.get(id);const eligible=(r&&(r.status==="playing"||r.status==="PLAYING"))||(external&&external.status==="user_confirmed_working");if(!eligible)return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavorites();const c=findCard(id),b=c&&c.querySelector("[data-favorite]");if(b)b.classList.toggle("saved",state.favorites.has(id));renderLibrary();}
+function toggleFavorite(id){const r=state.results.get(id);const eligible=state.favorites.has(id)||(r&&(r.status==="playing"||r.status==="PLAYING"));if(!eligible)return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavorites();const c=findCard(id),b=c&&c.querySelector("[data-favorite]");if(b)b.classList.toggle("saved",state.favorites.has(id));renderLibrary();}
 function exportMaestroDiagnostics(){
 const entries=state.channels.map(channel=>{
-const result=state.results.get(channel.id);
-if(!result)return null;
-return {id:channel.id,name:channel.name,category:cats(channel)[0]||"",format:channel.format||"",catalog_url:channel.url||"",result:{status:result.status||"UNKNOWN",message:result.message||"",detail:result.detail||"",strategy:result.strategy||"",at:result.at||null,maestro:!!result.maestro},external_result:state.externalResults.get(channel.id)||null,saved_in_library:state.favorites.has(channel.id),protected_88:state.approvedIds.has(channel.id)};
+const result=state.results.get(channel.id),external=state.externalResults.get(channel.id)||null;
+if(!result&&!external)return null;
+return {id:channel.id,name:channel.name,category:cats(channel)[0]||"",format:channel.format||"",catalog_url:channel.url||"",result:result?{status:result.status||"UNKNOWN",message:result.message||"",detail:result.detail||"",strategy:result.strategy||"",at:result.at||null,maestro:!!result.maestro}:null,external_result:external,saved_in_library:state.favorites.has(channel.id),protected_88:state.approvedIds.has(channel.id)};
 }).filter(Boolean);
-if(!entries.length){alert("Ainda não existem diagnósticos salvos neste navegador.");return;}
-const failed=entries.filter(x=>isFailureStatus(x.result.status));
-const report={schema_version:1,report_type:"tv-brasil-engine-maestro-diagnostics",generated_at:new Date().toISOString(),catalog_total:state.channels.length,tested_total:entries.length,failed_total:failed.length,playing_total:entries.filter(x=>x.result.status==="playing"||x.result.status==="PLAYING").length,notes:"Relatório local de diagnóstico. Falhas de CORS e rede podem ser indistinguíveis no navegador. Nenhum catálogo ou backup foi modificado.",failures:failed,other_results:entries.filter(x=>!isFailureStatus(x.result.status))};
+if(!entries.length){alert("Ainda não existem resultados salvos neste navegador.");return;}
+const failed=entries.filter(x=>x.result&&isFailureStatus(x.result.status));
+const pluto=entries.filter(x=>x.external_result&&x.external_result.strategy==="official_site_fallback");
+const investigations=[
+{front:"Pluto TV",scope:"103 canais",tasks:["Investigar URLs oficiais individuais por canal","Verificar alternativas oficiais de reprodução incorporada e fontes autorizadas","Não usar proxies indiscriminados para contornar CORS"]},
+{front:"Servidor 45.162.64.114",scope:"27 canais",tasks:["Procurar fontes HTTPS legítimas que atendam várias emissoras"]},
+{front:"Outros canais HTTP",scope:"28 canais",tasks:["Investigar cada origem e procurar o site ou player oficial"]},
+{front:"CNN, COM Brasil e L!ke",scope:"3 emissoras",tasks:["Investigar compatibilidade de codecs e variantes HLS"]},
+{front:"Red Bull TV e SBT Cuiabá",scope:"2 emissoras",tasks:["Verificar as fontes após os registros HTTP 404 e 403"]}
+];
+const report={schema_version:2,report_type:"tv-brasil-engine-maestro-diagnostics-and-investigations",generated_at:new Date().toISOString(),catalog_total:state.channels.length,tested_total:entries.filter(x=>x.result).length,external_feedback_total:pluto.length,failed_total:failed.length,playing_total:entries.filter(x=>x.result&&(x.result.status==="playing"||x.result.status==="PLAYING")).length,pluto_feedback_summary:{correct_channel:pluto.filter(x=>x.external_result.status==="pluto_correct_channel").length,opened:pluto.filter(x=>x.external_result.status==="pluto_opened").length,not_opened:pluto.filter(x=>x.external_result.status==="pluto_not_opened").length,pending:pluto.filter(x=>!["pluto_correct_channel","pluto_opened","pluto_not_opened"].includes(x.external_result.status)).length},technical_investigations:investigations,notes:"Relatório local. A confirmação de abertura da página geral da Pluto TV não comprova a reprodução da emissora específica. Somente links individuais oficialmente identificados e validados poderão ser cadastrados como destino de uma emissora. Falhas de CORS e rede podem ser indistinguíveis no navegador. Nenhum catálogo, biblioteca protegida ou favorito foi modificado.",failures:failed,other_results:entries.filter(x=>!x.result||!isFailureStatus(x.result.status))};
 const blob=new Blob([JSON.stringify(report,null,2)],{type:"application/json;charset=utf-8"});
 const url=URL.createObjectURL(blob),a=document.createElement("a");
 a.href=url;a.download="maestro-diagnosticos-"+new Date().toISOString().slice(0,10)+".json";
@@ -190,7 +198,7 @@ function saveExternalResults(){try{localStorage.setItem(EXTERNAL_RESULTS_KEY,JSO
 function recordExternalResult(id,status,message){
 const record={status,message,at:Date.now(),strategy:"official_site_fallback",destination:"https://pluto.tv/br/live-tv"};
 state.externalResults.set(id,record);saveExternalResults();
-const card=findCard(id);if(status==="user_confirmed_working"&&card)ensureFavoriteButton(id,card);if(card){const diag=card.querySelector("[data-diagnostic]");if(diag)diag.textContent="Pluto TV · "+message;const tech=card.querySelector("[data-technical]");if(tech)tech.textContent="Destino oficial: https://pluto.tv/br/live-tv | Resultado informado pelo usuário: "+status;}
+const card=findCard(id);if(card){const diag=card.querySelector("[data-diagnostic]");if(diag)diag.textContent="Pluto TV · "+message;const tech=card.querySelector("[data-technical]");if(tech)tech.textContent="Destino oficial: https://pluto.tv/br/live-tv | Resultado informado pelo usuário: "+status;}
 }
 function showExternalFallback(id){
 const c=findCard(id),ch=state.channels.find(x=>x.id===id);if(!c||!ch)return;
@@ -204,13 +212,20 @@ a.innerHTML=isPluto?'<i data-lucide="external-link"></i> Abrir Pluto TV oficial'
 if(isPluto)a.addEventListener("click",()=>recordExternalResult(id,"opened_pending_confirmation","Site oficial aberto em nova aba; aguardando sua confirmação."));
 actions.insertBefore(a,actions.lastElementChild);
 if(isPluto){
-const yes=document.createElement("button");yes.type="button";yes.className="button secondary";yes.dataset.externalFeedback="working";yes.textContent="Abriu e reproduziu";
-const no=document.createElement("button");no.type="button";no.className="button secondary";no.dataset.externalFeedback="failed";no.textContent="Não abriu / não reproduziu";
-yes.addEventListener("click",()=>{recordExternalResult(id,"user_confirmed_working","Usuário confirmou que abriu e reproduziu.");yes.textContent="Confirmado: funcionou";no.disabled=true;});
-no.addEventListener("click",()=>{recordExternalResult(id,"user_confirmed_failed","Usuário informou que não abriu ou não reproduziu.");no.textContent="Registrado: não funcionou";yes.disabled=true;});
-actions.insertBefore(yes,actions.lastElementChild);actions.insertBefore(no,actions.lastElementChild);
+const correct=document.createElement("button");correct.type="button";correct.className="button secondary";correct.dataset.externalFeedback="correct";correct.textContent="Abriu a emissora correta";
+const opened=document.createElement("button");opened.type="button";opened.className="button secondary";opened.dataset.externalFeedback="opened";opened.textContent="Abriu";
+const notOpened=document.createElement("button");notOpened.type="button";notOpened.className="button secondary";notOpened.dataset.externalFeedback="not-opened";notOpened.textContent="Não abriu";
+const feedback=[correct,opened,notOpened];
+const saveFeedback=(status,message,selected)=>{recordExternalResult(id,status,message);feedback.forEach(button=>{button.disabled=button!==selected;});selected.textContent=status==="pluto_correct_channel"?"Confirmado: emissora correta":status==="pluto_opened"?"Registrado: abriu":"Registrado: não abriu";};
+correct.addEventListener("click",()=>saveFeedback("pluto_correct_channel","Usuário confirmou que a emissora correta abriu.",correct));
+opened.addEventListener("click",()=>saveFeedback("pluto_opened","Usuário confirmou que a página abriu, sem confirmar a emissora.",opened));
+notOpened.addEventListener("click",()=>saveFeedback("pluto_not_opened","Usuário informou que a página não abriu.",notOpened));
+feedback.forEach(button=>actions.insertBefore(button,actions.lastElementChild));
 const previous=state.externalResults.get(id);
-if(previous){const diag=c.querySelector("[data-diagnostic]");if(diag)diag.textContent="Pluto TV · "+previous.message;if(previous.status==="user_confirmed_working"){yes.textContent="Confirmado: funcionou";no.disabled=true;}else if(previous.status==="user_confirmed_failed"){no.textContent="Registrado: não funcionou";yes.disabled=true;}}
+if(previous){const diag=c.querySelector("[data-diagnostic]");if(diag)diag.textContent="Pluto TV · "+previous.message;
+const selected=previous.status==="pluto_correct_channel"?correct:previous.status==="pluto_opened"||previous.status==="user_confirmed_working"?opened:previous.status==="pluto_not_opened"||previous.status==="user_confirmed_failed"?notOpened:null;
+if(selected){selected.textContent=previous.status==="pluto_correct_channel"?"Confirmado: emissora correta":selected===opened?"Registrado: abriu":"Registrado: não abriu";feedback.forEach(button=>button.disabled=button!==selected);}
+}
 }
 }
 refreshIcons();
@@ -234,7 +249,7 @@ function renderChannels(){const q=$("search-input").value.trim().toLocaleLowerCa
 $("visible-count").textContent=list.length+" canais";
 $("channel-grid").innerHTML=list.length?list.map(c=>{const r=state.results.get(c.id);const initials=esc((c.name||"TV").replace(/[^a-zA-Z0-9À-ÿ ]/g,"").split(/\s+/).slice(0,2).map(x=>x[0]||"").join("").toUpperCase());const logo=c.logo?'<img loading="lazy" src="'+esc(c.logo)+'" alt="" onerror="this.remove()">':'<span class="logo-fallback">'+initials+'</span>';return '<article class="channel-card" data-channel-id="'+esc(c.id)+'"><div class="channel-logo">'+logo+'</div><div class="channel-info"><div class="channel-name">'+esc(c.name)+'</div><div class="channel-meta"><span>'+esc(cats(c)[0])+'</span><span class="tag">'+esc(c.format||"formato?")+'</span></div><div class="result-line"><span class="result-text '+cls(r?.status)+'" data-result>'+esc(r?.message||"Ainda não testado")+'</span><button class="test-btn" data-test="'+esc(c.id)+'">Testar</button></div></div><section class="channel-player" data-player hidden><div class="mini-player-head"><strong>PLAYER · '+esc(c.name)+'</strong><span class="mini-status neutral" data-status>Pronto para testar</span></div><div class="channel-video-wrap"><video class="channel-video" controls playsinline preload="none"></video><div class="mini-placeholder" data-placeholder>Player individual desta emissora. Toque em Testar.</div></div><p class="mini-diagnostic" data-diagnostic>Diagnóstico aguardando início.</p><div class="mini-technical" data-technical>URL: '+esc(c.url||"ausente")+' | Formato: '+esc(c.format||"desconhecido")+'</div><div class="mini-actions"><button class="button secondary" data-stop disabled>Parar teste</button><button class="button secondary" data-close>Fechar painel</button></div></section></article>';}).join(""):'<div class="empty-state">Nenhuma emissora corresponde aos filtros.</div>';
 $("channel-grid").querySelectorAll("[data-test]").forEach(b=>b.addEventListener("click",()=>testChannel(b.dataset.test)));
-$("channel-grid").querySelectorAll(".channel-card").forEach(c=>{const id=c.dataset.channelId;if(((state.results.get(id)?.status==="playing"||state.results.get(id)?.status==="PLAYING")||state.externalResults.get(id)?.status==="user_confirmed_working")&&!c.querySelector("[data-favorite]")){const b=document.createElement("button");b.className="favorite-btn"+(state.favorites.has(id)?" saved":"");b.dataset.favorite=id;b.title="Adicionar à biblioteca";b.setAttribute("aria-label","Adicionar à biblioteca");b.innerHTML='<i data-lucide="list-video"></i>';c.querySelector(".result-line").appendChild(b);b.addEventListener("click",()=>toggleFavorite(id));}});
+$("channel-grid").querySelectorAll(".channel-card").forEach(c=>{const id=c.dataset.channelId;if((state.favorites.has(id)||state.results.get(id)?.status==="playing"||state.results.get(id)?.status==="PLAYING")&&!c.querySelector("[data-favorite]")){const b=document.createElement("button");b.className="favorite-btn"+(state.favorites.has(id)?" saved":"");b.dataset.favorite=id;b.title="Adicionar à biblioteca";b.setAttribute("aria-label","Adicionar à biblioteca");b.innerHTML='<i data-lucide="list-video"></i>';c.querySelector(".result-line").appendChild(b);b.addEventListener("click",()=>toggleFavorite(id));}});
 $("channel-grid").querySelectorAll("[data-stop]").forEach(b=>b.addEventListener("click",()=>{const c=b.closest(".channel-card");if(c.dataset.channelId===state.activeId)stopActive("Teste interrompido manualmente.");b.disabled=true;}));
 $("channel-grid").querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>{const c=b.closest(".channel-card");if(c.dataset.channelId===state.activeId)stopActive("Player fechado.");c.querySelector("[data-player]").hidden=true;}));
 }
