@@ -1,9 +1,9 @@
-const CACHE_NAME = "tv-brasil-engine-shell-v8";
+const CACHE_NAME = "tv-brasil-engine-shell-v9";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=2.5.5",
-  "./app.js?v=2.5.5",
+  "./styles.css?v=2.5.6",
+  "./app.js?v=2.5.6",
   "./manifest.json",
   "./data/playback-strategies.json",
   "./data/catalog-final.json",
