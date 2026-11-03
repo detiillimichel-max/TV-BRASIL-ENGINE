@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "title": "Biblioteca Pública e Oficial",
+  "description": "Registro conservador de canais cuja origem e condições de uso foram verificadas para o TV-BRASIL-ENGINE.",
+  "policy": {
+    "inclusion_requires": [
+      "official_broadcaster_site",
+      "identified_rights_holder",
+      "official_stream_source",
+      "documented_permission_scope",
+      "evidence_url_or_license_when_available"
+    ],
+    "playback_status": [
+      "authorized_embed",
+      "external_link_only",
+      "pending_verification"
+    ],
+    "technical_playback_is_not_legal_permission": true,
+    "public_listing_is_not_retransmission_authorization": true,
+    "no_channel_is_approved_by_default": true
+  },
+  "channels": [],
+  "review_queue": [],
+  "last_reviewed_at": null
+}
