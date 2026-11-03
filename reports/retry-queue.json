@@ -1,17 +1,7 @@
 {
-  "updated_at": "2026-11-02T12:07:54.877Z",
-  "total_retry_candidates": 127,
+  "updated_at": "2026-11-03T13:23:32.400590+00:00",
+  "total_retry_candidates": 125,
   "items": [
-    {
-      "id": "Canal38.br@SD",
-      "name": "Canal 38 (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "News",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
-    },
     {
       "id": "CinturaoVerde.br@SD",
       "name": "Cinturao Verde",
@@ -23,14 +13,14 @@
       "retry_reason": "invalid_playlist"
     },
     {
-      "id": "KpopTVPlay.br@SD",
-      "name": "KpopTV Play (576p)",
-      "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
+      "id": "EUTV.br@SD",
+      "name": "EUTV (720p)",
+      "url": "https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "Music",
+      "category": "General",
       "retry_stage": "hls",
-      "retry_reason": "http_error"
+      "retry_reason": "invalid_playlist"
     },
     {
       "id": "MBCBrasilTV.br@SD",
@@ -53,6 +43,16 @@
       "retry_reason": "http_error"
     },
     {
+      "id": "RBATV.br@SD",
+      "name": "RBATV (720p)",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "hls",
+      "category": "General",
+      "retry_stage": "hls",
+      "retry_reason": "invalid_playlist"
+    },
+    {
       "id": "SBTNacional.br@SD",
       "name": "SBT Nacional (1080p)",
       "url": "https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/chunklist.m3u8",
@@ -63,14 +63,14 @@
       "retry_reason": "invalid_playlist"
     },
     {
-      "id": "TCM10HD.br@SD",
-      "name": "TCM 10 HD (1080p)",
-      "url": "https://live.tcm10.com.br/tcm10hd/stream.m3u8",
+      "id": "STZTV.br@SD",
+      "name": "STZ TV (1080p)",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "News",
+      "category": "Culture;News",
       "retry_stage": "hls",
-      "retry_reason": "not_found"
+      "retry_reason": "invalid_playlist"
     },
     {
       "id": "AdultSwimLatinAmerica.us@Brazil",
@@ -273,6 +273,36 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "CatveFM.br@SD",
+      "name": "Catve FM (720p) [Not 24/7]",
+      "url": "https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "CatveMasterTV.br@SD",
+      "name": "Catve Master TV (720p) [Not 24/7]",
+      "url": "https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "Catve2.br@SD",
+      "name": "Catve2 (720p)",
+      "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "ChefTV.br@SD",
       "name": "Chef TV (720p)",
       "url": "http://168.197.104.22/CHEF_TV/index.m3u8",
@@ -339,6 +369,16 @@
       "source": "iptv-org",
       "format": "",
       "category": "Outdoor",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "FonteTV.br@SD",
+      "name": "Fonte TV",
+      "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Religious",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -743,16 +783,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "SOUTV.br@SD",
-      "name": "SOU TV",
-      "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
       "id": "SporTV2.br@SD",
       "name": "SporTV 2 (1080p)",
       "url": "http://195.178.110.110/sportv2/index.m3u8",
@@ -771,16 +801,6 @@
       "category": "Sports",
       "retry_stage": "stream_probe",
       "retry_reason": "blocked"
-    },
-    {
-      "id": "TELE6.bo@SD",
-      "name": "TELE 6 (720p)",
-      "url": "https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
     },
     {
       "id": "TravelBoxBrazil.br@SD",
@@ -853,16 +873,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
       "id": "TVCamara2.br@SD",
       "name": "TV Camara 2 (1080p) [Not 24/7]",
       "url": "https://stream3.camara.gov.br/tv2/manifest.m3u8",
@@ -899,16 +909,6 @@
       "source": "iptv-org",
       "format": "",
       "category": "Undefined",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
-      "id": "TVComunitaria.br@SD",
-      "name": "TV Comunitaria (360p)",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "source": "iptv-org",
-      "format": "",
-      "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -1103,16 +1103,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TVSimCachoeiro.br@SD",
-      "name": "TV Sim Cachoeiro (720p)",
-      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "News",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
       "id": "TVSolComunidade.br@SD",
       "name": "TV Sol Comunidade (480p) [Not 24/7]",
       "url": "http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8",
@@ -1173,22 +1163,12 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TVEBahia.br@SD",
-      "name": "TVE Bahia (1080p)",
-      "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+      "id": "TVCRio.br@SD",
+      "name": "TVC-Rio",
+      "url": "https://video05.logicahost.com.br/comunitariario/comunitariario/playlist.m3u8",
       "source": "iptv-org",
       "format": "",
-      "category": "Undefined",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
-      "id": "TVERS.br@SD",
-      "name": "TVE RS (1080p)",
-      "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Culture;Education",
+      "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
