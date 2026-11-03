@@ -13,11 +13,11 @@
   <link rel="apple-touch-icon" href="./icons/icon-192.svg">
   <meta name="description" content="Painel individual de diagnóstico e reprodução do catálogo TV-BRASIL-ENGINE.">
   <title>TV-BRASIL-ENGINE · Central de testes</title>
-  <link rel="stylesheet" href="./styles.css?v=2.5.6">
+  <link rel="stylesheet" href="./styles.css?v=2.5.7">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/mpegts.js@1.8.0/dist/mpegts.min.js" defer></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-  <script src="./app.js?v=2.5.6" defer></script>
+  <script src="./app.js?v=2.5.7" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -50,6 +50,7 @@
       <button class="main-tab" data-tab="library" type="button"><i data-lucide="bookmark"></i><span class="tab-label">Minha biblioteca</span><b id="library-count">0</b></button>
       <button class="main-tab" data-tab="channels" type="button"><i data-lucide="tv"></i><span class="tab-label">Emissoras</span><b id="approved-tab-count">88</b></button>
       <button class="main-tab" data-tab="feed" type="button"><i data-lucide="gallery-vertical"></i><span class="tab-label">TV Feed</span></button>
+      <button class="main-tab" data-tab="official" type="button"><i data-lucide="shield-check"></i><span class="tab-label">Biblioteca Pública e Oficial</span><b id="official-count">0</b></button>
     </nav>
     <section id="featured-player" class="featured-player" hidden>
       <div class="featured-heading"><div><p class="eyebrow">TV AO VIVO</p><h2 id="featured-title">Escolha uma emissora</h2><p id="featured-category" class="muted">Transmissão selecionada</p></div><span class="live-pill"><i></i> AO VIVO</span></div>
@@ -82,6 +83,20 @@
     <section class="catalog-section library-section" id="library-section" hidden>
       <div class="section-heading"><div><p class="eyebrow">CANAIS APROVADOS</p><h2>Minha biblioteca</h2><p class="muted">Emissoras que já confirmaram vídeo e áudio neste aparelho.</p><p id="library-recovery-status" class="muted" hidden></p></div><div class="library-heading-actions"><span id="library-total" class="count-label">0 canais</span><button id="export-library-btn" class="button primary" type="button"><i data-lucide="download"></i> Exportar JSON</button></div></div>
       <div id="library-grid" class="channel-grid"><div class="empty-state">Nenhum canal salvo ainda. Teste uma emissora e adicione-a à biblioteca quando vídeo e áudio forem confirmados.</div></div>
+    </section>
+    <section class="catalog-section official-section" id="official-section" hidden>
+      <div class="section-heading">
+        <div><p class="eyebrow">FONTES COM PROCEDÊNCIA E USO VERIFICADOS</p><h2>Biblioteca Pública e Oficial</h2><p class="muted">Somente emissoras com origem identificada e condições de uso documentadas. Estar disponível na internet ou em uma playlist pública não é autorização de retransmissão.</p></div>
+        <span id="official-total" class="count-label">0 canais liberados</span>
+      </div>
+      <div class="official-rules">
+        <article><i data-lucide="landmark"></i><strong>TV pública e governamental</strong><span>Emissoras públicas, institucionais e governamentais.</span></article>
+        <article><i data-lucide="building-2"></i><strong>Legislativas e universitárias</strong><span>TVs de câmaras, assembleias, universidades e instituições públicas.</span></article>
+        <article><i data-lucide="badge-check"></i><strong>Integração autorizada</strong><span>Emissoras que autorizem expressamente link externo ou reprodução no PWA.</span></article>
+      </div>
+      <div class="official-legend"><span class="official-status authorized">Reprodução autorizada</span><span class="official-status link-only">Somente link externo</span><span class="official-status pending">Em verificação</span></div>
+      <div id="official-library-list" class="official-library-list"><div class="empty-state">Carregando registro de autorizações...</div></div>
+      <p class="official-footnote">A biblioteca começa vazia intencionalmente. Nenhum canal será liberado apenas porque o HLS funciona ou aparece no IPTV-org. Cada cadastro exige evidência verificável e escopo de uso.</p>
     </section>
   </main>
   <footer><span>TV-BRASIL-ENGINE</span><span id="updated-at">Catálogo independente do TV OIO</span></footer>
