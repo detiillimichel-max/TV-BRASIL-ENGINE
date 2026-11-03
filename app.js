@@ -226,6 +226,23 @@ if(format==="mpegts")return "mpegts.js";
 if(format==="hls")return "hls.js_or_native";
 return "unsupported";
 }
+function ensureFavoriteButton(id,card){
+if(!card)return;
+let b=card.querySelector("[data-favorite]");
+if(!b){
+b=document.createElement("button");
+b.className="favorite-btn";
+b.dataset.favorite=id;
+b.title="Adicionar à biblioteca";
+b.setAttribute("aria-label","Adicionar à biblioteca");
+b.innerHTML='<i data-lucide="list-video"></i>';
+const line=card.querySelector(".result-line");
+if(line)line.appendChild(b);
+b.addEventListener("click",()=>toggleFavorite(id));
+}
+b.classList.toggle("saved",state.favorites.has(id));
+refreshIcons();
+}
 function setMaestroResult(id,status,message,detail,extra={}){
 const record={status,message,detail:detail||"",at:Date.now(),maestro:true,...extra};
 state.results.set(id,record);save();counts();
@@ -233,6 +250,8 @@ const card=findCard(id);
 if(card){
 const label=card.querySelector("[data-result]");
 if(label){label.textContent=message;label.className="result-text "+(status==="PLAYING"?"ok":status==="AUDIO_ONLY"?"warn":"bad");}
+if(status==="PLAYING")ensureFavoriteButton(id,card);
+else{const favorite=card.querySelector("[data-favorite]");if(favorite)favorite.remove();}
 const diag=card.querySelector("[data-diagnostic]");if(diag)diag.textContent=message;
 const tech=card.querySelector("[data-technical]");if(tech)tech.textContent=detail||status;
 }
