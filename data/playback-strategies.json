@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "name": "TV-BRASIL-ENGINE Maestro Playback Strategies",
+  "description": "Estratégias experimentais por canal. O catálogo original e os 88 canais protegidos são somente leitura e nunca são alterados por este arquivo.",
+  "policy": {
+    "catalog_read_only": true,
+    "approved_88_read_only": true,
+    "allow_only_public_or_authorized_sources": true,
+    "no_generic_stream_proxy": true,
+    "max_sources_per_channel": 3,
+    "attempt_timeout_ms": 20000,
+    "probe_timeout_ms": 5000
+  },
+  "defaults": {
+    "hls": [
+      "hls.js",
+      "native_hls"
+    ],
+    "mpegts": [
+      "mpegts.js"
+    ],
+    "official_embed": [
+      "authorized_iframe"
+    ],
+    "unknown": []
+  },
+  "source_recognition": {
+    "official_domains": [
+      "tvcultura.com.br",
+      "sbt.com.br",
+      "band.com.br",
+      "redetv.uol.com.br",
+      "recordtv.com.br",
+      "recordnews.com.br",
+      "cnnbrasil.com.br",
+      "youtube.com",
+      "youtu.be",
+      "pluto.tv"
+    ],
+    "cdn_domains": [
+      "cloudfront.net",
+      "cloudflare.net"
+    ]
+  },
+  "status_codes": [
+    "PLAYING",
+    "CORS_BLOCKED",
+    "TIMEOUT",
+    "UNSUPPORTED_CODEC",
+    "HTTP_INSECURE",
+    "SOURCE_UNAVAILABLE",
+    "OFFICIAL_EMBED_REQUIRED",
+    "AUDIO_ONLY",
+    "CORS_OR_NETWORK_UNVERIFIED"
+  ],
+  "channels": {}
+}
