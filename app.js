@@ -69,6 +69,21 @@ if(tab==="feed"){renderTvFeed();if(!state.featuredId&&state.approvedChannels.len
 refreshIcons();
 }
 function toggleFavorite(id){const r=state.results.get(id);if(!r||!(r.status==="playing"||r.status==="PLAYING"))return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavorites();const c=findCard(id),b=c&&c.querySelector("[data-favorite]");if(b)b.classList.toggle("saved",state.favorites.has(id));renderLibrary();}
+function exportMaestroDiagnostics(){
+const entries=state.channels.map(channel=>{
+const result=state.results.get(channel.id);
+if(!result)return null;
+return {id:channel.id,name:channel.name,category:cats(channel)[0]||"",format:channel.format||"",catalog_url:channel.url||"",result:{status:result.status||"UNKNOWN",message:result.message||"",detail:result.detail||"",strategy:result.strategy||"",at:result.at||null,maestro:!!result.maestro},saved_in_library:state.favorites.has(channel.id),protected_88:state.approvedIds.has(channel.id)};
+}).filter(Boolean);
+if(!entries.length){alert("Ainda não existem diagnósticos salvos neste navegador.");return;}
+const failed=entries.filter(x=>isFailureStatus(x.result.status));
+const report={schema_version:1,report_type:"tv-brasil-engine-maestro-diagnostics",generated_at:new Date().toISOString(),catalog_total:state.channels.length,tested_total:entries.length,failed_total:failed.length,playing_total:entries.filter(x=>x.result.status==="playing"||x.result.status==="PLAYING").length,notes:"Relatório local de diagnóstico. Falhas de CORS e rede podem ser indistinguíveis no navegador. Nenhum catálogo ou backup foi modificado.",failures:failed,other_results:entries.filter(x=>!isFailureStatus(x.result.status))};
+const blob=new Blob([JSON.stringify(report,null,2)],{type:"application/json;charset=utf-8"});
+const url=URL.createObjectURL(blob),a=document.createElement("a");
+a.href=url;a.download="maestro-diagnosticos-"+new Date().toISOString().slice(0,10)+".json";
+document.body.appendChild(a);a.click();a.remove();
+setTimeout(()=>URL.revokeObjectURL(url),10000);
+}
 function exportApprovedLibrary(){
 const ids=[...state.favorites];
 const channels=state.channels.filter(c=>state.favorites.has(c.id));
@@ -389,6 +404,7 @@ try{const configResponse=await fetch("./data/playback-strategies.json?v=1",{cach
 try{const br=await fetch("https://osqdup2f2kumsdtb.public.blob.vercel-storage.com/backups/tv-brasil-engine-biblioteca-88-canais-2026-11-02T21-41-46-360Z.json",{cache:"no-store"});if(!br.ok)throw new Error("HTTP "+br.status);const bj=await br.json();if(bj.total!==88||!Array.isArray(bj.channels)||bj.channels.length!==88||new Set(bj.channels.map(c=>c.id)).size!==88)throw new Error("Backup inválido");state.approvedChannels=bj.channels;state.approvedIds=new Set(bj.channels.map(c=>c.id));$("approved-tab-count").textContent=state.approvedChannels.length;}catch(backupError){console.warn("Não foi possível carregar os 88 canais do Blob",backupError);state.approvedChannels=state.channels.filter(c=>state.favorites.has(c.id));state.approvedIds=new Set(state.approvedChannels.map(c=>c.id));}
 const valid=new Set(state.channels.map(c=>c.id));for(const id of state.results.keys())if(!valid.has(id))state.results.delete(id);save();$("total-count").textContent=state.channels.length;$("catalog-tab-count").textContent=state.channels.length;$("hls-count").textContent=state.channels.filter(c=>c.format==="hls").length;$("ts-count").textContent=state.channels.filter(c=>c.format==="mpegts").length;$("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date(data.updated_at).toLocaleString("pt-BR"):"data não informada");renderFilters();renderChannels();renderLibrary();renderChannelRows();if(state.activeTab==="feed")renderTvFeed();if(state.libraryRecovered){const note=$("library-recovery-status");if(note){note.hidden=false;note.textContent="Biblioteca recuperada automaticamente do backup seguro: 88 emissoras restauradas do Vercel Blob.";} }counts();setStatus($("api-status"),"ok","Catálogo conectado");refreshIcons();}catch(e){setStatus($("api-status"),"bad","Catálogo indisponível");$("channel-grid").innerHTML='<div class="empty-state">Não foi possível carregar o catálogo: '+esc(e.message)+'</div>';}}
 $("export-library-btn").addEventListener("click",exportApprovedLibrary);
+$("export-diagnostics-btn").addEventListener("click",exportMaestroDiagnostics);
 $("featured-prev").addEventListener("click",()=>stepFeatured(-1));$("featured-next").addEventListener("click",()=>stepFeatured(1));
 $("featured-play").addEventListener("click",()=>{const v=$("featured-video");if(v.paused)v.play().catch(()=>{});else v.pause();});
 $("featured-fullscreen").addEventListener("click",()=>{const el=$("featured-stage");if(el.requestFullscreen)el.requestFullscreen();else if($("featured-video").webkitEnterFullscreen)$("featured-video").webkitEnterFullscreen();});
