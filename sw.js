@@ -1,11 +1,12 @@
-const CACHE_NAME = "tv-brasil-engine-shell-v9";
+const CACHE_NAME = "tv-brasil-engine-shell-v10";
 const APP_SHELL = [
   "./",
   "./index.html",
-  "./styles.css?v=2.5.6",
-  "./app.js?v=2.5.6",
+  "./styles.css?v=2.5.7",
+  "./app.js?v=2.5.7",
   "./manifest.json",
   "./data/playback-strategies.json",
+  "./data/biblioteca-publica-oficial.json",
   "./data/catalog-final.json",
   "./icons/icon-192.svg",
   "./icons/icon-512.svg",
