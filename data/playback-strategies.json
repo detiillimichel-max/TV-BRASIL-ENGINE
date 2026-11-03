@@ -1,57 +1,939 @@
 {
   "schema_version": 1,
   "name": "TV-BRASIL-ENGINE Maestro Playback Strategies",
-  "description": "Estratégias experimentais por canal. O catálogo original e os 88 canais protegidos são somente leitura e nunca são alterados por este arquivo.",
+  "description": "Estratégias experimentais individuais por canal; não altera catálogo, cartões ou biblioteca aprovada.",
+  "experiment": {
+    "id": "pluto-tv-batch-01",
+    "source_diagnostic": "maestro-diagnosticos-2026-11-03.json",
+    "channel_count": 102,
+    "decision": "Fallback externo para o site oficial Pluto TV. Nenhum embed genérico público foi documentado.",
+    "official_site": "https://pluto.tv/br/live-tv",
+    "msn_embed": "Plataforma autorizada listada pela Pluto TV; integração depende de autorização/credenciamento e não constitui código genérico para terceiros."
+  },
   "policy": {
     "catalog_read_only": true,
     "approved_88_read_only": true,
-    "allow_only_public_or_authorized_sources": true,
     "no_generic_stream_proxy": true,
-    "max_sources_per_channel": 3,
-    "attempt_timeout_ms": 20000,
-    "probe_timeout_ms": 5000
+    "only_public_or_authorized_sources": true
   },
-  "defaults": {
-    "hls": [
-      "hls.js",
-      "native_hls"
-    ],
-    "mpegts": [
-      "mpegts.js"
-    ],
-    "official_embed": [
-      "authorized_iframe"
-    ],
-    "unknown": []
-  },
-  "source_recognition": {
-    "official_domains": [
-      "tvcultura.com.br",
-      "sbt.com.br",
-      "band.com.br",
-      "redetv.uol.com.br",
-      "recordtv.com.br",
-      "recordnews.com.br",
-      "cnnbrasil.com.br",
-      "youtube.com",
-      "youtu.be",
-      "pluto.tv"
-    ],
-    "cdn_domains": [
-      "cloudfront.net",
-      "cloudflare.net"
-    ]
-  },
-  "status_codes": [
-    "PLAYING",
-    "CORS_BLOCKED",
-    "TIMEOUT",
-    "UNSUPPORTED_CODEC",
-    "HTTP_INSECURE",
-    "SOURCE_UNAVAILABLE",
-    "OFFICIAL_EMBED_REQUIRED",
-    "AUDIO_ONLY",
-    "CORS_OR_NETWORK_UNVERIFIED"
-  ],
-  "channels": {}
+  "channels": {
+    "AdrenalinaPuraTV.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "AvatarAlendadeAang.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "BETPlutoTV.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "BMCNews.br@SD": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "BobEsponjaCalcaQuadrada.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "CineTerror.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "ComedyCentralPlutoTV.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "ComedyCentralSouthPark.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "CSIMiami.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "DetetivesMedicos.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "DiffrentStrokesArnold.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "FailArmy.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "FilmesSuspense.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "iCarly.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "JornadanasEstrelasANovaGeracao.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "JornadanasEstrelasDeepSpaceNine.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "JornadanasEstrelasVoyager.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "KenanKel.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MacGyver.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MasterChef.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVAreyoutheOne.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVBiggestPop.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVCatfish.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVClassic.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVComoEx.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVDating.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVDrag.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVJovenseMaes.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVPlutoTV.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVReality.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVRocks.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "MTVShore.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "Naruto.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "NCIS.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "NickJrClub.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "NickelodeonClassico.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "NickelodeonTeen.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "NickelodeonToons.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "Numbers.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "OEncantadordeCaes.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "OReinoInfantil.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "OggyeasBaratasTontas.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "OnePiece.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVAliens.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVAnimais.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVAnimeAcao.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVAnime.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVBangBang.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCanalUOL.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineClassicos.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineComedia.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineComediaRomantica.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineCrime.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineDrama.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineFamilia.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineInspiracao.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineRomance.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCineSucessos.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVCozinha.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVDesenhosClassicos.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVEsportes.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVFiccaoCientifica.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVFilmesAcao.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVFilmesAventura.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVFilmesdeLuta.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVHistoria.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVInvestigacao.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVJunior.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVKFOOD.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVKids.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVKidsClub.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVMisterios.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVNatureza.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVNegocioFechado.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVNetmovies.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVNovelas.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVPaisagensporStingray.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVPolicial.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVRecordNews.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVRetro.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVSeriesAcao.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVSeriesComedia.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVSeriesCriminais.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVSeriesDrama.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVSeriesNovelescas.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVSeriesSciFi.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVShowsporStingray.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVTerrorTrash.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVTurbo.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVViagens.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVVidaReal.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "ProntosocorroHistoriasDeEmergencia.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "SmithsonianChannelPlutoTV.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "SouthParkColecaoCartman.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "SouthParkColecaoKenny.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "SouthParkColecaoKyle.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "SouthParkColecaoStan.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "StarTrek.us@BR": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "TastemadeBrasil.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "ThePetCollective.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "Tokusato.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "TurmadaMonica.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    }
+  }
 }
