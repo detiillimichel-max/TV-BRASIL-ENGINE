@@ -5,7 +5,7 @@
   "experiment": {
     "id": "pluto-tv-batch-01",
     "source_diagnostic": "maestro-diagnosticos-2026-11-03.json",
-    "channel_count": 102,
+    "channel_count": 103,
     "decision": "Fallback externo para o site oficial Pluto TV. Nenhum embed genérico público foi documentado.",
     "official_site": "https://pluto.tv/br/live-tv",
     "msn_embed": "Plataforma autorizada listada pela Pluto TV; integração depende de autorização/credenciamento e não constitui código genérico para terceiros."
@@ -927,6 +927,15 @@
       "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
     },
     "TurmadaMonica.us@Brazil": {
+      "playback_strategy": "official_site_fallback",
+      "official_url": "https://pluto.tv/br/live-tv",
+      "open_external": true,
+      "embed_status": "not_publicly_documented_generic_embed",
+      "msn_embed_requires_partner_authorization": true,
+      "original_jmp2_reference_only": true,
+      "note": "Abrir no site oficial; não reproduzir jmp2.uk no player nem usar proxy."
+    },
+    "PlutoTVFilmesNacionais.us@BR": {
       "playback_strategy": "official_site_fallback",
       "official_url": "https://pluto.tv/br/live-tv",
       "open_external": true,
