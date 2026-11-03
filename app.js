@@ -194,8 +194,8 @@ return {protocol:u.protocol.replace(":","").toUpperCase(),host,origin:official?"
 function detectFormat(ch,url){
 const f=String(ch.format||"").toLowerCase(),u=String(url||"").toLowerCase();
 if(f==="mpegts"||f==="mpeg-ts"||/\.ts($|[?#])/.test(u))return "mpegts";
-if(f==="hls"||/\.m3u8($|[?#])/.test(u))return "hls";
 if(/youtube\.com|youtu\.be/.test(u))return "official_embed";
+if(f==="hls"||/\.m3u8($|[?#])/.test(u))return "hls";
 return f||"unknown";
 }
 function youtubeEmbed(url){
@@ -256,12 +256,13 @@ if(state.approvedIds.has(id)){console.info("Maestro: canal protegido, somente le
 stopActive("Outro canal foi selecionado; este player foi pausado.");
 const c=findCard(id);if(!c)return;
 const panel=c.querySelector("[data-player]"),v=c.querySelector("video");
+const oldEmbed=panel.querySelector("iframe[data-maestro-embed]");if(oldEmbed)oldEmbed.remove();v.hidden=false;
 panel.hidden=false;c.classList.add("active");state.activeId=id;state.video=v;
 const status=c.querySelector("[data-status]"),diag=c.querySelector("[data-diagnostic]"),tech=c.querySelector("[data-technical]"),placeholder=c.querySelector("[data-placeholder]"),stop=c.querySelector("[data-stop]");
 setStatus(status,"pending","Maestro analisando");
 diag.textContent="Identificando formato, origem, protocolo e estratégia de reprodução.";
 placeholder.hidden=true;stop.disabled=false;panel.scrollIntoView({behavior:"smooth",block:"nearest"});
-const config=state.playbackConfig?.channels?.[id]||{};
+const config=state.approvedIds.has(id)?{}:(state.playbackConfig?.channels?.[id]||{});
 const sources=[...(config.sources||[]),{url:ch.url,type:"catalog",priority:999}].filter(s=>s&&s.url);
 if(!sources.length){finish("SOURCE_UNAVAILABLE","Nenhuma fonte configurada para este canal.");return;}
 let sourceIndex=0;
@@ -291,7 +292,7 @@ state.mpegts=mpegts.createPlayer({type:"mpegts",isLive:true,url, cors:true, with
 state.mpegts.attachMediaElement(v);state.mpegts.load();
 state.mpegts.on(mpegts.Events.ERROR,(_type,detail,info)=>{if(state.activeId!==id)return;finish(/network/i.test(String(detail))?"SOURCE_UNAVAILABLE":"UNSUPPORTED_CODEC","mpegts.js informou erro na reprodução.",diagnostic+" | MPEGTS: "+detail+" | "+JSON.stringify(info||{}));});
 v.play().catch(()=>{setStatus(status,"pending","Toque em play");diag.textContent="Fluxo preparado. Toque no play do vídeo para iniciar.";});
-watchPlayback(id,ch,url,"mpegts.js",diagnostic);
+watchPlayback(id,ch,url,"mpegts.js",diagnostic,(code,detail)=>finish(code,"Falha na reprodução MPEG-TS.",detail));
 }catch(error){finish("UNSUPPORTED_CODEC","Não foi possível iniciar o player MPEG-TS.",diagnostic+" | "+error.message);}
 return;
 }
@@ -311,11 +312,14 @@ state.hls.loadSource(url);state.hls.attachMedia(v);
 }else if(v.canPlayType("application/vnd.apple.mpegurl")){
 v.src=url;v.play().catch(()=>{setStatus(status,"pending","Toque em play");diag.textContent="Toque no play para iniciar.";});
 }else{finish("UNSUPPORTED_CODEC","Este navegador não oferece HLS.js nem HLS nativo.",diagnostic);return;}
-watchPlayback(id,ch,url,"hls.js_or_native",diagnostic);
+watchPlayback(id,ch,url,"hls.js_or_native",diagnostic,(code,detail)=>finish(code,"Falha na reprodução HLS.",detail));
 };
 function finish(code,message,detail){
 if(state.activeId!==id)return;
 clearTimeout(state.mediaTimer);clearTimeout(state.frameTimer);
+if(state.hls){state.hls.destroy();state.hls=null;}
+if(state.mpegts){state.mpegts.destroy();state.mpegts=null;}
+v.pause();v.removeAttribute("src");v.load();
 setStatus(status,"bad",code);diag.textContent=message;tech.textContent=detail||code;
 setMaestroResult(id,code,message,detail,{strategy:strategyFor(ch,sources[Math.max(0,sourceIndex-1)]?.url||ch.url,detectFormat(ch,ch.url))});
 if(sourceIndex<sources.length){setStatus(status,"pending","Tentando fonte alternativa");tryNext(code,detail);}
@@ -323,7 +327,7 @@ else{showExternalFallback(id);}
 }
 tryNext("SOURCE_UNAVAILABLE","");
 }
-function watchPlayback(id,ch,url,strategy,details){
+function watchPlayback(id,ch,url,strategy,details,onFailure){
 const card=findCard(id),video=card?.querySelector("video"),status=card?.querySelector("[data-status]"),diag=card?.querySelector("[data-diagnostic]");
 if(!video)return;
 video.onplaying=()=>{
@@ -349,6 +353,7 @@ if(state.activeId!==id)return;
 const code=video.error?.code===4?"UNSUPPORTED_CODEC":"SOURCE_UNAVAILABLE";
 const msg=video.error?.code===4?"Formato ou codec não suportado pelo navegador.":"O elemento de vídeo não conseguiu reproduzir a fonte.";
 setMaestroResult(id,code,msg,details,{strategy});
+if(typeof onFailure==="function")onFailure(code,details);
 if(state.hls){state.hls.destroy();state.hls=null;}
 if(state.mpegts){state.mpegts.destroy();state.mpegts=null;}
 if(state.activeId===id){setStatus(status,"bad",code);diag.textContent=msg;}
@@ -356,7 +361,7 @@ if(state.activeId===id){setStatus(status,"bad",code);diag.textContent=msg;}
 state.mediaTimer=setTimeout(()=>{
 if(state.activeId!==id)return;
 if(video.readyState<2){const msg="A transmissão não começou dentro de 20 segundos.";
-setMaestroResult(id,"TIMEOUT",msg,details,{strategy});setStatus(status,"bad","TIMEOUT");diag.textContent=msg;}
+setMaestroResult(id,"TIMEOUT",msg,details,{strategy});setStatus(status,"bad","TIMEOUT");diag.textContent=msg;if(typeof onFailure==="function")onFailure("TIMEOUT",details);}
 },20000);
 }
 async function loadCatalog(){stopActive("Catálogo atualizado.");$("channel-grid").innerHTML='<div class="empty-state">Buscando catálogo...</div>';try{setStatus($("api-status"),"pending","Carregando catálogo");const r=await fetch(CATALOG_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const data=await r.json();if(!Array.isArray(data.channels))throw new Error("JSON sem lista channels");state.channels=data.channels;restore();const hasLocalLibrary=restoreFavorites();if(!hasLocalLibrary||[...state.favorites].some(id=>!state.channels.some(c=>c.id===id)))await recoverLibraryFromBlob(!hasLocalLibrary);
