@@ -264,7 +264,7 @@ setStatus(status,"pending","Maestro analisando");
 diag.textContent="Identificando formato, origem, protocolo e estratégia de reprodução.";
 placeholder.hidden=true;stop.disabled=false;panel.scrollIntoView({behavior:"smooth",block:"nearest"});
 const config=state.approvedIds.has(id)?{}:(state.playbackConfig?.channels?.[id]||{});
-const sources=[...(config.sources||[]),{url:ch.url,type:"catalog",priority:999}].filter(s=>s&&s.url);
+const sources=[...(config.sources||[]).slice(0,2),{url:ch.url,type:"catalog",priority:999}].filter(s=>s&&s.url);
 if(!sources.length){finish("SOURCE_UNAVAILABLE","Nenhuma fonte configurada para este canal.");return;}
 let sourceIndex=0;
 const tryNext=async(lastStatus,lastDetail)=>{
