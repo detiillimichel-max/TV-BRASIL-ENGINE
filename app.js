@@ -399,10 +399,77 @@ if(video.readyState<2){const msg="A transmissão não começou dentro de 20 segu
 setMaestroResult(id,"TIMEOUT",msg,details,{strategy});setStatus(status,"bad","TIMEOUT");diag.textContent=msg;if(typeof onFailure==="function")onFailure("TIMEOUT",details);}
 },20000);
 }
-async function loadCatalog(){stopActive("Catálogo atualizado.");$("channel-grid").innerHTML='<div class="empty-state">Buscando catálogo...</div>';try{setStatus($("api-status"),"pending","Carregando catálogo");const r=await fetch(CATALOG_URL+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);const data=await r.json();if(!Array.isArray(data.channels))throw new Error("JSON sem lista channels");state.channels=data.channels;restore();const hasLocalLibrary=restoreFavorites();if(!hasLocalLibrary||[...state.favorites].some(id=>!state.channels.some(c=>c.id===id)))await recoverLibraryFromBlob(!hasLocalLibrary);
-try{const configResponse=await fetch("./data/playback-strategies.json?v=1",{cache:"no-store"});if(configResponse.ok){const configData=await configResponse.json();if(configData&&configData.schema_version===1&&configData.channels&&typeof configData.channels==="object")state.playbackConfig=configData;}}catch(configError){console.warn("Maestro: configuração indisponível; usando estratégias padrão.",configError);}
-try{const br=await fetch("https://osqdup2f2kumsdtb.public.blob.vercel-storage.com/backups/tv-brasil-engine-biblioteca-88-canais-2026-11-02T21-41-46-360Z.json",{cache:"no-store"});if(!br.ok)throw new Error("HTTP "+br.status);const bj=await br.json();if(bj.total!==88||!Array.isArray(bj.channels)||bj.channels.length!==88||new Set(bj.channels.map(c=>c.id)).size!==88)throw new Error("Backup inválido");state.approvedChannels=bj.channels;state.approvedIds=new Set(bj.channels.map(c=>c.id));$("approved-tab-count").textContent=state.approvedChannels.length;}catch(backupError){console.warn("Não foi possível carregar os 88 canais do Blob",backupError);state.approvedChannels=state.channels.filter(c=>state.favorites.has(c.id));state.approvedIds=new Set(state.approvedChannels.map(c=>c.id));}
-const valid=new Set(state.channels.map(c=>c.id));for(const id of state.results.keys())if(!valid.has(id))state.results.delete(id);save();$("total-count").textContent=state.channels.length;$("catalog-tab-count").textContent=state.channels.length;$("hls-count").textContent=state.channels.filter(c=>c.format==="hls").length;$("ts-count").textContent=state.channels.filter(c=>c.format==="mpegts").length;$("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date(data.updated_at).toLocaleString("pt-BR"):"data não informada");renderFilters();renderChannels();renderLibrary();renderChannelRows();if(state.activeTab==="feed")renderTvFeed();if(state.libraryRecovered){const note=$("library-recovery-status");if(note){note.hidden=false;note.textContent="Biblioteca recuperada automaticamente do backup seguro: 88 emissoras restauradas do Vercel Blob.";} }counts();setStatus($("api-status"),"ok","Catálogo conectado");refreshIcons();}catch(e){setStatus($("api-status"),"bad","Catálogo indisponível");$("channel-grid").innerHTML='<div class="empty-state">Não foi possível carregar o catálogo: '+esc(e.message)+'</div>';}}
+async function fetchWithTimeout(url,options={},timeoutMs=12000){
+const controller=new AbortController();
+const timer=setTimeout(()=>controller.abort(),timeoutMs);
+try{return await fetch(url,{...options,signal:controller.signal});}
+finally{clearTimeout(timer);}
+}
+async function loadCatalog(){
+stopActive("Catálogo atualizado.");
+$("channel-grid").innerHTML='<div class="empty-state">Buscando catálogo...</div>';
+setStatus($("api-status"),"pending","Carregando catálogo");
+let data=null,lastError=null;
+const catalogUrls=["./data/catalog-final.json","https://raw.githubusercontent.com/detiillimichel-max/TV-BRASIL-ENGINE/main/data/catalog-final.json"];
+for(const url of catalogUrls){
+try{
+const r=await fetchWithTimeout(url+(url.includes("?")?"&":"?")+"t="+Date.now(),{cache:"no-store"},12000);
+if(!r.ok)throw new Error("HTTP "+r.status+" em "+url);
+const parsed=await r.json();
+if(!Array.isArray(parsed.channels)||!parsed.channels.length)throw new Error("Catálogo sem canais válidos.");
+data=parsed;break;
+}catch(error){lastError=error;console.warn("Falha ao carregar catálogo por",url,error);}
+}
+if(!data){
+setStatus($("api-status"),"bad","Catálogo indisponível");
+$("channel-grid").innerHTML='<div class="empty-state">Não foi possível carregar o catálogo. Toque em Atualizar para tentar novamente.</div>';
+return;
+}
+state.channels=data.channels;
+restore();
+restoreFavorites();
+const valid=new Set(state.channels.map(c=>c.id));
+for(const id of state.results.keys())if(!valid.has(id))state.results.delete(id);
+save();
+$("total-count").textContent=state.channels.length;
+$("catalog-tab-count").textContent=state.channels.length;
+$("hls-count").textContent=state.channels.filter(c=>c.format==="hls").length;
+$("ts-count").textContent=state.channels.filter(c=>c.format==="mpegts").length;
+$("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date(data.updated_at).toLocaleString("pt-BR"):"data não informada");
+renderFilters();renderChannels();renderLibrary();renderChannelRows();
+if(state.activeTab==="feed")renderTvFeed();
+counts();setStatus($("api-status"),"ok","Catálogo conectado");refreshIcons();
+// Complementos externos são carregados depois que a interface já está utilizável.
+(async()=>{
+try{
+const response=await fetchWithTimeout("./data/playback-strategies.json?v=2",{cache:"no-store"},7000);
+if(response.ok){
+const configData=await response.json();
+if(configData&&configData.schema_version===1&&configData.channels&&typeof configData.channels==="object")state.playbackConfig=configData;
+}
+}catch(error){console.warn("Maestro: estratégias indisponíveis; usando reprodução padrão.",error);}
+})();
+(async()=>{
+const backupUrl="https://osqdup2f2kumsdtb.public.blob.vercel-storage.com/backups/tv-brasil-engine-biblioteca-88-canais-2026-11-02T21-41-46-360Z.json";
+try{
+const br=await fetchWithTimeout(backupUrl,{cache:"no-store"},9000);
+if(!br.ok)throw new Error("HTTP "+br.status);
+const bj=await br.json();
+if(bj.total!==88||!Array.isArray(bj.channels)||bj.channels.length!==88||new Set(bj.channels.map(c=>c.id)).size!==88)throw new Error("Backup inválido");
+state.approvedChannels=bj.channels;state.approvedIds=new Set(bj.channels.map(c=>c.id));
+$("approved-tab-count").textContent=state.approvedChannels.length;
+renderChannelRows();if(state.activeTab==="feed")renderTvFeed();
+}catch(error){
+console.warn("Backup externo indisponível; mantendo os dados locais sem apagar nada.",error);
+if(!state.approvedChannels.length){
+state.approvedChannels=state.channels.filter(c=>state.favorites.has(c.id));
+state.approvedIds=new Set(state.approvedChannels.map(c=>c.id));
+$("approved-tab-count").textContent=state.approvedChannels.length;
+renderChannelRows();
+}
+}
+})();
+}
 $("export-library-btn").addEventListener("click",exportApprovedLibrary);
 $("export-diagnostics-btn").addEventListener("click",exportMaestroDiagnostics);
 
