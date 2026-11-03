@@ -13,11 +13,11 @@
   <link rel="apple-touch-icon" href="./icons/icon-192.svg">
   <meta name="description" content="Painel individual de diagnóstico e reprodução do catálogo TV-BRASIL-ENGINE.">
   <title>TV-BRASIL-ENGINE · Central de testes</title>
-  <link rel="stylesheet" href="./styles.css?v=2.5.1">
+  <link rel="stylesheet" href="./styles.css?v=2.5.2">
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17/dist/hls.min.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/mpegts.js@1.8.0/dist/mpegts.min.js" defer></script>
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
-  <script src="./app.js?v=2.5.1" defer></script>
+  <script src="./app.js?v=2.5.2" defer></script>
 </head>
 <body>
   <header class="topbar">
@@ -62,6 +62,7 @@
         <div><p class="eyebrow">CATÁLOGO COMPLETO</p><h2>Emissoras</h2><p class="muted">Os canais não são removidos por falha. Cada resultado é salvo localmente e permanece após fechar ou atualizar a página.</p></div>
         <span id="visible-count" class="count-label">0 canais</span>
       </div>
+      <div style="display:flex;justify-content:flex-end;margin:12px 0"><button id="export-diagnostics-btn" class="button secondary" type="button"><i data-lucide="download"></i> Exportar diagnósticos do Maestro</button></div>
       <div class="filters">
         <label class="search-box"><span>⌕</span><input id="search-input" type="search" placeholder="Buscar emissora..." autocomplete="off"></label>
         <select id="category-filter" aria-label="Filtrar por categoria"><option value="">Todas as categorias</option></select>
