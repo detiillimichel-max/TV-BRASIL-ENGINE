@@ -61,12 +61,46 @@ $("catalog-section").hidden=tab!=="catalog";
 $("library-section").hidden=tab!=="library";
 $("channels-section").hidden=tab!=="channels";
 $("feed-section").hidden=tab!=="feed";
+$("official-section").hidden=tab!=="official";
 $("featured-player").hidden=!(tab==="channels"||tab==="feed");
 $("featured-player").classList.toggle("feed-player-mode",tab==="feed");
 document.querySelectorAll(".main-tab").forEach(b=>b.classList.toggle("active",b.dataset.tab===tab));
 if(tab==="library")renderLibrary();
 if(tab==="channels")renderChannelRows();
 if(tab==="feed"){renderTvFeed();if(!state.featuredId&&state.approvedChannels.length)playFeaturedChannel(state.approvedChannels[0].id);}
+if(tab==="official")renderOfficialLibrary();
+refreshIcons();
+}
+async function loadOfficialLibrary(){
+try{
+const response=await fetchWithTimeout("./data/biblioteca-publica-oficial.json?v=1",{cache:"no-store"},8000);
+if(!response.ok)throw new Error("HTTP "+response.status);
+const data=await response.json();
+if(data.schema_version!==1||!Array.isArray(data.channels))throw new Error("Registro de biblioteca inválido.");
+state.officialChannels=data.channels.filter(channel=>channel&&channel.id&&channel.name&&channel.status);
+state.officialLibraryLoaded=true;
+$("official-count").textContent=state.officialChannels.length;
+$("official-total").textContent=state.officialChannels.length+" canais liberados";
+renderOfficialLibrary();
+}catch(error){
+console.warn("Biblioteca pública e oficial indisponível:",error);
+$("official-library-list").innerHTML='<div class="empty-state">Não foi possível carregar o registro de autorizações. Tente atualizar o aplicativo.</div>';
+}
+}
+function renderOfficialLibrary(){
+const host=$("official-library-list");if(!host)return;
+const channels=state.officialChannels||[];
+if(!channels.length){
+host.innerHTML='<div class="official-empty"><i data-lucide="shield-check"></i><h3>Nenhum canal liberado ainda</h3><p>Estamos construindo esta biblioteca com critérios mais rigorosos. Um canal só aparecerá aqui depois de identificarmos a emissora, o responsável pelos direitos e a permissão aplicável ao uso no TV-BRASIL-ENGINE.</p><ul><li>Site oficial da emissora e URL oficial da transmissão</li><li>Responsável pelos direitos e resposta da emissora</li><li>Permissão para link externo ou reprodução incorporada</li><li>Documento, licença ou termos oficiais, quando disponíveis</li></ul><strong>Os 88 canais existentes e a sua Minha biblioteca permanecem intactos.</strong></div>';
+}else{
+host.innerHTML=channels.map(channel=>{
+const status=channel.status==="authorized_embed"?'authorized':channel.status==="external_link_only"?'link-only':'pending';
+const label=status==="authorized"?'Reprodução autorizada':status==="link-only"?'Somente link externo':'Em verificação';
+const link=channel.official_site?'<a class="button secondary" href="'+esc(channel.official_site)+'" target="_blank" rel="noopener noreferrer">Site oficial</a>':'';
+const stream=channel.stream_url&&status==="authorized"?'<a class="button primary" href="'+esc(channel.stream_url)+'" target="_blank" rel="noopener noreferrer">Abrir transmissão</a>':'';
+return '<article class="official-channel-card"><div class="official-channel-head"><div><h3>'+esc(channel.name)+'</h3><span>'+esc(channel.category||"Emissora pública")+'</span></div><span class="official-status '+status+'">'+label+'</span></div><dl><dt>Responsável pelos direitos</dt><dd>'+esc(channel.rights_holder||"Ainda não identificado")+'</dd><dt>Permissão registrada</dt><dd>'+esc(channel.permission_summary||"Não documentada")+'</dd><dt>Resposta da emissora</dt><dd>'+esc(channel.broadcaster_response||"Não recebida ou não registrada")+'</dd><dt>Documento / licença</dt><dd>'+(channel.license_url?'<a href="'+esc(channel.license_url)+'" target="_blank" rel="noopener noreferrer">Consultar documento</a>':"Não disponível")+'</dd></dl><div class="official-actions">'+link+stream+'</div></article>';
+}).join("");
+}
 refreshIcons();
 }
 function toggleFavorite(id){const r=state.results.get(id);const eligible=state.favorites.has(id)||(r&&(r.status==="playing"||r.status==="PLAYING"));if(!eligible)return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavorites();const c=findCard(id),b=c&&c.querySelector("[data-favorite]");if(b)b.classList.toggle("saved",state.favorites.has(id));renderLibrary();}
@@ -232,7 +266,7 @@ refreshIcons();
 }
 
 const $=id=>document.getElementById(id);
-const state={channels:[],approvedChannels:[],results:new Map(),externalResults:new Map(),favorites:new Set(),activeId:null,hls:null,video:null,mediaTimer:null,frameTimer:null,featuredId:null,featuredHls:null,mpegts:null,playbackConfig:{schema_version:1,channels:{}},approvedIds:new Set(),activeTab:"catalog",libraryRecovered:false};
+const state={channels:[],approvedChannels:[],results:new Map(),externalResults:new Map(),favorites:new Set(),activeId:null,hls:null,video:null,mediaTimer:null,frameTimer:null,featuredId:null,featuredHls:null,mpegts:null,playbackConfig:{schema_version:1,channels:{}},approvedIds:new Set(),activeTab:"catalog",libraryRecovered:false,officialChannels:[],officialLibraryLoaded:false};
 const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const cats=c=>Array.isArray(c.categories)&&c.categories.length?c.categories:[c.category||"Undefined"];
 function setStatus(el,type,label){if(el.id==="api-status"){el.className="status-pill "+type;el.innerHTML="<i></i>"+label;}else{el.className="mini-status "+type;el.textContent=label;}}
@@ -496,6 +530,7 @@ $("updated-at").textContent="Catálogo atualizado em "+(data.updated_at?new Date
 renderFilters();renderChannels();renderLibrary();renderChannelRows();
 if(state.activeTab==="feed")renderTvFeed();
 counts();setStatus($("api-status"),"ok","Catálogo conectado");refreshIcons();
+loadOfficialLibrary();
 // Complementos externos são carregados depois que a interface já está utilizável.
 (async()=>{
 try{
@@ -535,5 +570,5 @@ $("featured-play").addEventListener("click",()=>{const v=$("featured-video");if(
 $("featured-fullscreen").addEventListener("click",()=>{const el=$("featured-stage");if(el.requestFullscreen)el.requestFullscreen();else if($("featured-video").webkitEnterFullscreen)$("featured-video").webkitEnterFullscreen();});
 $("featured-favorite").addEventListener("click",()=>{const id=state.featuredId;if(!id)return;if(state.favorites.has(id))state.favorites.delete(id);else state.favorites.add(id);saveFavorites();$("featured-favorite").classList.toggle("is-favorite",state.favorites.has(id));renderLibrary();});
 let feedTouchY=0;$("featured-stage").addEventListener("touchstart",e=>{feedTouchY=e.changedTouches[0].clientY;},{passive:true});$("featured-stage").addEventListener("touchend",e=>{if(state.activeTab!=="feed")return;const delta=feedTouchY-e.changedTouches[0].clientY;if(Math.abs(delta)>55)stepFeatured(delta>0?1:-1);},{passive:true});
-$("reload-btn").addEventListener("click",loadCatalog);document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));["search-input","category-filter","format-filter","result-filter"].forEach(id=>$(id).addEventListener(id==="search-input"?"input":"change",renderChannels));loadCatalog();
+$("reload-btn").addEventListener("click",()=>{loadCatalog();loadOfficialLibrary();});document.querySelectorAll("[data-tab]").forEach(b=>b.addEventListener("click",()=>switchTab(b.dataset.tab)));["search-input","category-filter","format-filter","result-filter"].forEach(id=>$(id).addEventListener(id==="search-input"?"input":"change",renderChannels));loadCatalog();
 })();
