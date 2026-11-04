@@ -1,21 +1,11 @@
 {
-  "updated_at": "2026-11-03T13:23:32.400590+00:00",
+  "updated_at": "2026-11-04T13:35:08.290461+00:00",
   "total_retry_candidates": 125,
   "items": [
     {
       "id": "CinturaoVerde.br@SD",
       "name": "Cinturao Verde",
       "url": "https://play.redecinturaoverde.com.br/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "General",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
-    },
-    {
-      "id": "EUTV.br@SD",
-      "name": "EUTV (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
       "category": "General",
@@ -43,9 +33,19 @@
       "retry_reason": "http_error"
     },
     {
-      "id": "RBATV.br@SD",
-      "name": "RBATV (720p)",
-      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8",
+      "id": "PlenaTV.br@SD",
+      "name": "Plena TV (720p)",
+      "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "hls",
+      "category": "News",
+      "retry_stage": "hls",
+      "retry_reason": "invalid_playlist"
+    },
+    {
+      "id": "RedeTVMais.br@SD",
+      "name": "Rede TV! Mais",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
       "category": "General",
@@ -59,16 +59,6 @@
       "source": "iptv-org",
       "format": "hls",
       "category": "Undefined",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
-    },
-    {
-      "id": "STZTV.br@SD",
-      "name": "STZ TV (1080p)",
-      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "Culture;News",
       "retry_stage": "hls",
       "retry_reason": "invalid_playlist"
     },
@@ -783,6 +773,16 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "SOUTV.br@SD",
+      "name": "SOU TV",
+      "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "SporTV2.br@SD",
       "name": "SporTV 2 (1080p)",
       "url": "http://195.178.110.110/sportv2/index.m3u8",
@@ -871,6 +871,16 @@
       "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVBrasilOeste.br@SD",
+      "name": "TV Brasil Oeste (720p)",
+      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "blocked"
     },
     {
       "id": "TVCamara2.br@SD",
@@ -1083,6 +1093,16 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "TVParaense.br@HD",
+      "name": "TV Paraense (720p)",
+      "url": "https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Entertainment;Family;General;News",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "TVProfissao.br@SD",
       "name": "TV Profissao",
       "url": "https://stmv.webtvninjas.com.br/tvprofissao/tvprofissao/playlist.m3u8",
@@ -1106,16 +1126,6 @@
       "id": "TVSolComunidade.br@SD",
       "name": "TV Sol Comunidade (480p) [Not 24/7]",
       "url": "http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Undefined",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
-      "id": "TVSulBahia.br@SD",
-      "name": "TV Sul Bahia (320p)",
-      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
       "source": "iptv-org",
       "format": "",
       "category": "Undefined",
@@ -1149,16 +1159,6 @@
       "source": "iptv-org",
       "format": "",
       "category": "Education",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
-      "id": "TVVicosa.br@SD",
-      "name": "TV Vicosa (480p)",
-      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Entertainment",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },

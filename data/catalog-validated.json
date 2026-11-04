@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-03T13:23:04.206090+00:00",
+  "updated_at": "2026-11-04T13:34:38.596311+00:00",
   "total_channels": 279,
   "channels": [
     {
@@ -186,7 +186,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -911,6 +911,17 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://play.mbcbrasil.tv.br/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "MCMTop.fr@SD",
+      "name": "MCM Top (France)",
+      "logo": "https://i.imgur.com/EVtWQLd.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://185.228.163.146:8000/play/a00g/index.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -2034,7 +2045,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2078,7 +2089,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2089,7 +2100,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2132,17 +2143,6 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.162.64.114/SONY_MOVIES/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "SOUTV.br@SD",
-      "name": "SOU TV",
-      "logo": "https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2467,17 +2467,6 @@
       "format": "hls"
     },
     {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "logo": "https://i.imgur.com/noqGfuy.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVBRICSPortuguese.br@SD",
       "name": "TV BRICS Portuguese (1080p)",
       "logo": "https://i.imgur.com/vLpm8tN.png",
@@ -2650,7 +2639,7 @@
       "source": "iptv-org",
       "url": "https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2786,17 +2775,6 @@
       "format": "hls"
     },
     {
-      "id": "TVParaense.br@HD",
-      "name": "TV Paraense (720p)",
-      "logo": "https://duckduckgo.com/i/e408ea02.png",
-      "category": "Entertainment;Family;General;News",
-      "source": "iptv-org",
-      "url": "https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVParanaTurismo.br@SD",
       "name": "TV Parana Turismo (720p) [Not 24/7]",
       "logo": "https://i.imgur.com/I6pKoBd.png",
@@ -2826,7 +2804,7 @@
       "source": "iptv-org",
       "url": "https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2885,6 +2863,17 @@
       "format": "hls"
     },
     {
+      "id": "TVSulBahia.br@SD",
+      "name": "TV Sul Bahia (320p)",
+      "logo": "https://i.imgur.com/qM6nMWm.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
       "id": "TVTerceiroAnjo.br@SD",
       "name": "TV Terceiro Anjo (360p)",
       "logo": "https://i.imgur.com/PExKWNv.png",
@@ -2915,6 +2904,17 @@
       "url": "https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "TVVicosa.br@SD",
+      "name": "TV Vicosa (480p)",
+      "logo": "https://i.imgur.com/TZF55f9.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {

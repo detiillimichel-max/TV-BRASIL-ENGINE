@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-03T13:23:32.335262+00:00",
+  "updated_at": "2026-11-04T13:35:08.236443+00:00",
   "total_input_channels": 279,
   "total_hls_tested": 274,
   "total_other_formats_skipped": 5,
-  "total_playlist_and_segment_ok": 267,
+  "total_playlist_and_segment_ok": 268,
   "results": {
-    "playlist_and_segment_ok": 267,
-    "invalid_playlist": 6,
+    "playlist_and_segment_ok": 268,
+    "invalid_playlist": 5,
     "http_error": 1
   },
   "channels": [
@@ -25,7 +25,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:04.541641+00:00"
+      "hls_checked_at": "2026-11-04T13:34:38.919801+00:00"
     },
     {
       "id": "1001Noites.br@SD",
@@ -42,7 +42,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 346,
-      "hls_checked_at": "2026-11-03T13:23:05.343669+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.689954+00:00"
     },
     {
       "id": "AELatinAmerica.us@Brazil",
@@ -59,7 +59,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:04.884239+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.237992+00:00"
     },
     {
       "id": "AdessoTV.br@SD",
@@ -75,8 +75,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 576,
-      "hls_checked_at": "2026-11-03T13:23:05.136190+00:00"
+      "segment_bytes_received": 589,
+      "hls_checked_at": "2026-11-04T13:34:39.375913+00:00"
     },
     {
       "id": "AdrenalinaPuraTV.us@Brazil",
@@ -93,7 +93,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1491,
-      "hls_checked_at": "2026-11-03T13:23:04.785429+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.263583+00:00"
     },
     {
       "id": "AgroCanal.br@SD",
@@ -110,7 +110,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:04.885442+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.269486+00:00"
     },
     {
       "id": "AgroMais.br@SD",
@@ -127,7 +127,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:05.068063+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.443754+00:00"
     },
     {
       "id": "AmazonSat.br@SD",
@@ -144,7 +144,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:05.735244+00:00"
+      "hls_checked_at": "2026-11-04T13:34:40.130029+00:00"
     },
     {
       "id": "AMCLatinAmerica.us@Brazil",
@@ -161,7 +161,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:05.441351+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.837259+00:00"
     },
     {
       "id": "AngelTV.in@Portuguese",
@@ -178,7 +178,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 144,
-      "hls_checked_at": "2026-11-03T13:23:06.158041+00:00"
+      "hls_checked_at": "2026-11-04T13:34:40.552563+00:00"
     },
     {
       "id": "ArarunaTV.br@SD",
@@ -194,8 +194,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 229,
-      "hls_checked_at": "2026-11-03T13:23:06.624270+00:00"
+      "segment_bytes_received": 230,
+      "hls_checked_at": "2026-11-04T13:34:40.843979+00:00"
     },
     {
       "id": "AratuOn.br@SD",
@@ -211,8 +211,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 602,
-      "hls_checked_at": "2026-11-03T13:23:05.545308+00:00"
+      "segment_bytes_received": 180,
+      "hls_checked_at": "2026-11-04T13:34:39.635192+00:00"
     },
     {
       "id": "Arte1.br@SD",
@@ -229,7 +229,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:05.872220+00:00"
+      "hls_checked_at": "2026-11-04T13:34:40.168945+00:00"
     },
     {
       "id": "AvatarAlendadeAang.us@BR",
@@ -246,7 +246,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:05.722418+00:00"
+      "hls_checked_at": "2026-11-04T13:34:39.998952+00:00"
     },
     {
       "id": "AWTV.br@HD",
@@ -263,7 +263,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:06.575798+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.078044+00:00"
     },
     {
       "id": "AXN.br@SD",
@@ -280,7 +280,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:06.226721+00:00"
+      "hls_checked_at": "2026-11-04T13:34:40.500542+00:00"
     },
     {
       "id": "BemMaisTV.br@HD",
@@ -290,14 +290,14 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls",
       "hls_validation": "playlist_and_segment_ok",
       "hls_playlist_type": "master",
       "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 230,
-      "hls_checked_at": "2026-11-03T13:23:07.401937+00:00"
+      "segment_http_status": 200,
+      "segment_bytes_received": 809,
+      "hls_checked_at": "2026-11-04T13:34:41.263948+00:00"
     },
     {
       "id": "BETPlutoTV.us@BR",
@@ -314,7 +314,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:06.231734+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.155456+00:00"
     },
     {
       "id": "BMCNews.br@SD",
@@ -331,7 +331,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1380,
-      "hls_checked_at": "2026-11-03T13:23:06.579107+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.011093+00:00"
     },
     {
       "id": "BoasNovas.br@SD",
@@ -347,8 +347,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 546,
-      "hls_checked_at": "2026-11-03T13:23:06.875144+00:00"
+      "segment_bytes_received": 555,
+      "hls_checked_at": "2026-11-04T13:34:41.206243+00:00"
     },
     {
       "id": "BobEsponjaCalcaQuadrada.us@BR",
@@ -365,7 +365,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1501,
-      "hls_checked_at": "2026-11-03T13:23:06.656846+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.197784+00:00"
     },
     {
       "id": "BoxKidsTV.br@SD",
@@ -382,7 +382,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:07.153347+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.657524+00:00"
     },
     {
       "id": "Canal38.br@SD",
@@ -398,8 +398,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 190,
-      "hls_checked_at": "2026-11-03T13:23:07.228615+00:00"
+      "segment_bytes_received": 212,
+      "hls_checked_at": "2026-11-04T13:34:41.910190+00:00"
     },
     {
       "id": "CanaldoBoi.br@SD",
@@ -416,7 +416,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:07.157057+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.720855+00:00"
     },
     {
       "id": "CanalEducacao.br@SD",
@@ -433,7 +433,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:07.186166+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.733253+00:00"
     },
     {
       "id": "CanalFDR.br@SD",
@@ -449,8 +449,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1657,
-      "hls_checked_at": "2026-11-03T13:23:07.063224+00:00"
+      "segment_bytes_received": 1667,
+      "hls_checked_at": "2026-11-04T13:34:41.414431+00:00"
     },
     {
       "id": "CanalFutura.br@SD",
@@ -467,7 +467,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:07.591701+00:00"
+      "hls_checked_at": "2026-11-04T13:34:41.942533+00:00"
     },
     {
       "id": "CanalMetropolitanodeNoticias.br@SD",
@@ -484,7 +484,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.103429+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.535822+00:00"
     },
     {
       "id": "CanalRural.br@SD",
@@ -501,7 +501,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:07.719853+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.291849+00:00"
     },
     {
       "id": "CanalSete.br@SD",
@@ -517,8 +517,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 234,
-      "hls_checked_at": "2026-11-03T13:23:08.689760+00:00"
+      "segment_bytes_received": 235,
+      "hls_checked_at": "2026-11-04T13:34:43.220516+00:00"
     },
     {
       "id": "CanalUOL.br@SD",
@@ -535,7 +535,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.038752+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.715937+00:00"
     },
     {
       "id": "CartoonNetworkLatinAmerica.us@Brazil",
@@ -552,7 +552,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:07.927123+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.471836+00:00"
     },
     {
       "id": "CazeTV.br@SD",
@@ -569,7 +569,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 300,
-      "hls_checked_at": "2026-11-03T13:23:08.044627+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.468007+00:00"
     },
     {
       "id": "ChromaTV.br@SD",
@@ -585,8 +585,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 240,
-      "hls_checked_at": "2026-11-03T13:23:08.015338+00:00"
+      "segment_bytes_received": 241,
+      "hls_checked_at": "2026-11-04T13:34:42.566988+00:00"
     },
     {
       "id": "CineTerror.us@BR",
@@ -603,7 +603,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.304219+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.783712+00:00"
     },
     {
       "id": "CinturaoVerde.br@SD",
@@ -617,7 +617,7 @@
       "format": "hls",
       "hls_validation": "invalid_playlist",
       "hls_http_status": null,
-      "hls_checked_at": "2026-11-03T13:23:08.348223+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.201198+00:00"
     },
     {
       "id": "ClassiqueTV.br@SD",
@@ -634,7 +634,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.222791+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.680909+00:00"
     },
     {
       "id": "CNNBrasil.br@SD",
@@ -651,7 +651,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 442,
-      "hls_checked_at": "2026-11-03T13:23:08.267238+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.621578+00:00"
     },
     {
       "id": "COMBrasil.br@SD",
@@ -668,7 +668,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 569,
-      "hls_checked_at": "2026-11-03T13:23:08.281742+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.752398+00:00"
     },
     {
       "id": "ComedyCentralBrasil.br@SD",
@@ -685,7 +685,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.367965+00:00"
+      "hls_checked_at": "2026-11-04T13:34:42.836977+00:00"
     },
     {
       "id": "ComedyCentralPlutoTV.us@BR",
@@ -701,8 +701,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1865,
-      "hls_checked_at": "2026-11-03T13:23:08.685245+00:00"
+      "segment_bytes_received": 1540,
+      "hls_checked_at": "2026-11-04T13:34:43.225038+00:00"
     },
     {
       "id": "ComedyCentralSouthPark.us@BR",
@@ -719,7 +719,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.703006+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.115120+00:00"
     },
     {
       "id": "ConectaMaisTV.br@SD",
@@ -736,7 +736,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:09.363044+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.835712+00:00"
     },
     {
       "id": "ConecTVBrasil.br@SD",
@@ -753,7 +753,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.586958+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.146666+00:00"
     },
     {
       "id": "ConexaoTV.br@SD",
@@ -769,8 +769,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 235,
-      "hls_checked_at": "2026-11-03T13:23:08.554313+00:00"
+      "segment_bytes_received": 239,
+      "hls_checked_at": "2026-11-04T13:34:43.316922+00:00"
     },
     {
       "id": "CSIMiami.us@BR",
@@ -786,8 +786,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:08.854450+00:00"
+      "segment_bytes_received": 2037,
+      "hls_checked_at": "2026-11-04T13:34:43.547666+00:00"
     },
     {
       "id": "CulturaFast.br@SD",
@@ -804,7 +804,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1039,
-      "hls_checked_at": "2026-11-03T13:23:09.646529+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.260813+00:00"
     },
     {
       "id": "DespertarTV.br@HD",
@@ -820,8 +820,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 303,
-      "hls_checked_at": "2026-11-03T13:23:09.812528+00:00"
+      "segment_bytes_received": 304,
+      "hls_checked_at": "2026-11-04T13:34:44.380598+00:00"
     },
     {
       "id": "DetetivesMedicos.us@BR",
@@ -838,7 +838,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:09.006323+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.561189+00:00"
     },
     {
       "id": "DiffrentStrokesArnold.us@Brazil",
@@ -855,7 +855,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:09.026832+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.628691+00:00"
     },
     {
       "id": "DiscoveryChannelLatinAmerica.us@Brazil",
@@ -872,7 +872,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:09.379538+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.073614+00:00"
     },
     {
       "id": "DiscoveryKidsLatinAmerica.us@Brazil",
@@ -889,7 +889,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 303,
-      "hls_checked_at": "2026-11-03T13:23:09.020502+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.575212+00:00"
     },
     {
       "id": "DiscoveryWorld.us@Brazil",
@@ -906,7 +906,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 303,
-      "hls_checked_at": "2026-11-03T13:23:09.033386+00:00"
+      "hls_checked_at": "2026-11-04T13:34:43.590269+00:00"
     },
     {
       "id": "DumDum.br@SD",
@@ -922,8 +922,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:09.550862+00:00"
+      "segment_bytes_received": 303,
+      "hls_checked_at": "2026-11-04T13:34:44.114109+00:00"
     },
     {
       "id": "ElyTV.br@SD",
@@ -940,7 +940,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.740311+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.308251+00:00"
     },
     {
       "id": "ESPN.br@SD",
@@ -957,7 +957,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 352,
-      "hls_checked_at": "2026-11-03T13:23:09.733938+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.189780+00:00"
     },
     {
       "id": "ESPN4.br@SD",
@@ -974,7 +974,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 352,
-      "hls_checked_at": "2026-11-03T13:23:09.748626+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.430122+00:00"
     },
     {
       "id": "EUTV.br@SD",
@@ -986,9 +986,12 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls",
-      "hls_validation": "invalid_playlist",
-      "hls_http_status": null,
-      "hls_checked_at": "2026-11-03T13:23:09.987363+00:00"
+      "hls_validation": "playlist_and_segment_ok",
+      "hls_playlist_type": "master",
+      "hls_http_status": 200,
+      "segment_http_status": 200,
+      "segment_bytes_received": 602,
+      "hls_checked_at": "2026-11-04T13:34:44.753922+00:00"
     },
     {
       "id": "FailArmy.us@Brazil",
@@ -1005,7 +1008,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1421,
-      "hls_checked_at": "2026-11-03T13:23:10.039757+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.282027+00:00"
     },
     {
       "id": "FalaLitoral.br@SD",
@@ -1021,8 +1024,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 244,
-      "hls_checked_at": "2026-11-03T13:23:10.047854+00:00"
+      "segment_bytes_received": 239,
+      "hls_checked_at": "2026-11-04T13:34:44.501163+00:00"
     },
     {
       "id": "FIFAPlus.uk@Portuguese",
@@ -1039,7 +1042,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 1285,
-      "hls_checked_at": "2026-11-03T13:23:10.244279+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.487050+00:00"
     },
     {
       "id": "FilmesSuspense.us@BR",
@@ -1056,7 +1059,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.158410+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.731652+00:00"
     },
     {
       "id": "Futura.br@SD",
@@ -1073,7 +1076,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:10.540335+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.000447+00:00"
     },
     {
       "id": "GospelCartoon.br@SD",
@@ -1090,7 +1093,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.195036+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.627167+00:00"
     },
     {
       "id": "GospelMovieTV.br@SD",
@@ -1107,7 +1110,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.193672+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.628771+00:00"
     },
     {
       "id": "iCarly.us@BR",
@@ -1124,7 +1127,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.710446+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.974873+00:00"
     },
     {
       "id": "ISTV.br@SD",
@@ -1141,7 +1144,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.310300+00:00"
+      "hls_checked_at": "2026-11-04T13:34:44.736217+00:00"
     },
     {
       "id": "J3NEWSTV.br@SD",
@@ -1158,7 +1161,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:11.067259+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.547728+00:00"
     },
     {
       "id": "JornadanasEstrelasANovaGeracao.us@BR",
@@ -1175,7 +1178,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.605131+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.079130+00:00"
     },
     {
       "id": "JornadanasEstrelasDeepSpaceNine.us@BR",
@@ -1192,7 +1195,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.644962+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.096458+00:00"
     },
     {
       "id": "JornadanasEstrelasVoyager.us@BR",
@@ -1209,7 +1212,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:10.872592+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.383918+00:00"
     },
     {
       "id": "JovemPanNews.br@SD",
@@ -1226,7 +1229,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:11.166330+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.574917+00:00"
     },
     {
       "id": "KenanKel.us@BR",
@@ -1243,7 +1246,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:11.001943+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.400269+00:00"
     },
     {
       "id": "KpopTVPlay.br@SD",
@@ -1259,8 +1262,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 232,
-      "hls_checked_at": "2026-11-03T13:23:10.923223+00:00"
+      "segment_bytes_received": 223,
+      "hls_checked_at": "2026-11-04T13:34:45.303806+00:00"
     },
     {
       "id": "KuriakosKids.pt@SD",
@@ -1276,8 +1279,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 268,
-      "hls_checked_at": "2026-11-03T13:23:12.080618+00:00"
+      "segment_bytes_received": 273,
+      "hls_checked_at": "2026-11-04T13:34:46.430671+00:00"
     },
     {
       "id": "Lke.br@SD",
@@ -1294,7 +1297,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 1472,
-      "hls_checked_at": "2026-11-03T13:23:11.187609+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.650385+00:00"
     },
     {
       "id": "LamoreRockShowWebTV.br@SD",
@@ -1310,8 +1313,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 252,
-      "hls_checked_at": "2026-11-03T13:23:12.379746+00:00"
+      "segment_bytes_received": 235,
+      "hls_checked_at": "2026-11-04T13:34:47.018269+00:00"
     },
     {
       "id": "LifetimeLatinAmerica.us@Brazil",
@@ -1328,7 +1331,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:11.562216+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.898962+00:00"
     },
     {
       "id": "Loading.br@SD",
@@ -1345,7 +1348,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:11.299879+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.730336+00:00"
     },
     {
       "id": "MacGyver.us@BR",
@@ -1362,7 +1365,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:11.522436+00:00"
+      "hls_checked_at": "2026-11-04T13:34:45.932917+00:00"
     },
     {
       "id": "MasterChef.us@Brazil",
@@ -1378,8 +1381,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:11.663134+00:00"
+      "segment_bytes_received": 1823,
+      "hls_checked_at": "2026-11-04T13:34:46.881582+00:00"
     },
     {
       "id": "MBCBrasilTV.br@SD",
@@ -1393,7 +1396,24 @@
       "format": "hls",
       "hls_validation": "invalid_playlist",
       "hls_http_status": null,
-      "hls_checked_at": "2026-11-03T13:23:11.793694+00:00"
+      "hls_checked_at": "2026-11-04T13:34:46.168728+00:00"
+    },
+    {
+      "id": "MCMTop.fr@SD",
+      "name": "MCM Top (France)",
+      "logo": "https://i.imgur.com/EVtWQLd.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://185.228.163.146:8000/play/a00g/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls",
+      "hls_validation": "playlist_and_segment_ok",
+      "hls_playlist_type": "master",
+      "hls_http_status": 200,
+      "segment_http_status": 200,
+      "segment_bytes_received": 358,
+      "hls_checked_at": "2026-11-04T13:34:46.286222+00:00"
     },
     {
       "id": "MTVAreyoutheOne.us@BR",
@@ -1410,7 +1430,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:11.846410+00:00"
+      "hls_checked_at": "2026-11-04T13:34:46.231163+00:00"
     },
     {
       "id": "MTVBiggestPop.us@BR",
@@ -1426,8 +1446,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1945,
-      "hls_checked_at": "2026-11-03T13:23:12.051039+00:00"
+      "segment_bytes_received": 1814,
+      "hls_checked_at": "2026-11-04T13:34:46.558519+00:00"
     },
     {
       "id": "MTVCatfish.us@BR",
@@ -1444,7 +1464,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1511,
-      "hls_checked_at": "2026-11-03T13:23:12.180210+00:00"
+      "hls_checked_at": "2026-11-04T13:34:46.577255+00:00"
     },
     {
       "id": "MTVClassic.us@BR",
@@ -1460,8 +1480,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 2046,
-      "hls_checked_at": "2026-11-03T13:23:12.198961+00:00"
+      "segment_bytes_received": 2048,
+      "hls_checked_at": "2026-11-04T13:34:46.700429+00:00"
     },
     {
       "id": "MTVComoEx.us@BR",
@@ -1478,7 +1498,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.419457+00:00"
+      "hls_checked_at": "2026-11-04T13:34:46.851653+00:00"
     },
     {
       "id": "MTVDating.us@BR",
@@ -1495,7 +1515,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1511,
-      "hls_checked_at": "2026-11-03T13:23:12.519146+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.646844+00:00"
     },
     {
       "id": "MTVDrag.us@BR",
@@ -1512,7 +1532,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.548048+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.567035+00:00"
     },
     {
       "id": "MTVJovenseMaes.us@BR",
@@ -1528,8 +1548,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1510,
-      "hls_checked_at": "2026-11-03T13:23:12.628555+00:00"
+      "segment_bytes_received": 1512,
+      "hls_checked_at": "2026-11-04T13:34:47.122970+00:00"
     },
     {
       "id": "MTVPlutoTV.us@BR",
@@ -1546,7 +1566,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.744502+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.237453+00:00"
     },
     {
       "id": "MTVReality.us@BR",
@@ -1562,8 +1582,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1431,
-      "hls_checked_at": "2026-11-03T13:23:12.949253+00:00"
+      "segment_bytes_received": 2048,
+      "hls_checked_at": "2026-11-04T13:34:47.418435+00:00"
     },
     {
       "id": "MTVRocks.us@BR",
@@ -1580,7 +1600,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.846259+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.389517+00:00"
     },
     {
       "id": "MTVShore.us@BR",
@@ -1597,7 +1617,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.954525+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.518237+00:00"
     },
     {
       "id": "MyTimeMovieNetwork.br@SD",
@@ -1614,7 +1634,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 539,
-      "hls_checked_at": "2026-11-03T13:23:12.831642+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.394977+00:00"
     },
     {
       "id": "Naruto.us@Brazil",
@@ -1631,7 +1651,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:13.058248+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.738874+00:00"
     },
     {
       "id": "NCIS.us@BR",
@@ -1648,7 +1668,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:13.051552+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.716528+00:00"
     },
     {
       "id": "NickJrClub.us@BR",
@@ -1665,7 +1685,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1510,
-      "hls_checked_at": "2026-11-03T13:23:13.682790+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.877811+00:00"
     },
     {
       "id": "Nickelodeon.br@SD",
@@ -1682,7 +1702,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:12.960488+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.625276+00:00"
     },
     {
       "id": "NickelodeonClassico.us@BR",
@@ -1699,7 +1719,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1530,
-      "hls_checked_at": "2026-11-03T13:23:13.331214+00:00"
+      "hls_checked_at": "2026-11-04T13:34:48.661557+00:00"
     },
     {
       "id": "NickelodeonTeen.us@BR",
@@ -1715,8 +1735,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1491,
-      "hls_checked_at": "2026-11-03T13:23:13.406400+00:00"
+      "segment_bytes_received": 1490,
+      "hls_checked_at": "2026-11-04T13:34:48.624409+00:00"
     },
     {
       "id": "NickelodeonToons.us@BR",
@@ -1733,7 +1753,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1500,
-      "hls_checked_at": "2026-11-03T13:23:13.398647+00:00"
+      "hls_checked_at": "2026-11-04T13:34:48.704023+00:00"
     },
     {
       "id": "NickOnline.br@HD",
@@ -1747,7 +1767,7 @@
       "format": "hls",
       "hls_validation": "http_error",
       "hls_http_status": 218,
-      "hls_checked_at": "2026-11-03T13:23:13.147276+00:00"
+      "hls_checked_at": "2026-11-04T13:34:47.815998+00:00"
     },
     {
       "id": "NovaEraTV.br@SD",
@@ -1763,8 +1783,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 240,
-      "hls_checked_at": "2026-11-03T13:23:13.323053+00:00"
+      "segment_bytes_received": 237,
+      "hls_checked_at": "2026-11-04T13:34:47.880193+00:00"
     },
     {
       "id": "NovoTempo.br@SD",
@@ -1781,7 +1801,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:13.675272+00:00"
+      "hls_checked_at": "2026-11-04T13:34:48.340167+00:00"
     },
     {
       "id": "NTV.br@SD",
@@ -1797,8 +1817,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 565,
-      "hls_checked_at": "2026-11-03T13:23:14.291003+00:00"
+      "segment_bytes_received": 552,
+      "hls_checked_at": "2026-11-04T13:34:48.893956+00:00"
     },
     {
       "id": "Numbers.us@BR",
@@ -1815,7 +1835,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:13.594335+00:00"
+      "hls_checked_at": "2026-11-04T13:34:48.232025+00:00"
     },
     {
       "id": "ODiaTV.br@SD",
@@ -1831,8 +1851,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 235,
-      "hls_checked_at": "2026-11-03T13:23:13.448822+00:00"
+      "segment_bytes_received": 232,
+      "hls_checked_at": "2026-11-04T13:34:48.277848+00:00"
     },
     {
       "id": "OEncantadordeCaes.us@Brazil",
@@ -1849,7 +1869,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:13.758066+00:00"
+      "hls_checked_at": "2026-11-04T13:34:48.683704+00:00"
     },
     {
       "id": "OReinoInfantil.us@Brazil",
@@ -1866,7 +1886,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:14.391692+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.325925+00:00"
     },
     {
       "id": "OggyeasBaratasTontas.us@BR",
@@ -1883,7 +1903,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:14.661895+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.012714+00:00"
     },
     {
       "id": "OnePiece.us@BR",
@@ -1900,7 +1920,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:14.200640+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.090657+00:00"
     },
     {
       "id": "PetloversTV.br@SD",
@@ -1917,7 +1937,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 234,
-      "hls_checked_at": "2026-11-03T13:23:15.352023+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.155109+00:00"
     },
     {
       "id": "PlayTV.br@SD",
@@ -1934,7 +1954,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:14.285943+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.231024+00:00"
     },
     {
       "id": "PlenaTV.br@SD",
@@ -1946,12 +1966,9 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls",
-      "hls_validation": "playlist_and_segment_ok",
-      "hls_playlist_type": "master",
-      "hls_http_status": 200,
-      "segment_http_status": 200,
-      "segment_bytes_received": 565,
-      "hls_checked_at": "2026-11-03T13:23:14.899917+00:00"
+      "hls_validation": "invalid_playlist",
+      "hls_http_status": null,
+      "hls_checked_at": "2026-11-04T13:34:49.410673+00:00"
     },
     {
       "id": "PlenitudeTV.br@SD",
@@ -1968,7 +1985,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 232,
-      "hls_checked_at": "2026-11-03T13:23:15.879134+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.669657+00:00"
     },
     {
       "id": "PlutoTVAliens.us@BR",
@@ -1985,7 +2002,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.282141+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.448999+00:00"
     },
     {
       "id": "PlutoTVAnimais.us@BR",
@@ -2002,7 +2019,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:14.713967+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.618623+00:00"
     },
     {
       "id": "PlutoTVAnimeAcao.us@BR",
@@ -2019,7 +2036,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.015277+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.710499+00:00"
     },
     {
       "id": "PlutoTVAnime.us@BR",
@@ -2035,8 +2052,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1884,
-      "hls_checked_at": "2026-11-03T13:23:15.098329+00:00"
+      "segment_bytes_received": 2048,
+      "hls_checked_at": "2026-11-04T13:34:49.748390+00:00"
     },
     {
       "id": "PlutoTVBangBang.us@BR",
@@ -2053,7 +2070,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.240415+00:00"
+      "hls_checked_at": "2026-11-04T13:34:49.845301+00:00"
     },
     {
       "id": "PlutoTVCanalUOL.us@BR",
@@ -2070,7 +2087,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.561941+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.089509+00:00"
     },
     {
       "id": "PlutoTVCineClassicos.us@BR",
@@ -2087,7 +2104,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.449285+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.720116+00:00"
     },
     {
       "id": "PlutoTVCineComedia.us@BR",
@@ -2104,7 +2121,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.578240+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.088729+00:00"
     },
     {
       "id": "PlutoTVCineComediaRomantica.us@BR",
@@ -2121,7 +2138,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.616043+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.208542+00:00"
     },
     {
       "id": "PlutoTVCineCrime.us@BR",
@@ -2138,7 +2155,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.687171+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.609380+00:00"
     },
     {
       "id": "PlutoTVCineDrama.us@BR",
@@ -2155,7 +2172,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.731961+00:00"
+      "hls_checked_at": "2026-11-04T13:34:51.100772+00:00"
     },
     {
       "id": "PlutoTVCineFamilia.us@BR",
@@ -2172,7 +2189,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.912271+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.558507+00:00"
     },
     {
       "id": "PlutoTVCineInspiracao.us@BR",
@@ -2189,7 +2206,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.963449+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.819445+00:00"
     },
     {
       "id": "PlutoTVCineRomance.us@BR",
@@ -2206,7 +2223,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:15.947593+00:00"
+      "hls_checked_at": "2026-11-04T13:34:51.531011+00:00"
     },
     {
       "id": "PlutoTVCineSucessos.us@BR",
@@ -2223,7 +2240,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.149801+00:00"
+      "hls_checked_at": "2026-11-04T13:34:50.963334+00:00"
     },
     {
       "id": "PlutoTVCozinha.us@BR",
@@ -2240,7 +2257,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.086706+00:00"
+      "hls_checked_at": "2026-11-04T13:34:51.109492+00:00"
     },
     {
       "id": "PlutoTVDesenhosClassicos.us@BR",
@@ -2256,8 +2273,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1809,
-      "hls_checked_at": "2026-11-03T13:23:16.222293+00:00"
+      "segment_bytes_received": 2048,
+      "hls_checked_at": "2026-11-04T13:34:51.722581+00:00"
     },
     {
       "id": "PlutoTVEsportes.us@BR",
@@ -2274,7 +2291,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.216313+00:00"
+      "hls_checked_at": "2026-11-04T13:34:51.817698+00:00"
     },
     {
       "id": "PlutoTVFiccaoCientifica.us@BR",
@@ -2290,8 +2307,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1822,
-      "hls_checked_at": "2026-11-03T13:23:16.348841+00:00"
+      "segment_bytes_received": 2048,
+      "hls_checked_at": "2026-11-04T13:34:51.964462+00:00"
     },
     {
       "id": "PlutoTVFilmesAcao.us@BR",
@@ -2308,7 +2325,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.304641+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.096565+00:00"
     },
     {
       "id": "PlutoTVFilmesAventura.us@BR",
@@ -2325,7 +2342,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.479804+00:00"
+      "hls_checked_at": "2026-11-04T13:34:51.458439+00:00"
     },
     {
       "id": "PlutoTVFilmesdeLuta.us@BR",
@@ -2342,7 +2359,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.493278+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.487487+00:00"
     },
     {
       "id": "PlutoTVFilmesNacionais.us@BR",
@@ -2359,7 +2376,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.679356+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.557778+00:00"
     },
     {
       "id": "PlutoTVHistoria.us@BR",
@@ -2376,7 +2393,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.581491+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.084670+00:00"
     },
     {
       "id": "PlutoTVInvestigacao.us@BR",
@@ -2393,7 +2410,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.632446+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.868033+00:00"
     },
     {
       "id": "PlutoTVJunior.us@BR",
@@ -2410,7 +2427,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.775693+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.318086+00:00"
     },
     {
       "id": "PlutoTVKFOOD.us@BR",
@@ -2427,7 +2444,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.850347+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.466631+00:00"
     },
     {
       "id": "PlutoTVKids.us@BR",
@@ -2444,7 +2461,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:16.795104+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.461554+00:00"
     },
     {
       "id": "PlutoTVKidsClub.us@BR",
@@ -2461,7 +2478,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.573738+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.881668+00:00"
     },
     {
       "id": "PlutoTVMisterios.us@BR",
@@ -2478,7 +2495,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.010208+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.903173+00:00"
     },
     {
       "id": "PlutoTVNatureza.us@BR",
@@ -2495,7 +2512,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.022745+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.473491+00:00"
     },
     {
       "id": "PlutoTVNegocioFechado.us@BR",
@@ -2512,7 +2529,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.127972+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.807008+00:00"
     },
     {
       "id": "PlutoTVNetmovies.us@BR",
@@ -2529,7 +2546,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.162656+00:00"
+      "hls_checked_at": "2026-11-04T13:34:52.934269+00:00"
     },
     {
       "id": "PlutoTVNovelas.us@BR",
@@ -2546,7 +2563,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.207812+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.825641+00:00"
     },
     {
       "id": "PlutoTVPaisagensporStingray.us@BR",
@@ -2563,7 +2580,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1501,
-      "hls_checked_at": "2026-11-03T13:23:17.491440+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.318801+00:00"
     },
     {
       "id": "PlutoTVPolicial.us@BR",
@@ -2580,7 +2597,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.368325+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.211778+00:00"
     },
     {
       "id": "PlutoTVRecordNews.us@BR",
@@ -2597,7 +2614,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1480,
-      "hls_checked_at": "2026-11-03T13:23:17.515626+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.939818+00:00"
     },
     {
       "id": "PlutoTVRetro.us@BR",
@@ -2614,7 +2631,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.849430+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.986938+00:00"
     },
     {
       "id": "PlutoTVSeriesAcao.us@BR",
@@ -2631,7 +2648,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.713523+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.658174+00:00"
     },
     {
       "id": "PlutoTVSeriesComedia.us@BR",
@@ -2647,8 +2664,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.713065+00:00"
+      "segment_bytes_received": 1809,
+      "hls_checked_at": "2026-11-04T13:34:54.506818+00:00"
     },
     {
       "id": "PlutoTVSeriesCriminais.us@BR",
@@ -2665,7 +2682,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.824630+00:00"
+      "hls_checked_at": "2026-11-04T13:34:53.839197+00:00"
     },
     {
       "id": "PlutoTVSeriesDrama.us@BR",
@@ -2682,7 +2699,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.869803+00:00"
+      "hls_checked_at": "2026-11-04T13:34:54.008996+00:00"
     },
     {
       "id": "PlutoTVSeriesNovelescas.us@BR",
@@ -2698,8 +2715,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:17.906780+00:00"
+      "segment_bytes_received": 1809,
+      "hls_checked_at": "2026-11-04T13:34:54.142679+00:00"
     },
     {
       "id": "PlutoTVSeriesSciFi.us@BR",
@@ -2716,7 +2733,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:18.751737+00:00"
+      "hls_checked_at": "2026-11-04T13:34:54.229102+00:00"
     },
     {
       "id": "PlutoTVShowsporStingray.us@BR",
@@ -2733,7 +2750,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1541,
-      "hls_checked_at": "2026-11-03T13:23:18.202681+00:00"
+      "hls_checked_at": "2026-11-04T13:34:54.434842+00:00"
     },
     {
       "id": "PlutoTVTerrorTrash.us@BR",
@@ -2749,8 +2766,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 1914,
-      "hls_checked_at": "2026-11-03T13:23:18.206160+00:00"
+      "segment_bytes_received": 2048,
+      "hls_checked_at": "2026-11-04T13:34:54.331577+00:00"
     },
     {
       "id": "PlutoTVTurbo.us@BR",
@@ -2767,7 +2784,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:18.201430+00:00"
+      "hls_checked_at": "2026-11-04T13:34:54.386142+00:00"
     },
     {
       "id": "PlutoTVViagens.us@BR",
@@ -2784,7 +2801,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:18.254386+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.344558+00:00"
     },
     {
       "id": "PlutoTVVidaReal.us@BR",
@@ -2801,7 +2818,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:18.245880+00:00"
+      "hls_checked_at": "2026-11-04T13:34:54.584811+00:00"
     },
     {
       "id": "PrimerTV.br@SD",
@@ -2818,7 +2835,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 260,
-      "hls_checked_at": "2026-11-03T13:23:18.718741+00:00"
+      "hls_checked_at": "2026-11-04T13:34:54.850602+00:00"
     },
     {
       "id": "ProntosocorroHistoriasDeEmergencia.us@Brazil",
@@ -2835,7 +2852,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:18.536739+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.342501+00:00"
     },
     {
       "id": "RBATV.br@SD",
@@ -2847,9 +2864,12 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls",
-      "hls_validation": "invalid_playlist",
-      "hls_http_status": null,
-      "hls_checked_at": "2026-11-03T13:23:18.403700+00:00"
+      "hls_validation": "playlist_and_segment_ok",
+      "hls_playlist_type": "master",
+      "hls_http_status": 200,
+      "segment_http_status": 200,
+      "segment_bytes_received": 168,
+      "hls_checked_at": "2026-11-04T13:34:54.732449+00:00"
     },
     {
       "id": "RecordNews.br@SD",
@@ -2866,7 +2886,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 308,
-      "hls_checked_at": "2026-11-03T13:23:18.776683+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.036571+00:00"
     },
     {
       "id": "RedBullTV.at@BR",
@@ -2883,7 +2903,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1160,
-      "hls_checked_at": "2026-11-03T13:23:18.877288+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.284778+00:00"
     },
     {
       "id": "RedeBrasil.br@SD",
@@ -2900,7 +2920,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:19.231853+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.470593+00:00"
     },
     {
       "id": "RedeCNTRiodeJaneiro.br@SD",
@@ -2917,7 +2937,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:19.065586+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.377489+00:00"
     },
     {
       "id": "RedeGospel.br@SD",
@@ -2933,8 +2953,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 213,
-      "hls_checked_at": "2026-11-03T13:23:18.905061+00:00"
+      "segment_bytes_received": 173,
+      "hls_checked_at": "2026-11-04T13:34:55.337652+00:00"
     },
     {
       "id": "RedeMeioNorte.br@SD",
@@ -2951,7 +2971,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 303,
-      "hls_checked_at": "2026-11-03T13:23:19.753921+00:00"
+      "hls_checked_at": "2026-11-04T13:34:56.292608+00:00"
     },
     {
       "id": "RedeMinas.br@SD",
@@ -2967,8 +2987,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 253,
-      "hls_checked_at": "2026-11-03T13:23:19.834634+00:00"
+      "segment_bytes_received": 254,
+      "hls_checked_at": "2026-11-04T13:34:56.493327+00:00"
     },
     {
       "id": "RedeNGT.br@SD",
@@ -2985,7 +3005,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 303,
-      "hls_checked_at": "2026-11-03T13:23:19.941748+00:00"
+      "hls_checked_at": "2026-11-04T13:34:56.454753+00:00"
     },
     {
       "id": "RedeSeculo21.br@SD",
@@ -3002,7 +3022,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:19.428975+00:00"
+      "hls_checked_at": "2026-11-04T13:34:55.870973+00:00"
     },
     {
       "id": "RedeSPTV.br@SD",
@@ -3018,8 +3038,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 235,
-      "hls_checked_at": "2026-11-03T13:23:20.681508+00:00"
+      "segment_bytes_received": 236,
+      "hls_checked_at": "2026-11-04T13:34:56.953702+00:00"
     },
     {
       "id": "RedeTVMais.br@SD",
@@ -3031,12 +3051,9 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls",
-      "hls_validation": "playlist_and_segment_ok",
-      "hls_playlist_type": "master",
-      "hls_http_status": 200,
-      "segment_http_status": 200,
-      "segment_bytes_received": 171,
-      "hls_checked_at": "2026-11-03T13:23:19.531985+00:00"
+      "hls_validation": "invalid_playlist",
+      "hls_http_status": null,
+      "hls_checked_at": "2026-11-04T13:34:55.742970+00:00"
     },
     {
       "id": "RedeTV.br@SD",
@@ -3053,7 +3070,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:19.951599+00:00"
+      "hls_checked_at": "2026-11-04T13:34:56.265069+00:00"
     },
     {
       "id": "RetroCartoon.br@SD",
@@ -3070,7 +3087,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:20.017224+00:00"
+      "hls_checked_at": "2026-11-04T13:34:56.338521+00:00"
     },
     {
       "id": "RITTV.br@SD",
@@ -3087,7 +3104,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:20.765508+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.329118+00:00"
     },
     {
       "id": "SBTCuiaba.br@SD",
@@ -3097,14 +3114,14 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls",
       "hls_validation": "playlist_and_segment_ok",
       "hls_playlist_type": "master",
       "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 232,
-      "hls_checked_at": "2026-11-03T13:23:21.517158+00:00"
+      "segment_http_status": 200,
+      "segment_bytes_received": 808,
+      "hls_checked_at": "2026-11-04T13:34:57.212917+00:00"
     },
     {
       "id": "SBTInterior.br@SD",
@@ -3120,8 +3137,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 185,
-      "hls_checked_at": "2026-11-03T13:23:20.591439+00:00"
+      "segment_bytes_received": 184,
+      "hls_checked_at": "2026-11-04T13:34:56.977428+00:00"
     },
     {
       "id": "SBTNacional.br@SD",
@@ -3135,7 +3152,7 @@
       "format": "hls",
       "hls_validation": "invalid_playlist",
       "hls_http_status": null,
-      "hls_checked_at": "2026-11-03T13:23:20.044300+00:00"
+      "hls_checked_at": "2026-11-04T13:34:56.549675+00:00"
     },
     {
       "id": "SBTNews.br@SD",
@@ -3152,7 +3169,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1568,
-      "hls_checked_at": "2026-11-03T13:23:20.402091+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.010257+00:00"
     },
     {
       "id": "SBTNovaMutum.br@SD",
@@ -3162,14 +3179,14 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls",
       "hls_validation": "playlist_and_segment_ok",
       "hls_playlist_type": "master",
       "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 229,
-      "hls_checked_at": "2026-11-03T13:23:21.511814+00:00"
+      "segment_http_status": 200,
+      "segment_bytes_received": 810,
+      "hls_checked_at": "2026-11-04T13:34:57.506586+00:00"
     },
     {
       "id": "SBTRondonopolis.br@SD",
@@ -3179,14 +3196,14 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls",
       "hls_validation": "playlist_and_segment_ok",
       "hls_playlist_type": "master",
       "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 235,
-      "hls_checked_at": "2026-11-03T13:23:22.055161+00:00"
+      "segment_http_status": 200,
+      "segment_bytes_received": 811,
+      "hls_checked_at": "2026-11-04T13:34:57.857501+00:00"
     },
     {
       "id": "SICTV.br@SD",
@@ -3203,7 +3220,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:21.584670+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.937518+00:00"
     },
     {
       "id": "SmithsonianChannelPlutoTV.us@BR",
@@ -3220,7 +3237,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:21.006984+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.354021+00:00"
     },
     {
       "id": "SonyChannel.br@SD",
@@ -3237,7 +3254,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:21.268712+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.715854+00:00"
     },
     {
       "id": "SonyMovies.br@SD",
@@ -3254,24 +3271,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:21.534592+00:00"
-    },
-    {
-      "id": "SOUTV.br@SD",
-      "name": "SOU TV",
-      "logo": "https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls",
-      "hls_validation": "playlist_and_segment_ok",
-      "hls_playlist_type": "master",
-      "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 229,
-      "hls_checked_at": "2026-11-03T13:23:22.883560+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.856495+00:00"
     },
     {
       "id": "SouthParkColecaoCartman.us@BR",
@@ -3288,7 +3288,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:21.838365+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.699429+00:00"
     },
     {
       "id": "SouthParkColecaoKenny.us@BR",
@@ -3305,7 +3305,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:21.834896+00:00"
+      "hls_checked_at": "2026-11-04T13:34:57.858119+00:00"
     },
     {
       "id": "SouthParkColecaoKyle.us@BR",
@@ -3322,7 +3322,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:21.894855+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.040100+00:00"
     },
     {
       "id": "SouthParkColecaoStan.us@BR",
@@ -3339,7 +3339,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:21.943961+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.077281+00:00"
     },
     {
       "id": "StarTrek.us@BR",
@@ -3356,7 +3356,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:22.882384+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.175221+00:00"
     },
     {
       "id": "StudioUniversalLatinAmerica.us@Brazil",
@@ -3373,7 +3373,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:22.445752+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.440018+00:00"
     },
     {
       "id": "STZTV.br@SD",
@@ -3385,9 +3385,12 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls",
-      "hls_validation": "invalid_playlist",
-      "hls_http_status": null,
-      "hls_checked_at": "2026-11-03T13:23:21.987142+00:00"
+      "hls_validation": "playlist_and_segment_ok",
+      "hls_playlist_type": "master",
+      "hls_http_status": 200,
+      "segment_http_status": 200,
+      "segment_bytes_received": 594,
+      "hls_checked_at": "2026-11-04T13:34:58.261125+00:00"
     },
     {
       "id": "TastemadeBrasil.us@Brazil",
@@ -3404,7 +3407,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1421,
-      "hls_checked_at": "2026-11-03T13:23:22.417920+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.407339+00:00"
     },
     {
       "id": "TCM10HD.br@SD",
@@ -3421,7 +3424,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:23.492897+00:00"
+      "hls_checked_at": "2026-11-04T13:34:59.581087+00:00"
     },
     {
       "id": "TELE6.bo@SD",
@@ -3437,8 +3440,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 579,
-      "hls_checked_at": "2026-11-03T13:23:22.378128+00:00"
+      "segment_bytes_received": 592,
+      "hls_checked_at": "2026-11-04T13:34:58.377101+00:00"
     },
     {
       "id": "TerraViva.br@SD",
@@ -3455,7 +3458,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:22.901703+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.706377+00:00"
     },
     {
       "id": "ThePetCollective.us@Brazil",
@@ -3472,7 +3475,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1471,
-      "hls_checked_at": "2026-11-03T13:23:22.828360+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.711559+00:00"
     },
     {
       "id": "TikTokRadioBrasil.br@HD",
@@ -3489,7 +3492,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:22.595011+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.756091+00:00"
     },
     {
       "id": "TimesBrasil.br@SD",
@@ -3506,7 +3509,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:22.853858+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.699530+00:00"
     },
     {
       "id": "TNTLatinAmerica.us@Brazil",
@@ -3523,7 +3526,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 303,
-      "hls_checked_at": "2026-11-03T13:23:22.842126+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.454447+00:00"
     },
     {
       "id": "TNTNovelas.us@Brazil",
@@ -3540,7 +3543,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:23.366198+00:00"
+      "hls_checked_at": "2026-11-04T13:34:58.981806+00:00"
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -3557,7 +3560,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:23.217152+00:00"
+      "hls_checked_at": "2026-11-04T13:34:59.668833+00:00"
     },
     {
       "id": "TraceBrazuca.fr@HD",
@@ -3574,7 +3577,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:23.464535+00:00"
+      "hls_checked_at": "2026-11-04T13:34:59.285900+00:00"
     },
     {
       "id": "TurmadaMonica.us@Brazil",
@@ -3591,7 +3594,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 1441,
-      "hls_checked_at": "2026-11-03T13:23:23.368749+00:00"
+      "hls_checked_at": "2026-11-04T13:34:59.092641+00:00"
     },
     {
       "id": "TVACritica.br@SD",
@@ -3608,7 +3611,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 172,
-      "hls_checked_at": "2026-11-03T13:23:23.085207+00:00"
+      "hls_checked_at": "2026-11-04T13:34:59.275747+00:00"
     },
     {
       "id": "TVAFolha.br@SD",
@@ -3624,8 +3627,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 230,
-      "hls_checked_at": "2026-11-03T13:23:24.778695+00:00"
+      "segment_bytes_received": 226,
+      "hls_checked_at": "2026-11-04T13:35:00.568761+00:00"
     },
     {
       "id": "TVAldeia.br@SD",
@@ -3642,7 +3645,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:24.599526+00:00"
+      "hls_checked_at": "2026-11-04T13:35:00.065659+00:00"
     },
     {
       "id": "TVAliancaCatarinense.br@SD",
@@ -3658,8 +3661,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 236,
-      "hls_checked_at": "2026-11-03T13:23:24.784732+00:00"
+      "segment_bytes_received": 239,
+      "hls_checked_at": "2026-11-04T13:35:00.752148+00:00"
     },
     {
       "id": "TVAlternativa.br@SD",
@@ -3676,7 +3679,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:24.296585+00:00"
+      "hls_checked_at": "2026-11-04T13:35:00.299906+00:00"
     },
     {
       "id": "TVAparecida.br@SD",
@@ -3693,7 +3696,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:23.993222+00:00"
+      "hls_checked_at": "2026-11-04T13:35:00.108218+00:00"
     },
     {
       "id": "TVBahia.br@HD",
@@ -3710,7 +3713,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:23.977385+00:00"
+      "hls_checked_at": "2026-11-04T13:35:00.135467+00:00"
     },
     {
       "id": "TVBrasil.br@SD",
@@ -3727,24 +3730,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:24.502907+00:00"
-    },
-    {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "logo": "https://i.imgur.com/noqGfuy.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls",
-      "hls_validation": "playlist_and_segment_ok",
-      "hls_playlist_type": "master",
-      "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 234,
-      "hls_checked_at": "2026-11-03T13:23:25.649597+00:00"
+      "hls_checked_at": "2026-11-04T13:35:00.596598+00:00"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3760,8 +3746,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 157,
-      "hls_checked_at": "2026-11-03T13:23:26.077840+00:00"
+      "segment_bytes_received": 304,
+      "hls_checked_at": "2026-11-04T13:35:02.354533+00:00"
     },
     {
       "id": "TVBrusque.br@SD",
@@ -3777,8 +3763,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 234,
-      "hls_checked_at": "2026-11-03T13:23:26.189833+00:00"
+      "segment_bytes_received": 230,
+      "hls_checked_at": "2026-11-04T13:35:01.628962+00:00"
     },
     {
       "id": "TVCamara.br@SD",
@@ -3795,7 +3781,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 834,
-      "hls_checked_at": "2026-11-03T13:23:26.299523+00:00"
+      "hls_checked_at": "2026-11-04T13:35:01.761933+00:00"
     },
     {
       "id": "TVCancaoNova.br@SD",
@@ -3812,7 +3798,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:25.303333+00:00"
+      "hls_checked_at": "2026-11-04T13:35:01.100664+00:00"
     },
     {
       "id": "TVCidadeVerdeCuiaba.br@SD",
@@ -3829,7 +3815,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:25.785737+00:00"
+      "hls_checked_at": "2026-11-04T13:35:01.569937+00:00"
     },
     {
       "id": "TVClube.br@SD",
@@ -3845,8 +3831,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 236,
-      "hls_checked_at": "2026-11-03T13:23:25.495635+00:00"
+      "segment_bytes_received": 240,
+      "hls_checked_at": "2026-11-04T13:35:01.052576+00:00"
     },
     {
       "id": "TVComunitaria.br@SD",
@@ -3862,8 +3848,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 267,
-      "hls_checked_at": "2026-11-03T13:23:25.859407+00:00"
+      "segment_bytes_received": 268,
+      "hls_checked_at": "2026-11-04T13:35:01.483621+00:00"
     },
     {
       "id": "TVCultura.br@SD",
@@ -3880,7 +3866,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:26.177729+00:00"
+      "hls_checked_at": "2026-11-04T13:35:01.622789+00:00"
     },
     {
       "id": "TVCuruca.br@SD",
@@ -3897,7 +3883,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:25.922968+00:00"
+      "hls_checked_at": "2026-11-04T13:35:01.629517+00:00"
     },
     {
       "id": "TVDifusao.br@SD",
@@ -3913,8 +3899,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 189,
-      "hls_checked_at": "2026-11-03T13:23:26.249594+00:00"
+      "segment_bytes_received": 192,
+      "hls_checked_at": "2026-11-04T13:35:01.878030+00:00"
     },
     {
       "id": "TVEvangelizar.br@SD",
@@ -3931,7 +3917,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:26.449178+00:00"
+      "hls_checked_at": "2026-11-04T13:35:02.153265+00:00"
     },
     {
       "id": "TVFronteira.br@SD",
@@ -3948,7 +3934,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:27.060266+00:00"
+      "hls_checked_at": "2026-11-04T13:35:02.517693+00:00"
     },
     {
       "id": "TVGazeta.br@SD",
@@ -3965,7 +3951,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:26.705857+00:00"
+      "hls_checked_at": "2026-11-04T13:35:02.153655+00:00"
     },
     {
       "id": "TVGRANDENATALHDTVBRASIL.br@SD",
@@ -3982,7 +3968,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:26.605726+00:00"
+      "hls_checked_at": "2026-11-04T13:35:05.193984+00:00"
     },
     {
       "id": "TVGuara.br@SD",
@@ -3992,14 +3978,14 @@
       "source": "iptv-org",
       "url": "https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls",
       "hls_validation": "playlist_and_segment_ok",
       "hls_playlist_type": "master",
       "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 229,
-      "hls_checked_at": "2026-11-03T13:23:27.748956+00:00"
+      "segment_http_status": 200,
+      "segment_bytes_received": 811,
+      "hls_checked_at": "2026-11-04T13:35:02.829930+00:00"
     },
     {
       "id": "TVGuarapari.br@SD",
@@ -4016,7 +4002,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 284,
-      "hls_checked_at": "2026-11-03T13:23:27.466942+00:00"
+      "hls_checked_at": "2026-11-04T13:35:02.986118+00:00"
     },
     {
       "id": "TVJustica.br@SD",
@@ -4033,7 +4019,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:26.972982+00:00"
+      "hls_checked_at": "2026-11-04T13:35:02.682215+00:00"
     },
     {
       "id": "TVLifeAmerica.br@HD",
@@ -4050,7 +4036,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:27.399458+00:00"
+      "hls_checked_at": "2026-11-04T13:35:03.115935+00:00"
     },
     {
       "id": "TVLitoralRN.br@SD",
@@ -4066,8 +4052,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 234,
-      "hls_checked_at": "2026-11-03T13:23:28.241854+00:00"
+      "segment_bytes_received": 230,
+      "hls_checked_at": "2026-11-04T13:35:03.988123+00:00"
     },
     {
       "id": "TVMaisMarica.br@SD",
@@ -4084,7 +4070,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 236,
-      "hls_checked_at": "2026-11-03T13:23:27.457401+00:00"
+      "hls_checked_at": "2026-11-04T13:35:03.100712+00:00"
     },
     {
       "id": "TVManaBrasil.pt@SD",
@@ -4100,8 +4086,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 275,
-      "hls_checked_at": "2026-11-03T13:23:28.218456+00:00"
+      "segment_bytes_received": 278,
+      "hls_checked_at": "2026-11-04T13:35:04.046440+00:00"
     },
     {
       "id": "TVMarajoara.br@SD",
@@ -4118,7 +4104,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 236,
-      "hls_checked_at": "2026-11-03T13:23:29.033405+00:00"
+      "hls_checked_at": "2026-11-04T13:35:04.749214+00:00"
     },
     {
       "id": "TVMetropole.br@SD",
@@ -4134,8 +4120,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 236,
-      "hls_checked_at": "2026-11-03T13:23:28.818679+00:00"
+      "segment_bytes_received": 234,
+      "hls_checked_at": "2026-11-04T13:35:04.426059+00:00"
     },
     {
       "id": "TVNatal.br@SD",
@@ -4152,7 +4138,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 358,
-      "hls_checked_at": "2026-11-03T13:23:27.855823+00:00"
+      "hls_checked_at": "2026-11-04T13:35:03.504868+00:00"
     },
     {
       "id": "TVPadreCicero.br@SD",
@@ -4169,7 +4155,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 236,
-      "hls_checked_at": "2026-11-03T13:23:29.150587+00:00"
+      "hls_checked_at": "2026-11-04T13:35:04.869775+00:00"
     },
     {
       "id": "TVPaiEterno.br@SD",
@@ -4186,7 +4172,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 304,
-      "hls_checked_at": "2026-11-03T13:23:28.381543+00:00"
+      "hls_checked_at": "2026-11-04T13:35:04.511199+00:00"
     },
     {
       "id": "TVPantanalMS.br@SD",
@@ -4202,25 +4188,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 233,
-      "hls_checked_at": "2026-11-03T13:23:28.297026+00:00"
-    },
-    {
-      "id": "TVParaense.br@HD",
-      "name": "TV Paraense (720p)",
-      "logo": "https://duckduckgo.com/i/e408ea02.png",
-      "category": "Entertainment;Family;General;News",
-      "source": "iptv-org",
-      "url": "https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls",
-      "hls_validation": "playlist_and_segment_ok",
-      "hls_playlist_type": "master",
-      "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 233,
-      "hls_checked_at": "2026-11-03T13:23:29.702008+00:00"
+      "segment_bytes_received": 225,
+      "hls_checked_at": "2026-11-04T13:35:04.098147+00:00"
     },
     {
       "id": "TVParanaTurismo.br@SD",
@@ -4237,7 +4206,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:28.772634+00:00"
+      "hls_checked_at": "2026-11-04T13:35:04.578115+00:00"
     },
     {
       "id": "TVPassoFundo.br@SD",
@@ -4253,8 +4222,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 529,
-      "hls_checked_at": "2026-11-03T13:23:28.574669+00:00"
+      "segment_bytes_received": 519,
+      "hls_checked_at": "2026-11-04T13:35:04.580424+00:00"
     },
     {
       "id": "TVPetropolis.br@SD",
@@ -4264,14 +4233,14 @@
       "source": "iptv-org",
       "url": "https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls",
       "hls_validation": "playlist_and_segment_ok",
       "hls_playlist_type": "master",
       "hls_http_status": 200,
-      "segment_http_status": 206,
-      "segment_bytes_received": 229,
-      "hls_checked_at": "2026-11-03T13:23:30.161307+00:00"
+      "segment_http_status": 200,
+      "segment_bytes_received": 807,
+      "hls_checked_at": "2026-11-04T13:35:05.439156+00:00"
     },
     {
       "id": "TVSaoRaimundo.br@SD",
@@ -4288,7 +4257,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:29.064350+00:00"
+      "hls_checked_at": "2026-11-04T13:35:04.845588+00:00"
     },
     {
       "id": "TVSenado.br@SD",
@@ -4305,7 +4274,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:29.342530+00:00"
+      "hls_checked_at": "2026-11-04T13:35:05.106719+00:00"
     },
     {
       "id": "TVSeries.br@SD",
@@ -4322,7 +4291,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:29.138305+00:00"
+      "hls_checked_at": "2026-11-04T13:35:04.854473+00:00"
     },
     {
       "id": "TVSimCachoeiro.br@SD",
@@ -4338,8 +4307,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 230,
-      "hls_checked_at": "2026-11-03T13:23:29.502212+00:00"
+      "segment_bytes_received": 229,
+      "hls_checked_at": "2026-11-04T13:35:05.270448+00:00"
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4355,8 +4324,25 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 235,
-      "hls_checked_at": "2026-11-03T13:23:29.549572+00:00"
+      "segment_bytes_received": 238,
+      "hls_checked_at": "2026-11-04T13:35:05.271551+00:00"
+    },
+    {
+      "id": "TVSulBahia.br@SD",
+      "name": "TV Sul Bahia (320p)",
+      "logo": "https://i.imgur.com/qM6nMWm.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls",
+      "hls_validation": "playlist_and_segment_ok",
+      "hls_playlist_type": "master",
+      "hls_http_status": 200,
+      "segment_http_status": 200,
+      "segment_bytes_received": 219,
+      "hls_checked_at": "2026-11-04T13:35:05.797817+00:00"
     },
     {
       "id": "TVTerceiroAnjo.br@SD",
@@ -4372,8 +4358,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 204,
-      "hls_checked_at": "2026-11-03T13:23:30.531243+00:00"
+      "segment_bytes_received": 201,
+      "hls_checked_at": "2026-11-04T13:35:06.559185+00:00"
     },
     {
       "id": "TVUFOP.br@HD",
@@ -4390,7 +4376,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:30.562305+00:00"
+      "hls_checked_at": "2026-11-04T13:35:06.403922+00:00"
     },
     {
       "id": "TVUniversal.br@SD",
@@ -4407,7 +4393,24 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 520,
-      "hls_checked_at": "2026-11-03T13:23:30.190063+00:00"
+      "hls_checked_at": "2026-11-04T13:35:05.443822+00:00"
+    },
+    {
+      "id": "TVVicosa.br@SD",
+      "name": "TV Vicosa (480p)",
+      "logo": "https://i.imgur.com/TZF55f9.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls",
+      "hls_validation": "playlist_and_segment_ok",
+      "hls_playlist_type": "master",
+      "hls_http_status": 200,
+      "segment_http_status": 206,
+      "segment_bytes_received": 613,
+      "hls_checked_at": "2026-11-04T13:35:05.514105+00:00"
     },
     {
       "id": "TVVilaReal.br@SD",
@@ -4424,7 +4427,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 578,
-      "hls_checked_at": "2026-11-03T13:23:30.200849+00:00"
+      "hls_checked_at": "2026-11-04T13:35:06.308006+00:00"
     },
     {
       "id": "TVZoom.br@SD",
@@ -4440,8 +4443,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 200,
-      "segment_bytes_received": 602,
-      "hls_checked_at": "2026-11-03T13:23:30.349988+00:00"
+      "segment_bytes_received": 589,
+      "hls_checked_at": "2026-11-04T13:35:06.310455+00:00"
     },
     {
       "id": "TVPlusPet.br@SD",
@@ -4458,7 +4461,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:31.129400+00:00"
+      "hls_checked_at": "2026-11-04T13:35:06.468996+00:00"
     },
     {
       "id": "TVCOMMaceio.br@SD",
@@ -4475,7 +4478,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:30.467060+00:00"
+      "hls_checked_at": "2026-11-04T13:35:06.079732+00:00"
     },
     {
       "id": "TVEBahia.br@SD",
@@ -4491,8 +4494,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 755,
-      "hls_checked_at": "2026-11-03T13:23:31.432749+00:00"
+      "segment_bytes_received": 739,
+      "hls_checked_at": "2026-11-04T13:35:07.293468+00:00"
     },
     {
       "id": "TVERS.br@SD",
@@ -4508,8 +4511,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 725,
-      "hls_checked_at": "2026-11-03T13:23:32.134396+00:00"
+      "segment_bytes_received": 739,
+      "hls_checked_at": "2026-11-04T13:35:08.235785+00:00"
     },
     {
       "id": "TVideoNews.br@SD",
@@ -4525,8 +4528,8 @@
       "hls_playlist_type": "master",
       "hls_http_status": 200,
       "segment_http_status": 206,
-      "segment_bytes_received": 238,
-      "hls_checked_at": "2026-11-03T13:23:31.834599+00:00"
+      "segment_bytes_received": 232,
+      "hls_checked_at": "2026-11-04T13:35:07.672495+00:00"
     },
     {
       "id": "TVitape.br@SD",
@@ -4543,7 +4546,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:30.849637+00:00"
+      "hls_checked_at": "2026-11-04T13:35:06.732847+00:00"
     },
     {
       "id": "TVLatinaSat.br@HD",
@@ -4560,7 +4563,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:31.704301+00:00"
+      "hls_checked_at": "2026-11-04T13:35:07.599491+00:00"
     },
     {
       "id": "TVNBN.br@SD",
@@ -4577,7 +4580,7 @@
       "hls_http_status": 200,
       "segment_http_status": 200,
       "segment_bytes_received": 589,
-      "hls_checked_at": "2026-11-03T13:23:31.607214+00:00"
+      "hls_checked_at": "2026-11-04T13:35:07.323786+00:00"
     },
     {
       "id": "UMATV.br@HD",
@@ -4594,7 +4597,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:31.820389+00:00"
+      "hls_checked_at": "2026-11-04T13:35:07.405832+00:00"
     },
     {
       "id": "UnisulTV.br@SD",
@@ -4611,7 +4614,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 2048,
-      "hls_checked_at": "2026-11-03T13:23:32.334536+00:00"
+      "hls_checked_at": "2026-11-04T13:35:08.225308+00:00"
     },
     {
       "id": "VEJAPlusTV.br@HD",
@@ -4628,7 +4631,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 591,
-      "hls_checked_at": "2026-11-03T13:23:31.647822+00:00"
+      "hls_checked_at": "2026-11-04T13:35:07.477765+00:00"
     },
     {
       "id": "WooHoo.br@SD",
@@ -4645,7 +4648,7 @@
       "hls_http_status": 200,
       "segment_http_status": 206,
       "segment_bytes_received": 305,
-      "hls_checked_at": "2026-11-03T13:23:32.174292+00:00"
+      "hls_checked_at": "2026-11-04T13:35:07.934594+00:00"
     }
   ]
 }

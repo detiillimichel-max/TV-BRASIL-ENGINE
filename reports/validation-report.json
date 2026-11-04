@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-03T13:23:04.206090+00:00",
-  "total_tested": 397,
+  "updated_at": "2026-11-04T13:34:38.596311+00:00",
+  "total_tested": 398,
   "total_media_detected": 279,
   "results": {
     "media_detected": 279,
     "unavailable": 94,
-    "blocked": 23,
+    "blocked": 24,
     "unknown": 1
   },
   "channels": [
@@ -281,7 +281,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -1394,6 +1394,17 @@
       "validation": "unavailable",
       "http_status": null,
       "format": null
+    },
+    {
+      "id": "MCMTop.fr@SD",
+      "name": "MCM Top (France)",
+      "logo": "https://i.imgur.com/EVtWQLd.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://185.228.163.146:8000/play/a00g/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "MKKWebTV.br@SD",
@@ -2767,7 +2778,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2822,7 +2833,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtmutum/sbtmutum/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2833,7 +2844,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2931,9 +2942,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "SouthParkColecaoCartman.us@BR",
@@ -3360,9 +3371,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3713,7 +3724,7 @@
       "source": "iptv-org",
       "url": "https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -3910,9 +3921,9 @@
       "category": "Entertainment;Family;General;News",
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/tvparaense/tvparaense/playlist.m3u",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVParanaTurismo.br@SD",
@@ -3944,7 +3955,7 @@
       "source": "iptv-org",
       "url": "https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -4042,9 +4053,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVSuldeMinas.br@SD",
@@ -4119,9 +4130,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVVilaReal.br@SD",
