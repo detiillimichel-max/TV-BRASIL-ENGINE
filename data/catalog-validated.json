@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-04T13:34:38.596311+00:00",
-  "total_channels": 279,
+  "updated_at": "2026-11-05T13:48:03.666518+00:00",
+  "total_channels": 277,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -11,17 +11,6 @@
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
       "validation": "media_detected",
       "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "1001Noites.br@SD",
-      "name": "1001 Noites (480p)",
-      "logo": "https://i.imgur.com/dWA9y2J.png",
-      "category": "Shop",
-      "source": "iptv-org",
-      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
       "format": "hls"
     },
     {
@@ -120,7 +109,7 @@
       "source": "iptv-org",
       "url": "https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -207,17 +196,6 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://jmp2.uk/plu-666c9c60a7efd40008f552f0.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "BoasNovas.br@SD",
-      "name": "Boas Novas (1080p)",
-      "logo": "https://i.imgur.com/ZqhizdP.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -682,6 +660,17 @@
       "url": "https://jmp2.uk/plu-5f171d3442a0500007362f22.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "FonteTV.br@SD",
+      "name": "Fonte TV",
+      "logo": "https://i.imgur.com/7q2BmNc.png",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -1155,17 +1144,6 @@
       "url": "https://x1colegal.com/hls/stream.m3u8",
       "validation": "media_detected",
       "http_status": 218,
-      "format": "hls"
-    },
-    {
-      "id": "NovaEraTV.br@SD",
-      "name": "Nova Era TV (1080p) [Not 24/7]",
-      "logo": "https://i.imgur.com/IK3F9Uq.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://wz3.dnip.com.br:1935/novaeratv/novaeratv.sdp/live.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -2016,6 +1994,17 @@
       "format": "hls"
     },
     {
+      "id": "RedeTVParana.br@SD",
+      "name": "RedeTV! Parana",
+      "logo": "https://i.imgur.com/D8R0Af4.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "RetroCartoon.br@SD",
       "name": "Retro Cartoon (720p)",
       "logo": "https://i.imgur.com/hIlEfhl.png",
@@ -2445,6 +2434,17 @@
       "format": "hls"
     },
     {
+      "id": "TVArapuan.br@SD",
+      "name": "TV Arapuan (720p)",
+      "logo": "https://i.imgur.com/3395A2h.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVBahia.br@HD",
       "name": "TV Bahia (1080i)",
       "logo": "https://i.imgur.com/sJOrvHg.png",
@@ -2473,17 +2473,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVBrusque.br@SD",
-      "name": "TV Brusque (720p)",
-      "logo": "https://i.imgur.com/J2EAZPS.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2671,17 +2660,6 @@
       "category": "Culture",
       "source": "iptv-org",
       "url": "https://streaming.cloudecast.com/hls/tvlifeamerica/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVLitoralRN.br@SD",
-      "name": "TV Litoral RN (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3e/TV_LITORAL_RN.jpg",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"

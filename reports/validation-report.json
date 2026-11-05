@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-04T13:34:38.596311+00:00",
+  "updated_at": "2026-11-05T13:48:03.666518+00:00",
   "total_tested": 398,
-  "total_media_detected": 279,
+  "total_media_detected": 277,
   "results": {
-    "media_detected": 279,
-    "unavailable": 94,
-    "blocked": 24,
+    "media_detected": 277,
+    "unavailable": 98,
+    "blocked": 22,
     "unknown": 1
   },
   "channels": [
@@ -27,9 +27,9 @@
       "category": "Shop",
       "source": "iptv-org",
       "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "AELatinAmerica.us@Brazil",
@@ -160,7 +160,7 @@
       "source": "iptv-org",
       "url": "https://video05.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -335,9 +335,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "BobEsponjaCalcaQuadrada.us@BR",
@@ -1028,9 +1028,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ForaTedioTV.br@SD",
@@ -1677,9 +1677,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://wz3.dnip.com.br:1935/novaeratv/novaeratv.sdp/live.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "NovoTempo.br@SD",
@@ -2733,9 +2733,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RetroCartoon.br@SD",
@@ -3305,9 +3305,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3371,8 +3371,8 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
+      "validation": "unavailable",
+      "http_status": null,
       "format": null
     },
     {
@@ -3393,9 +3393,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVCamara.br@SD",
@@ -3547,8 +3547,8 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/marliomelohotmail.com/marliomelohotmail.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
+      "validation": "unavailable",
+      "http_status": null,
       "format": null
     },
     {
@@ -3789,9 +3789,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVMackenzie.br@SD",
@@ -4175,7 +4175,7 @@
       "source": "iptv-org",
       "url": "https://video05.logicahost.com.br/comunitariario/comunitariario/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": 404,
+      "http_status": 502,
       "format": null
     },
     {
