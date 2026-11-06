@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T13:46:32.617046+00:00",
+  "updated_at": "2026-11-06T13:30:37.797563+00:00",
   "total_channels": 398,
   "channels": [
     {
@@ -24,7 +24,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png",
       "category": "Entertainment",
       "source": "iptv-org",
-      "url": "http://170.83.16.50/AeE/index.m3u8"
+      "url": "http://79.127.238.228:14551"
     },
     {
       "id": "AdessoTV.br@SD",
@@ -48,7 +48,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png",
       "category": "Entertainment",
       "source": "iptv-org",
-      "url": "http://168.197.104.22/ADULT_SWIM/index.m3u8"
+      "url": "http://45.162.64.114/ADULT_SWIM/index.m3u8"
     },
     {
       "id": "AgroBrasilTV.br@SD",
@@ -116,7 +116,7 @@
     },
     {
       "id": "AratuOn.br@SD",
-      "name": "Aratu On",
+      "name": "Aratu On (1080p)",
       "logo": "https://i.imgur.com/Ht4jCab.png",
       "category": "News",
       "source": "iptv-org",
@@ -324,7 +324,7 @@
     },
     {
       "id": "CanalFDR.br@SD",
-      "name": "Canal FDR",
+      "name": "Canal FDR (1080p)",
       "logo": "https://i.imgur.com/7SE4CkE.png",
       "category": "Education;General",
       "source": "iptv-org",
@@ -444,7 +444,7 @@
     },
     {
       "id": "CazeTV.br@SD",
-      "name": "CazeTV",
+      "name": "CazeTV (1080p)",
       "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Caz%C3%A9TV_logo.svg/1280px-Caz%C3%A9TV_logo.svg.png",
       "category": "Sports",
       "source": "iptv-org",
@@ -792,7 +792,7 @@
       "logo": "https://i.ibb.co/m5TBCDL2/Globoplay-Novelas-1.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://170.82.202.31/Viva/index.m3u8"
+      "url": "http://79.127.238.228:14455"
     },
     {
       "id": "Gloob.br@SD",
@@ -1244,7 +1244,7 @@
     },
     {
       "id": "ODiaTV.br@SD",
-      "name": "O Dia TV",
+      "name": "O Dia TV (450p)",
       "logo": "https://i.imgur.com/1LUbAVP.png",
       "category": "General",
       "source": "iptv-org",
@@ -1956,7 +1956,7 @@
     },
     {
       "id": "RedeTVMais.br@SD",
-      "name": "Rede TV! Mais",
+      "name": "Rede TV! Mais (720p)",
       "logo": "https://i.ibb.co/F0Tm2WP/2103f4c07b851d64b4c96955765a9a95.png",
       "category": "General",
       "source": "iptv-org",
@@ -1976,7 +1976,7 @@
       "logo": "https://i.imgur.com/mP1qfp2.png",
       "category": "Religious",
       "source": "iptv-org",
-      "url": "http://168.197.104.22/REDE_VIDA/index.m3u8"
+      "url": "http://46.151.196.223:14244"
     },
     {
       "id": "RedeTVParana.br@SD",
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "SBTCuiaba.br@SD",
-      "name": "SBT Cuiaba",
+      "name": "SBT Cuiaba (818p)",
       "logo": "https://i.imgur.com/EZJWQ3i.png",
       "category": "General",
       "source": "iptv-org",
@@ -2052,7 +2052,7 @@
     },
     {
       "id": "SBTNovaMutum.br@SD",
-      "name": "SBT Nova Mutum",
+      "name": "SBT Nova Mutum (818p)",
       "logo": "https://upload.wikimedia.org/wikipedia/pt/d/d0/Logotipo_do_SBT_Nova_Mutum.png",
       "category": "Undefined",
       "source": "iptv-org",
@@ -2060,7 +2060,7 @@
     },
     {
       "id": "SBTRondonopolis.br@SD",
-      "name": "SBT Rondonopolis",
+      "name": "SBT Rondonopolis (720p)",
       "logo": "https://upload.wikimedia.org/wikipedia/pt/d/d5/Logotipo_do_SBT_Rondon%C3%B3polis.png",
       "category": "Undefined",
       "source": "iptv-org",
@@ -2240,7 +2240,7 @@
       "logo": "https://i.imgur.com/BHYWG0h.png",
       "category": "Movies",
       "source": "iptv-org",
-      "url": "http://46.151.196.223:14326/"
+      "url": "http://46.151.196.223:14326"
     },
     {
       "id": "TerraViva.br@SD",
@@ -2340,7 +2340,7 @@
     },
     {
       "id": "TVACritica.br@SD",
-      "name": "TV A Critica",
+      "name": "TV A Critica (1080p)",
       "logo": "https://i.imgur.com/j51rBro.png",
       "category": "Undefined",
       "source": "iptv-org",
@@ -2672,7 +2672,7 @@
       "logo": "",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://79.127.238.228:14173/"
+      "url": "http://79.127.238.228:14173"
     },
     {
       "id": "TVGloboSaoPaulo.br@SD",
