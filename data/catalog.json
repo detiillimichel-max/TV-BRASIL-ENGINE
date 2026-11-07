@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-06T13:30:37.797563+00:00",
+  "updated_at": "2026-11-07T12:11:03.627495+00:00",
   "total_channels": 398,
   "channels": [
     {
@@ -1004,11 +1004,11 @@
     },
     {
       "id": "MCMPop.fr@SD",
-      "name": "MCM Pop (580p)",
+      "name": "MCM Pop",
       "logo": "https://i.imgur.com/j31lBL7.png",
       "category": "Music",
       "source": "iptv-org",
-      "url": "http://188.115.15.121:8000/play/a014"
+      "url": "http://176.65.153.78:8201/play/a070/index.m3u8"
     },
     {
       "id": "MCMTop.fr@SD",

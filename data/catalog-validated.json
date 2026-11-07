@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-06T13:32:03.565826+00:00",
-  "total_channels": 279,
+  "updated_at": "2026-11-07T12:12:30.277077+00:00",
+  "total_channels": 283,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -11,6 +11,17 @@
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "1001Noites.br@SD",
+      "name": "1001 Noites (480p)",
+      "logo": "https://i.imgur.com/dWA9y2J.png",
+      "category": "Shop",
+      "source": "iptv-org",
+      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -355,6 +366,39 @@
       "format": "hls"
     },
     {
+      "id": "CatveFM.br@SD",
+      "name": "Catve FM (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/w89yw36.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "CatveMasterTV.br@SD",
+      "name": "Catve Master TV (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/4m7Iazm.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "Catve2.br@SD",
+      "name": "Catve2 (720p)",
+      "logo": "https://i.imgur.com/qiVfsfB.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "CazeTV.br@SD",
       "name": "CazeTV (1080p)",
       "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Caz%C3%A9TV_logo.svg/1280px-Caz%C3%A9TV_logo.svg.png",
@@ -471,17 +515,6 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "https://adylnet.streampool.net/10324/live/hls/Conecta/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "ConecTVBrasil.br@SD",
-      "name": "ConecTV Brasil (720p)",
-      "logo": "https://i.imgur.com/XN6jjMR.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -938,6 +971,17 @@
       "format": "hls"
     },
     {
+      "id": "MCMPop.fr@SD",
+      "name": "MCM Pop",
+      "logo": "https://i.imgur.com/j31lBL7.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
       "id": "MCMTop.fr@SD",
       "name": "MCM Top (France)",
       "logo": "https://i.imgur.com/EVtWQLd.png",
@@ -1298,6 +1342,17 @@
       "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "PlenaTV.br@SD",
+      "name": "Plena TV (720p)",
+      "logo": "https://i.imgur.com/lH4RT7b.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2001,7 +2056,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2181,6 +2236,17 @@
       "format": "hls"
     },
     {
+      "id": "SOUTV.br@SD",
+      "name": "SOU TV",
+      "logo": "https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
       "id": "SouthParkColecaoCartman.us@BR",
       "name": "South Park: Colecao Cartman",
       "logo": "https://images.pluto.tv/channels/65df71008b24c80008f04281/colorLogoPNG.png",
@@ -2277,17 +2343,6 @@
       "url": "https://live.tcm10.com.br/tcm10hd/stream.m3u8",
       "validation": "media_detected",
       "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TELE6.bo@SD",
-      "name": "TELE 6 (720p)",
-      "logo": "https://i.imgur.com/p7tt72X.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2430,7 +2485,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2452,7 +2507,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvalianca/tvalianca/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2478,17 +2533,6 @@
       "format": "hls"
     },
     {
-      "id": "TVArapuan.br@SD",
-      "name": "TV Arapuan (720p)",
-      "logo": "https://i.imgur.com/3395A2h.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVBahia.br@HD",
       "name": "TV Bahia (1080i)",
       "logo": "https://i.imgur.com/sJOrvHg.png",
@@ -2506,6 +2550,17 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://45.162.64.114/TV_BRASIL/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVBrasilOeste.br@SD",
+      "name": "TV Brasil Oeste (720p)",
+      "logo": "https://i.imgur.com/noqGfuy.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2572,17 +2627,6 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVComunitaria.br@SD",
-      "name": "TV Comunitaria (360p)",
-      "logo": "https://i.imgur.com/uxefHY3.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2793,7 +2837,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2885,28 +2929,6 @@
       "format": "hls"
     },
     {
-      "id": "TVSimCachoeiro.br@SD",
-      "name": "TV Sim Cachoeiro (720p)",
-      "logo": "https://i.imgur.com/t5oUK3C.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVTerceiroAnjo.br@SD",
-      "name": "TV Terceiro Anjo (360p)",
-      "logo": "https://i.imgur.com/PExKWNv.png",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "TVUFOP.br@HD",
       "name": "TV UFOP (1080p)",
       "logo": "https://raw.githubusercontent.com/daniloroxette/tvufop/refs/heads/main/images/tvufop_logo.png",
@@ -2984,6 +3006,28 @@
       "format": "hls"
     },
     {
+      "id": "TVEBahia.br@SD",
+      "name": "TVE Bahia (1080p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/960px-TVE_Bahia_logo.svg.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVERS.br@SD",
+      "name": "TVE RS (1080p)",
+      "logo": "https://i.imgur.com/MQ6lJpS.png",
+      "category": "Culture;Education",
+      "source": "iptv-org",
+      "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVideoNews.br@SD",
       "name": "TVideoNews (720p) [Not 24/7]",
       "logo": "https://i.imgur.com/vstHOYx.png",
@@ -2991,7 +3035,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvideonews/tvideonews/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {

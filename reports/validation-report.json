@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-06T13:32:03.565826+00:00",
+  "updated_at": "2026-11-07T12:12:30.277077+00:00",
   "total_tested": 398,
-  "total_media_detected": 279,
+  "total_media_detected": 283,
   "results": {
-    "media_detected": 279,
-    "unavailable": 94,
-    "blocked": 24,
+    "media_detected": 283,
+    "unavailable": 91,
+    "blocked": 23,
     "unknown": 1
   },
   "channels": [
@@ -27,9 +27,9 @@
       "category": "Shop",
       "source": "iptv-org",
       "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "AELatinAmerica.us@Brazil",
@@ -588,9 +588,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CatveMasterTV.br@SD",
@@ -599,9 +599,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "Catve2.br@SD",
@@ -610,9 +610,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CazeTV.br@SD",
@@ -764,9 +764,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "ConexaoTV.br@SD",
@@ -1386,14 +1386,14 @@
     },
     {
       "id": "MCMPop.fr@SD",
-      "name": "MCM Pop (580p)",
+      "name": "MCM Pop",
       "logo": "https://i.imgur.com/j31lBL7.png",
       "category": "Music",
       "source": "iptv-org",
-      "url": "http://188.115.15.121:8000/play/a014",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "MCMTop.fr@SD",
@@ -1414,7 +1414,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/mkkwebtv/mkkwebtv/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": 404,
+      "http_status": 502,
       "format": null
     },
     {
@@ -1798,9 +1798,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "PlenitudeTV.br@SD",
@@ -2690,7 +2690,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/websptv/websptv/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2942,9 +2942,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video10.logicahost.com.br/soutv/soutv/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "SouthParkColecaoCartman.us@BR",
@@ -3074,9 +3074,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TelecineAction.br@SD",
@@ -3240,7 +3240,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -3273,7 +3273,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvalianca/tvalianca/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -3305,9 +3305,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3371,9 +3371,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3492,9 +3492,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVCultura.br@SD",
@@ -3889,7 +3889,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -4020,9 +4020,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4075,9 +4075,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVThathi.br@SD",
@@ -4196,9 +4196,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVERS.br@SD",
@@ -4207,9 +4207,9 @@
       "category": "Culture;Education",
       "source": "iptv-org",
       "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVideoNews.br@SD",
@@ -4219,7 +4219,7 @@
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvideonews/tvideonews/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
