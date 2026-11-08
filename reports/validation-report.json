@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-07T12:12:30.277077+00:00",
-  "total_tested": 398,
+  "updated_at": "2026-11-08T12:32:51.294636+00:00",
+  "total_tested": 402,
   "total_media_detected": 283,
   "results": {
     "media_detected": 283,
-    "unavailable": 91,
-    "blocked": 23,
+    "unavailable": 94,
+    "blocked": 24,
     "unknown": 1
   },
   "channels": [
@@ -27,9 +27,9 @@
       "category": "Shop",
       "source": "iptv-org",
       "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "AELatinAmerica.us@Brazil",
@@ -225,9 +225,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://170.83.16.50/AXN/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "BabyFirst.us@Brazil",
@@ -764,9 +764,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ConexaoTV.br@SD",
@@ -1248,9 +1248,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "KenanKel.us@BR",
@@ -1336,9 +1336,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://170.83.16.50/LIFETIME/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "Loading.br@SD",
@@ -1798,9 +1798,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "PlenitudeTV.br@SD",
@@ -2381,9 +2381,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "http://200.194.238.229:8383/live/primer/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "ProntosocorroHistoriasDeEmergencia.us@Brazil",
@@ -2920,9 +2920,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "SonyMovies.br@SD",
@@ -3088,6 +3088,50 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "mpegts"
+    },
+    {
+      "id": "TelecineCult.br@SD",
+      "name": "Telecine Cult",
+      "logo": "https://i.imgur.com/6GuHXnr.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/64/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecineFun.br@SD",
+      "name": "Telecine Fun",
+      "logo": "https://i.imgur.com/MO2Ynki.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/63/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecinePremium.br@SD",
+      "name": "Telecine Premium",
+      "logo": "https://i.imgur.com/uVFgIr8.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/28/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecineTouch.br@SD",
+      "name": "Telecine Touch",
+      "logo": "https://i.imgur.com/Nky0hRo.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/29/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TerraViva.br@SD",
@@ -3305,9 +3349,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3371,9 +3415,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3492,9 +3536,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVCultura.br@SD",
@@ -4075,9 +4119,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVThathi.br@SD",

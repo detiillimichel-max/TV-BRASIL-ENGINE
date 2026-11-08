@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-07T12:12:30.277077+00:00",
+  "updated_at": "2026-11-08T12:32:51.294636+00:00",
   "total_channels": 283,
   "channels": [
     {
@@ -11,17 +11,6 @@
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
       "validation": "media_detected",
       "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "1001Noites.br@SD",
-      "name": "1001 Noites (480p)",
-      "logo": "https://i.imgur.com/dWA9y2J.png",
-      "category": "Shop",
-      "source": "iptv-org",
-      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
       "format": "hls"
     },
     {
@@ -174,17 +163,6 @@
       "category": "Classic;Series",
       "source": "iptv-org",
       "url": "https://awtv.nuvemplay.live/hls/stream.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "AXN.br@SD",
-      "name": "AXN (Brazil) (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
-      "category": "Movies",
-      "source": "iptv-org",
-      "url": "http://170.83.16.50/AXN/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -520,6 +498,17 @@
       "format": "hls"
     },
     {
+      "id": "ConecTVBrasil.br@SD",
+      "name": "ConecTV Brasil (720p)",
+      "logo": "https://i.imgur.com/XN6jjMR.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://stream01.msolutionbrasil.com.br/hls/conectv/live.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "ConexaoTV.br@SD",
       "name": "Conexao TV (720p)",
       "logo": "https://i.imgur.com/CJ9SPsZ.png",
@@ -850,17 +839,6 @@
       "format": "hls"
     },
     {
-      "id": "JovemPanNews.br@SD",
-      "name": "Jovem Pan News (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/960px-Jovem_Pan_logo_2018.svg.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "KenanKel.us@BR",
       "name": "Kenan & Kel BR",
       "logo": "https://images.pluto.tv/channels/5ffcc5130fd98c0007f2e216/colorLogoPNG.png",
@@ -911,17 +889,6 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "LifetimeLatinAmerica.us@Brazil",
-      "name": "Lifetime Latin America Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://170.83.16.50/LIFETIME/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -1342,17 +1309,6 @@
       "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "PlenaTV.br@SD",
-      "name": "Plena TV (720p)",
-      "logo": "https://i.imgur.com/lH4RT7b.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
       "format": "hls"
     },
     {
@@ -1906,17 +1862,6 @@
       "format": "hls"
     },
     {
-      "id": "PrimerTV.br@SD",
-      "name": "Primer TV (1080p)",
-      "logo": "https://i.imgur.com/PMptSP3.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "http://200.194.238.229:8383/live/primer/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "ProntosocorroHistoriasDeEmergencia.us@Brazil",
       "name": "Pronto-socorro: Historias De Emergencia",
       "logo": "https://i.imgur.com/0PkyJ3U.png",
@@ -2214,17 +2159,6 @@
       "format": "hls"
     },
     {
-      "id": "SonyChannel.br@SD",
-      "name": "Sony Channel (Brazil) (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/960px-Sony_Channel_Logo.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "SonyMovies.br@SD",
       "name": "Sony Movies (Brazil) (720p)",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png",
@@ -2355,6 +2289,50 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "mpegts"
+    },
+    {
+      "id": "TelecineCult.br@SD",
+      "name": "Telecine Cult",
+      "logo": "https://i.imgur.com/6GuHXnr.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/64/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecineFun.br@SD",
+      "name": "Telecine Fun",
+      "logo": "https://i.imgur.com/MO2Ynki.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/63/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecinePremium.br@SD",
+      "name": "Telecine Premium",
+      "logo": "https://i.imgur.com/uVFgIr8.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/28/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecineTouch.br@SD",
+      "name": "Telecine Touch",
+      "logo": "https://i.imgur.com/Nky0hRo.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/29/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TerraViva.br@SD",
@@ -2533,6 +2511,17 @@
       "format": "hls"
     },
     {
+      "id": "TVArapuan.br@SD",
+      "name": "TV Arapuan (720p)",
+      "logo": "https://i.imgur.com/3395A2h.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVBahia.br@HD",
       "name": "TV Bahia (1080i)",
       "logo": "https://i.imgur.com/sJOrvHg.png",
@@ -2550,17 +2539,6 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://45.162.64.114/TV_BRASIL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "logo": "https://i.imgur.com/noqGfuy.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2627,6 +2605,17 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVComunitaria.br@SD",
+      "name": "TV Comunitaria (360p)",
+      "logo": "https://i.imgur.com/uxefHY3.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2926,6 +2915,17 @@
       "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVTerceiroAnjo.br@SD",
+      "name": "TV Terceiro Anjo (360p)",
+      "logo": "https://i.imgur.com/PExKWNv.png",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
