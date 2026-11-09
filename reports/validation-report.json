@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-08T12:32:51.294636+00:00",
+  "updated_at": "2026-11-09T14:50:23.394365+00:00",
   "total_tested": 402,
-  "total_media_detected": 283,
+  "total_media_detected": 291,
   "results": {
-    "media_detected": 283,
-    "unavailable": 94,
-    "blocked": 24,
+    "media_detected": 291,
+    "unavailable": 87,
+    "blocked": 23,
     "unknown": 1
   },
   "channels": [
@@ -225,9 +225,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://170.83.16.50/AXN/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "BabyFirst.us@Brazil",
@@ -1248,9 +1248,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "KenanKel.us@BR",
@@ -1270,9 +1270,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "KuriakosKids.pt@SD",
@@ -1336,9 +1336,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://170.83.16.50/LIFETIME/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "Loading.br@SD",
@@ -1777,7 +1777,7 @@
       "source": "iptv-org",
       "url": "https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -1798,9 +1798,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "PlenitudeTV.br@SD",
@@ -2381,9 +2381,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "http://200.194.238.229:8383/live/primer/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ProntosocorroHistoriasDeEmergencia.us@Brazil",
@@ -2920,9 +2920,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "SonyMovies.br@SD",
@@ -3075,7 +3075,7 @@
       "source": "iptv-org",
       "url": "https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": 404,
+      "http_status": null,
       "format": null
     },
     {
@@ -3283,9 +3283,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVAdorar.br@SD",
@@ -3415,9 +3415,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -4064,9 +4064,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4075,9 +4075,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSolComunidade.br@SD",
@@ -4097,9 +4097,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVSuldeMinas.br@SD",

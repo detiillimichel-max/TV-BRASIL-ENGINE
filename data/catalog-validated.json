@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-08T12:32:51.294636+00:00",
-  "total_channels": 283,
+  "updated_at": "2026-11-09T14:50:23.394365+00:00",
+  "total_channels": 291,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -163,6 +163,17 @@
       "category": "Classic;Series",
       "source": "iptv-org",
       "url": "https://awtv.nuvemplay.live/hls/stream.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "AXN.br@SD",
+      "name": "AXN (Brazil) (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/AXN/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -839,23 +850,23 @@
       "format": "hls"
     },
     {
+      "id": "JovemPanNews.br@SD",
+      "name": "Jovem Pan News (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/960px-Jovem_Pan_logo_2018.svg.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "KenanKel.us@BR",
       "name": "Kenan & Kel BR",
       "logo": "https://images.pluto.tv/channels/5ffcc5130fd98c0007f2e216/colorLogoPNG.png",
       "category": "Series",
       "source": "iptv-org",
       "url": "https://jmp2.uk/plu-5ffcc5130fd98c0007f2e216.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "KpopTVPlay.br@SD",
-      "name": "KpopTV Play (576p)",
-      "logo": "https://i.imgur.com/Tf0vweF.png",
-      "category": "Music",
-      "source": "iptv-org",
-      "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -889,6 +900,17 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "https://a.cdni.live/rodrigo2364/rodrigo2364/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "LifetimeLatinAmerica.us@Brazil",
+      "name": "Lifetime Latin America Brazil (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/LIFETIME/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -1297,7 +1319,7 @@
       "source": "iptv-org",
       "url": "https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 206,
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -1309,6 +1331,17 @@
       "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "PlenaTV.br@SD",
+      "name": "Plena TV (720p)",
+      "logo": "https://i.imgur.com/lH4RT7b.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -1862,6 +1895,17 @@
       "format": "hls"
     },
     {
+      "id": "PrimerTV.br@SD",
+      "name": "Primer TV (1080p)",
+      "logo": "https://i.imgur.com/PMptSP3.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "http://200.194.238.229:8383/live/primer/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "ProntosocorroHistoriasDeEmergencia.us@Brazil",
       "name": "Pronto-socorro: Historias De Emergencia",
       "logo": "https://i.imgur.com/0PkyJ3U.png",
@@ -2156,6 +2200,17 @@
       "url": "https://jmp2.uk/plu-6298bd10d88ef000073f16b7.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "SonyChannel.br@SD",
+      "name": "Sony Channel (Brazil) (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/960px-Sony_Channel_Logo.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -2456,17 +2511,6 @@
       "format": "hls"
     },
     {
-      "id": "TVAFolha.br@SD",
-      "name": "TV A Folha (720p)",
-      "logo": "https://i.imgur.com/I7XGMhj.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "TVAldeia.br@SD",
       "name": "TV Aldeia (720p)",
       "logo": "https://i.imgur.com/rsfnv4Z.png",
@@ -2539,6 +2583,17 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://45.162.64.114/TV_BRASIL/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVBrasilOeste.br@SD",
+      "name": "TV Brasil Oeste (720p)",
+      "logo": "https://i.imgur.com/noqGfuy.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2915,6 +2970,39 @@
       "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVSimCachoeiro.br@SD",
+      "name": "TV Sim Cachoeiro (720p)",
+      "logo": "https://i.imgur.com/t5oUK3C.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVSimSaoMateus.br@SD",
+      "name": "TV Sim Sao Mateus (720p)",
+      "logo": "https://i.imgur.com/t5oUK3C.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVSulBahia.br@SD",
+      "name": "TV Sul Bahia (320p)",
+      "logo": "https://i.imgur.com/qM6nMWm.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
