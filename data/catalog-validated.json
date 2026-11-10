@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-09T14:50:23.394365+00:00",
-  "total_channels": 291,
+  "updated_at": "2026-11-10T14:03:11.892896+00:00",
+  "total_channels": 258,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -11,6 +11,17 @@
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "1001Noites.br@SD",
+      "name": "1001 Noites (480p)",
+      "logo": "https://i.imgur.com/dWA9y2J.png",
+      "category": "Shop",
+      "source": "iptv-org",
+      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -44,39 +55,6 @@
       "url": "https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "AdultSwimLatinAmerica.us@Brazil",
-      "name": "Adult Swim Latin America Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/ADULT_SWIM/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "AgroCanal.br@SD",
-      "name": "AgroCanal (720p)",
-      "logo": "https://i.imgur.com/5XyopHf.png",
-      "category": "Education;Outdoor",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/AGRO_CANAL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "AgroMais.br@SD",
-      "name": "AgroMais (720p)",
-      "logo": "https://i.imgur.com/sFcOZeo.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/AGROMAIS/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -132,17 +110,6 @@
       "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "Arte1.br@SD",
-      "name": "Arte 1 (720p)",
-      "logo": "https://i.imgur.com/Ivnk7A6.png",
-      "category": "Culture",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/ARTE1/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -256,28 +223,6 @@
       "format": "hls"
     },
     {
-      "id": "CanaldoBoi.br@SD",
-      "name": "Canal do Boi (720p)",
-      "logo": "https://i.imgur.com/pVM5MhS.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/CANAL_DO_BOI/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "CanalEducacao.br@SD",
-      "name": "Canal Educacao (720p)",
-      "logo": "https://i.imgur.com/OOB7nrS.png",
-      "category": "Education",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/CANAL_EDUCACAO/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "CanalFDR.br@SD",
       "name": "Canal FDR (1080p)",
       "logo": "https://i.imgur.com/7SE4CkE.png",
@@ -286,17 +231,6 @@
       "url": "https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "CanalFutura.br@SD",
-      "name": "Canal Futura (720p)",
-      "logo": "https://i.imgur.com/LgynEBC.png",
-      "category": "Education",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/FUTURA/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -341,17 +275,6 @@
       "url": "https://video24.mais.uol.com.br/live/6146.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
-      "category": "Animation;Kids",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/CARTOON_NETWORK/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -586,17 +509,6 @@
       "format": "hls"
     },
     {
-      "id": "DiscoveryChannelLatinAmerica.us@Brazil",
-      "name": "Discovery Channel Latin America Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "DiscoveryKidsLatinAmerica.us@Brazil",
       "name": "Discovery Kids Latin America Brazil (720p) [Geo-blocked]",
       "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png",
@@ -614,28 +526,6 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "DumDum.br@SD",
-      "name": "DumDum (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg",
-      "category": "Kids",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/ZOOMOO_KIDS/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "ElyTV.br@SD",
-      "name": "ElyTV (360p)",
-      "logo": "https://i.imgur.com/1eHNe91.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -715,17 +605,6 @@
       "url": "https://jmp2.uk/plu-5f171d3442a0500007362f22.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "FonteTV.br@SD",
-      "name": "Fonte TV",
-      "logo": "https://i.imgur.com/7q2BmNc.png",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -955,17 +834,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://play.mbcbrasil.tv.br/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "MCMPop.fr@SD",
-      "name": "MCM Pop",
-      "logo": "https://i.imgur.com/j31lBL7.png",
-      "category": "Music",
-      "source": "iptv-org",
-      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -1224,17 +1092,6 @@
       "format": "hls"
     },
     {
-      "id": "NovoTempo.br@SD",
-      "name": "Novo Tempo (720p)",
-      "logo": "",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/NOVO_TEMPO/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "NTV.br@SD",
       "name": "NTV (Brazil) (720p)",
       "logo": "https://i.imgur.com/n79nkVC.png",
@@ -1320,17 +1177,6 @@
       "url": "https://video04.logicahost.com.br/petloverstv/petloverstv/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "PlayTV.br@SD",
-      "name": "Play TV (Brazil) (720p)",
-      "logo": "https://i.imgur.com/Ikrj3lk.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -1928,17 +1774,6 @@
       "format": "hls"
     },
     {
-      "id": "RecordNews.br@SD",
-      "name": "Record News (720p)",
-      "logo": "https://i.imgur.com/HZDRG0K.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/RECORD_NEWS/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "RecordTVInteriorSP.br@SD",
       "name": "RecordTV Interior SP",
       "logo": "https://i.imgur.com/VcHy0fu.png",
@@ -1967,17 +1802,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://redebrasil.nuvemplay.live/hls/stream.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "RedeCNTRiodeJaneiro.br@SD",
-      "name": "Rede CNT Rio de Janeiro (720p)",
-      "logo": "https://i.imgur.com/jcasAmw.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/CNT/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2027,17 +1851,6 @@
       "format": "hls"
     },
     {
-      "id": "RedeSeculo21.br@SD",
-      "name": "Rede Seculo 21 (720p)",
-      "logo": "",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/REDE_SECULO_21/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "RedeSPTV.br@SD",
       "name": "Rede SPTV (360p)",
       "logo": "https://i.imgur.com/kh3LGAP.png",
@@ -2057,17 +1870,6 @@
       "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "RedeTV.br@SD",
-      "name": "Rede TV! SD (720p)",
-      "logo": "https://i.imgur.com/ZJgD38F.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/REDE_TV/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -2115,17 +1917,6 @@
       "format": "hls"
     },
     {
-      "id": "SBTCuiaba.br@SD",
-      "name": "SBT Cuiaba (818p)",
-      "logo": "https://i.imgur.com/EZJWQ3i.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://video09.logicahost.com.br/sbtcuiaba/sbtcuiaba/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "SBTInterior.br@SD",
       "name": "SBT Interior (720p)",
       "logo": "https://i.imgur.com/IkZfa4j.png",
@@ -2170,17 +1961,6 @@
       "format": "hls"
     },
     {
-      "id": "SBTRondonopolis.br@SD",
-      "name": "SBT Rondonopolis (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/pt/d/d5/Logotipo_do_SBT_Rondon%C3%B3polis.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "https://video09.logicahost.com.br/sbtroo/sbtroo/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "SICTV.br@SD",
       "name": "SIC TV (720p)",
       "logo": "https://i.imgur.com/mHxQyB2.png",
@@ -2209,17 +1989,6 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://170.83.16.50/SONY_CHANNEL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "SonyMovies.br@SD",
-      "name": "Sony Movies (Brazil) (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png",
-      "category": "Movies",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/SONY_MOVIES/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2390,17 +2159,6 @@
       "format": "hls"
     },
     {
-      "id": "TerraViva.br@SD",
-      "name": "Terra Viva (720p)",
-      "logo": "https://i.imgur.com/wnYsE3O.png",
-      "category": "Outdoor",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TERRAVIVA/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "ThePetCollective.us@Brazil",
       "name": "The Pet Collective Brazil (720p)",
       "logo": "https://i.imgur.com/yH7n2dF.png",
@@ -2456,17 +2214,6 @@
       "format": "hls"
     },
     {
-      "id": "TNTNovelas.us@Brazil",
-      "name": "TNT Novelas Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png",
-      "category": "Series",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TNT_NOVELAS/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "Tokusato.us@Brazil",
       "name": "Tokusato",
       "logo": "https://i.imgur.com/tWpjXtl.png",
@@ -2511,6 +2258,17 @@
       "format": "hls"
     },
     {
+      "id": "TVAFolha.br@SD",
+      "name": "TV A Folha (720p)",
+      "logo": "https://i.imgur.com/I7XGMhj.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
       "id": "TVAldeia.br@SD",
       "name": "TV Aldeia (720p)",
       "logo": "https://i.imgur.com/rsfnv4Z.png",
@@ -2544,17 +2302,6 @@
       "format": "hls"
     },
     {
-      "id": "TVAparecida.br@SD",
-      "name": "TV Aparecida (720p)",
-      "logo": "https://i.imgur.com/kxrja0X.png",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_APARECIDA/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVArapuan.br@SD",
       "name": "TV Arapuan (720p)",
       "logo": "https://i.imgur.com/3395A2h.png",
@@ -2572,28 +2319,6 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVBrasil.br@SD",
-      "name": "TV Brasil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_BRASIL/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "logo": "https://i.imgur.com/noqGfuy.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2632,17 +2357,6 @@
       "format": "hls"
     },
     {
-      "id": "TVCancaoNova.br@SD",
-      "name": "TV Cancao Nova (720p)",
-      "logo": "https://i.imgur.com/OaM9hkH.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/CANCAO_NOVA/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVCidadeVerdeCuiaba.br@SD",
       "name": "TV Cidade Verde Cuiaba",
       "logo": "https://i.imgur.com/e67h04h.png",
@@ -2676,17 +2390,6 @@
       "format": "hls"
     },
     {
-      "id": "TVCultura.br@SD",
-      "name": "TV Cultura (720p)",
-      "logo": "https://i.ibb.co/nm0jXMM/cultura-3x.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_CULTURA/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVCuruca.br@SD",
       "name": "TV Curuca (360p)",
       "logo": "https://i.imgur.com/JdCKNZ4.png",
@@ -2709,34 +2412,12 @@
       "format": "hls"
     },
     {
-      "id": "TVEvangelizar.br@SD",
-      "name": "TV Evangelizar (720p)",
-      "logo": "https://i.imgur.com/IrYR7Kp.png",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/EVANGELIZAR/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVFronteira.br@SD",
       "name": "TV Fronteira (480i)",
       "logo": "https://i.imgur.com/NtcoW6G.png",
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVGazeta.br@SD",
-      "name": "TV Gazeta (720p)",
-      "logo": "https://i.imgur.com/0sksWse.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_GAZETA/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2781,17 +2462,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVJustica.br@SD",
-      "name": "TV Justica (720p)",
-      "logo": "https://i.imgur.com/rOQKiMO.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_JUSTICA/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2885,17 +2555,6 @@
       "format": "hls"
     },
     {
-      "id": "TVPaiEterno.br@SD",
-      "name": "TV Pai Eterno (720p)",
-      "logo": "https://i.imgur.com/iuoXchN.png",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_PAI_ETERNO/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVPantanalMS.br@SD",
       "name": "TV Pantanal MS (360p) [Not 24/7]",
       "logo": "https://i.imgur.com/0FOmktl.png",
@@ -2946,17 +2605,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://stmv1.voxtvhd.com.br/9030/9030/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVSenado.br@SD",
-      "name": "TV Senado (Brazil) (720p)",
-      "logo": "https://i.imgur.com/duy6waL.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_SENADO/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -3188,17 +2836,6 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "WooHoo.br@SD",
-      "name": "WooHoo (720p)",
-      "logo": "https://i.imgur.com/me622pa.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/WOOHOO/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
