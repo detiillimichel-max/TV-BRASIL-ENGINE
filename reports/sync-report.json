@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-10T14:01:48.141956+00:00",
-  "total_collected": 402,
-  "total_unique": 402,
+  "updated_at": "2026-11-11T13:19:01.431739+00:00",
+  "total_collected": 398,
+  "total_unique": 398,
   "sources": [
     {
       "source": "iptv-org",
       "status": "success",
-      "channels": 402
+      "channels": 398
     }
   ]
 }

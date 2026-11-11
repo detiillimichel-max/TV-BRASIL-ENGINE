@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-10T14:03:11.892896+00:00",
-  "total_tested": 402,
-  "total_media_detected": 258,
+  "updated_at": "2026-11-11T13:20:41.765993+00:00",
+  "total_tested": 398,
+  "total_media_detected": 275,
   "results": {
-    "media_detected": 258,
-    "unavailable": 116,
-    "blocked": 27,
+    "media_detected": 275,
+    "unavailable": 96,
+    "blocked": 26,
     "unknown": 1
   },
   "channels": [
@@ -65,17 +65,6 @@
       "format": "hls"
     },
     {
-      "id": "AdultSwimLatinAmerica.us@Brazil",
-      "name": "Adult Swim Latin America Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/ADULT_SWIM/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
-    },
-    {
       "id": "AgroBrasilTV.br@SD",
       "name": "AgroBrasil TV (720p) [Not 24/7]",
       "logo": "https://i.imgur.com/aNkP7Zd.png",
@@ -92,10 +81,10 @@
       "logo": "https://i.imgur.com/5XyopHf.png",
       "category": "Education;Outdoor",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/AGRO_CANAL/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "AgroMais.br@SD",
@@ -103,7 +92,7 @@
       "logo": "https://i.imgur.com/sFcOZeo.png",
       "category": "News",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/AGROMAIS/index.m3u8",
+      "url": "http://45.177.114.115/agromais/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -180,7 +169,7 @@
       "logo": "https://i.imgur.com/Ivnk7A6.png",
       "category": "Culture",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/ARTE1/index.m3u8",
+      "url": "http://45.177.114.115/ARTE1/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -411,10 +400,10 @@
       "logo": "https://i.imgur.com/pVM5MhS.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/CANAL_DO_BOI/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/CANAL_DO_BOI/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CanaldoCriador.br@SD",
@@ -444,7 +433,7 @@
       "logo": "https://i.imgur.com/OOB7nrS.png",
       "category": "Education",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/CANAL_EDUCACAO/index.m3u8",
+      "url": "http://45.177.114.115/CANAL_EDUCACAO/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -466,10 +455,10 @@
       "logo": "https://i.imgur.com/LgynEBC.png",
       "category": "Education",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/FUTURA/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/FUTURA/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CanalGov.br@SD",
@@ -572,14 +561,14 @@
     },
     {
       "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p)",
+      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
       "category": "Animation;Kids",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/CARTOON_NETWORK/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CatveFM.br@SD",
@@ -624,17 +613,6 @@
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
-    },
-    {
-      "id": "ChefTV.br@SD",
-      "name": "Chef TV (720p)",
-      "logo": "https://i.imgur.com/UYksTee.png",
-      "category": "Cooking",
-      "source": "iptv-org",
-      "url": "http://168.197.104.22/CHEF_TV/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 400,
-      "format": null
     },
     {
       "id": "ChromaTV.br@SD",
@@ -857,17 +835,6 @@
       "format": "hls"
     },
     {
-      "id": "DiscoveryChannelLatinAmerica.us@Brazil",
-      "name": "Discovery Channel Latin America Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/DISCOVERY_CHANNEL/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
-    },
-    {
       "id": "DiscoveryKidsLatinAmerica.us@Brazil",
       "name": "Discovery Kids Latin America Brazil (720p) [Geo-blocked]",
       "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png",
@@ -895,10 +862,10 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg",
       "category": "Kids",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/ZOOMOO_KIDS/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://186.219.52.187/zoomoo/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ElementalChannel.br@SD",
@@ -1555,10 +1522,10 @@
       "logo": "https://i.imgur.com/CDPCF2X.png",
       "category": "Music",
       "source": "iptv-org",
-      "url": "http://168.197.104.22/MUSIC/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 400,
-      "format": null
+      "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "MyTimeMovieNetwork.br@SD",
@@ -1687,10 +1654,10 @@
       "logo": "",
       "category": "Religious",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/NOVO_TEMPO/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://186.219.52.187/novo_tempo/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "NTV.br@SD",
@@ -1786,7 +1753,7 @@
       "logo": "https://i.imgur.com/Ikrj3lk.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/PLAY_TV/index.m3u8",
+      "url": "http://45.177.114.115/PLAY_TV/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -2435,7 +2402,7 @@
       "logo": "https://i.imgur.com/HZDRG0K.png",
       "category": "News",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/RECORD_NEWS/index.m3u8",
+      "url": "http://45.177.114.115/RECORD_NEWS/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -2556,10 +2523,10 @@
       "logo": "https://i.imgur.com/jcasAmw.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/CNT/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeCNTSalvador.br@SD",
@@ -2578,10 +2545,10 @@
       "logo": "https://i.imgur.com/7KVFCrQ.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://168.197.104.22/REDE_FAMILIA/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 400,
-      "format": null
+      "url": "http://186.219.52.187/rede_familia/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeGlobo.br@SD",
@@ -2677,10 +2644,10 @@
       "logo": "",
       "category": "Religious",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/REDE_SECULO_21/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://186.219.52.187/seculo21/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeSPTV.br@SD",
@@ -2710,10 +2677,10 @@
       "logo": "https://i.imgur.com/ZJgD38F.png",
       "category": "General",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/REDE_TV/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/REDE_TV/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeVida.br@SD",
@@ -2744,9 +2711,9 @@
       "category": "Classic",
       "source": "iptv-org",
       "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "RITTV.br@SD",
@@ -2930,7 +2897,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png",
       "category": "Movies",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/SONY_MOVIES/index.m3u8",
+      "url": "http://45.177.114.115/SONY_MOVIES/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -3139,7 +3106,7 @@
       "logo": "https://i.imgur.com/wnYsE3O.png",
       "category": "Outdoor",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TERRAVIVA/index.m3u8",
+      "url": "http://45.177.114.115/TERRAVIVA/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -3200,17 +3167,6 @@
       "format": "hls"
     },
     {
-      "id": "TNTNovelas.us@Brazil",
-      "name": "TNT Novelas Brazil (720p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png",
-      "category": "Series",
-      "source": "iptv-org",
-      "url": "http://45.162.64.114/TNT_NOVELAS/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
-    },
-    {
       "id": "Tokusato.us@Brazil",
       "name": "Tokusato",
       "logo": "https://i.imgur.com/tWpjXtl.png",
@@ -3238,10 +3194,10 @@
       "logo": "https://i.imgur.com/3tBJERH.png",
       "category": "Travel",
       "source": "iptv-org",
-      "url": "http://168.197.104.22/TRAVEL_BOX_BRASIL/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 400,
-      "format": null
+      "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TurmadaMonica.us@Brazil",
@@ -3337,7 +3293,7 @@
       "logo": "https://i.imgur.com/kxrja0X.png",
       "category": "Religious",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_APARECIDA/index.m3u8",
+      "url": "http://45.177.114.115/TV_APARECIDA_HD/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -3403,7 +3359,7 @@
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/TvBrasil2023.png/960px-TvBrasil2023.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_BRASIL/index.m3u8",
+      "url": "http://45.177.114.115/TV_BRASIL/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -3415,9 +3371,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3480,10 +3436,10 @@
       "logo": "https://i.imgur.com/OaM9hkH.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/CANCAO_NOVA/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/CANCAO_NOVA/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVCarioca.br@SD",
@@ -3546,7 +3502,7 @@
       "logo": "https://i.ibb.co/nm0jXMM/cultura-3x.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_CULTURA/index.m3u8",
+      "url": "http://45.177.114.115/TV_CULTURA/index.m3u8",
       "validation": "unavailable",
       "http_status": null,
       "format": null
@@ -3656,10 +3612,10 @@
       "logo": "https://i.imgur.com/IrYR7Kp.png",
       "category": "Religious",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/EVANGELIZAR/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/TV_EVANGELIZAR/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVFronteira.br@SD",
@@ -3689,10 +3645,10 @@
       "logo": "https://i.imgur.com/0sksWse.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_GAZETA/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://186.219.52.187/gazeta/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVGazin.br@SD",
@@ -3799,10 +3755,10 @@
       "logo": "https://i.imgur.com/rOQKiMO.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_JUSTICA/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/TV_JUSTICA/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVLiberdade.br@SD",
@@ -3942,10 +3898,10 @@
       "logo": "https://i.imgur.com/iuoXchN.png",
       "category": "Religious",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_PAI_ETERNO/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://186.219.52.187/pai_eterno/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVPantanalMS.br@SD",
@@ -4041,10 +3997,10 @@
       "logo": "https://i.imgur.com/duy6waL.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/TV_SENADO/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/TV_SENADO/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSeries.br@SD",
@@ -4064,9 +4020,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4097,9 +4053,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSuldeMinas.br@SD",
@@ -4426,10 +4382,10 @@
       "logo": "https://i.imgur.com/me622pa.png",
       "category": "Undefined",
       "source": "iptv-org",
-      "url": "http://45.162.64.114/WOOHOO/index.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "url": "http://170.83.16.50/WOOHOO/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     }
   ]
 }

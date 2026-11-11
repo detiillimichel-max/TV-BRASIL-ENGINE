@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-10T14:03:11.892896+00:00",
-  "total_channels": 258,
+  "updated_at": "2026-11-11T13:20:41.765993+00:00",
+  "total_channels": 275,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -55,6 +55,17 @@
       "url": "https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "AgroCanal.br@SD",
+      "name": "AgroCanal (720p)",
+      "logo": "https://i.imgur.com/5XyopHf.png",
+      "category": "Education;Outdoor",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -223,6 +234,17 @@
       "format": "hls"
     },
     {
+      "id": "CanaldoBoi.br@SD",
+      "name": "Canal do Boi (720p)",
+      "logo": "https://i.imgur.com/pVM5MhS.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/CANAL_DO_BOI/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "CanalFDR.br@SD",
       "name": "Canal FDR (1080p)",
       "logo": "https://i.imgur.com/7SE4CkE.png",
@@ -231,6 +253,17 @@
       "url": "https://v-us-01.wisestream.io/memfs/e4ade538-7924-4359-81ef-b9d4dd229e91.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "CanalFutura.br@SD",
+      "name": "Canal Futura (720p)",
+      "logo": "https://i.imgur.com/LgynEBC.png",
+      "category": "Education",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/FUTURA/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -275,6 +308,17 @@
       "url": "https://video24.mais.uol.com.br/live/6146.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "CartoonNetworkLatinAmerica.us@Brazil",
+      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -526,6 +570,17 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "DumDum.br@SD",
+      "name": "DumDum (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c0/DumDum_logo.svg",
+      "category": "Kids",
+      "source": "iptv-org",
+      "url": "http://186.219.52.187/zoomoo/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -982,6 +1037,17 @@
       "format": "hls"
     },
     {
+      "id": "MusicBoxBrazil.br@SD",
+      "name": "Music Box Brazil (720p)",
+      "logo": "https://i.imgur.com/CDPCF2X.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "MyTimeMovieNetwork.br@SD",
       "name": "MyTime Movie Network (Brazil) (720p)",
       "logo": "https://i.imgur.com/aiGQtzI.png",
@@ -1087,6 +1153,17 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://wz3.dnip.com.br:1935/novaeratv/novaeratv.sdp/live.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "NovoTempo.br@SD",
+      "name": "Novo Tempo (720p)",
+      "logo": "",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "http://186.219.52.187/novo_tempo/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -1807,6 +1884,28 @@
       "format": "hls"
     },
     {
+      "id": "RedeCNTRiodeJaneiro.br@SD",
+      "name": "Rede CNT Rio de Janeiro (720p)",
+      "logo": "https://i.imgur.com/jcasAmw.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "RedeFamilia.br@SD",
+      "name": "Rede Familia (720p)",
+      "logo": "https://i.imgur.com/7KVFCrQ.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://186.219.52.187/rede_familia/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "RedeGospel.br@SD",
       "name": "Rede Gospel (1080p)",
       "logo": "https://i.imgur.com/mttSwgO.png",
@@ -1851,6 +1950,17 @@
       "format": "hls"
     },
     {
+      "id": "RedeSeculo21.br@SD",
+      "name": "Rede Seculo 21 (720p)",
+      "logo": "",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "http://186.219.52.187/seculo21/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "RedeSPTV.br@SD",
       "name": "Rede SPTV (360p)",
       "logo": "https://i.imgur.com/kh3LGAP.png",
@@ -1873,6 +1983,17 @@
       "format": "hls"
     },
     {
+      "id": "RedeTV.br@SD",
+      "name": "Rede TV! SD (720p)",
+      "logo": "https://i.imgur.com/ZJgD38F.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/REDE_TV/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "RedeVida.br@SD",
       "name": "Rede Vida (720p)",
       "logo": "https://i.imgur.com/mP1qfp2.png",
@@ -1890,17 +2011,6 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "RetroCartoon.br@SD",
-      "name": "Retro Cartoon (720p)",
-      "logo": "https://i.imgur.com/hIlEfhl.png",
-      "category": "Classic",
-      "source": "iptv-org",
-      "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2236,6 +2346,17 @@
       "format": "hls"
     },
     {
+      "id": "TravelBoxBrazil.br@SD",
+      "name": "Travel Box Brazil (720p)",
+      "logo": "https://i.imgur.com/3tBJERH.png",
+      "category": "Travel",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TurmadaMonica.us@Brazil",
       "name": "Turma da Monica (720p)",
       "logo": "https://i.imgur.com/nrvPPrW.png",
@@ -2324,6 +2445,17 @@
       "format": "hls"
     },
     {
+      "id": "TVBrasilOeste.br@SD",
+      "name": "TV Brasil Oeste (720p)",
+      "logo": "https://i.imgur.com/noqGfuy.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVBRICSPortuguese.br@SD",
       "name": "TV BRICS Portuguese (1080p)",
       "logo": "https://i.imgur.com/vLpm8tN.png",
@@ -2354,6 +2486,17 @@
       "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "TVCancaoNova.br@SD",
+      "name": "TV Cancao Nova (720p)",
+      "logo": "https://i.imgur.com/OaM9hkH.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/CANCAO_NOVA/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -2412,12 +2555,34 @@
       "format": "hls"
     },
     {
+      "id": "TVEvangelizar.br@SD",
+      "name": "TV Evangelizar (720p)",
+      "logo": "https://i.imgur.com/IrYR7Kp.png",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/TV_EVANGELIZAR/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVFronteira.br@SD",
       "name": "TV Fronteira (480i)",
       "logo": "https://i.imgur.com/NtcoW6G.png",
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVGazeta.br@SD",
+      "name": "TV Gazeta (720p)",
+      "logo": "https://i.imgur.com/0sksWse.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://186.219.52.187/gazeta/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2462,6 +2627,17 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVJustica.br@SD",
+      "name": "TV Justica (720p)",
+      "logo": "https://i.imgur.com/rOQKiMO.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/TV_JUSTICA/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2555,6 +2731,17 @@
       "format": "hls"
     },
     {
+      "id": "TVPaiEterno.br@SD",
+      "name": "TV Pai Eterno (720p)",
+      "logo": "https://i.imgur.com/iuoXchN.png",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "http://186.219.52.187/pai_eterno/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVPantanalMS.br@SD",
       "name": "TV Pantanal MS (360p) [Not 24/7]",
       "logo": "https://i.imgur.com/0FOmktl.png",
@@ -2610,23 +2797,23 @@
       "format": "hls"
     },
     {
+      "id": "TVSenado.br@SD",
+      "name": "TV Senado (Brazil) (720p)",
+      "logo": "https://i.imgur.com/duy6waL.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/TV_SENADO/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVSeries.br@SD",
       "name": "TV Series (480p)",
       "logo": "https://i.imgur.com/Ff5mj0o.png",
       "category": "Series",
       "source": "iptv-org",
       "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVSimCachoeiro.br@SD",
-      "name": "TV Sim Cachoeiro (720p)",
-      "logo": "https://i.imgur.com/t5oUK3C.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2640,17 +2827,6 @@
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVSulBahia.br@SD",
-      "name": "TV Sul Bahia (320p)",
-      "logo": "https://i.imgur.com/qM6nMWm.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2836,6 +3012,17 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://gpa-vja.otteravision.com/gpa/vja/vja.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "WooHoo.br@SD",
+      "name": "WooHoo (720p)",
+      "logo": "https://i.imgur.com/me622pa.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50/WOOHOO/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
