@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-12T14:24:24.823280+00:00",
+  "updated_at": "2026-11-13T13:44:16.488425+00:00",
   "total_tested": 398,
-  "total_media_detected": 271,
+  "total_media_detected": 273,
   "results": {
-    "media_detected": 271,
-    "unavailable": 100,
-    "blocked": 26,
+    "media_detected": 273,
+    "unavailable": 97,
+    "blocked": 27,
     "unknown": 1
   },
   "channels": [
@@ -390,9 +390,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "CanaldoBoi.br@SD",
@@ -610,9 +610,9 @@
       "category": "Sports",
       "source": "iptv-org",
       "url": "http://138.204.86.4:8080/CAZE_TV/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "ChromaTV.br@SD",
@@ -3305,9 +3305,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3404,9 +3404,9 @@
       "category": "Legislative",
       "source": "iptv-org",
       "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVCamara2.br@SD",
@@ -3855,9 +3855,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVMon.br@SD",
@@ -4031,9 +4031,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSolComunidade.br@SD",
@@ -4053,9 +4053,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSuldeMinas.br@SD",
@@ -4130,9 +4130,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVVilaReal.br@SD",

@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-12T14:24:24.823280+00:00",
-  "total_channels": 271,
+  "updated_at": "2026-11-13T13:44:16.488425+00:00",
+  "total_channels": 273,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -223,6 +223,17 @@
       "format": "hls"
     },
     {
+      "id": "Canal38.br@SD",
+      "name": "Canal 38 (720p)",
+      "logo": "https://i.imgur.com/co7TCWC.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
       "id": "CanaldoBoi.br@SD",
       "name": "Canal do Boi (720p)",
       "logo": "https://i.imgur.com/pVM5MhS.png",
@@ -339,17 +350,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "CazeTV.br@SD",
-      "name": "CazeTV (1080p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Caz%C3%A9TV_logo.svg/1280px-Caz%C3%A9TV_logo.svg.png",
-      "category": "Sports",
-      "source": "iptv-org",
-      "url": "http://138.204.86.4:8080/CAZE_TV/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2412,6 +2412,17 @@
       "format": "hls"
     },
     {
+      "id": "TVArapuan.br@SD",
+      "name": "TV Arapuan (720p)",
+      "logo": "https://i.imgur.com/3395A2h.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVBahia.br@HD",
       "name": "TV Bahia (1080i)",
       "logo": "https://i.imgur.com/sJOrvHg.png",
@@ -2442,6 +2453,17 @@
       "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVCamara.br@SD",
+      "name": "TV Camara (Brazil) (1080p)",
+      "logo": "https://i.imgur.com/Sdou1Ab.png",
+      "category": "Legislative",
+      "source": "iptv-org",
+      "url": "https://stream3.camara.gov.br/tv1/manifest.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -2654,6 +2676,17 @@
       "format": "hls"
     },
     {
+      "id": "TVMetropole.br@SD",
+      "name": "TV Metropole (720p) [Not 24/7]",
+      "logo": "https://i.imgur.com/bJyjLpg.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVNatal.br@SD",
       "name": "TV Natal (1080p)",
       "logo": "https://i.imgur.com/wqQmQml.png",
@@ -2775,28 +2808,6 @@
       "format": "hls"
     },
     {
-      "id": "TVSimSaoMateus.br@SD",
-      "name": "TV Sim Sao Mateus (720p)",
-      "logo": "https://i.imgur.com/t5oUK3C.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVSulBahia.br@SD",
-      "name": "TV Sul Bahia (320p)",
-      "logo": "https://i.imgur.com/qM6nMWm.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "TVTerceiroAnjo.br@SD",
       "name": "TV Terceiro Anjo (360p)",
       "logo": "https://i.imgur.com/PExKWNv.png",
@@ -2827,6 +2838,17 @@
       "url": "https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "TVVicosa.br@SD",
+      "name": "TV Vicosa (480p)",
+      "logo": "https://i.imgur.com/TZF55f9.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
