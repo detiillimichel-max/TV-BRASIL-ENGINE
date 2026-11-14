@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-13T13:44:16.488425+00:00",
+  "updated_at": "2026-11-14T12:48:15.028219+00:00",
   "total_tested": 398,
-  "total_media_detected": 273,
+  "total_media_detected": 267,
   "results": {
-    "media_detected": 273,
-    "unavailable": 97,
-    "blocked": 27,
+    "media_detected": 267,
+    "unavailable": 101,
+    "blocked": 29,
     "unknown": 1
   },
   "channels": [
@@ -302,8 +302,8 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "https://stmv1.transmissaodigital.com/blitstv/blitstv/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
+      "validation": "blocked",
+      "http_status": 403,
       "format": null
     },
     {
@@ -863,9 +863,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://186.219.52.187/zoomoo/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "ElementalChannel.br@SD",
@@ -1380,8 +1380,8 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/mkkwebtv/mkkwebtv/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
+      "validation": "blocked",
+      "http_status": 403,
       "format": null
     },
     {
@@ -1655,9 +1655,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://186.219.52.187/novo_tempo/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "NTV.br@SD",
@@ -2546,9 +2546,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://186.219.52.187/rede_familia/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "RedeGlobo.br@SD",
@@ -2645,9 +2645,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://186.219.52.187/seculo21/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "RedeSPTV.br@SD",
@@ -3239,9 +3239,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVAdorar.br@SD",
@@ -3305,9 +3305,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3492,9 +3492,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVCultura.br@SD",
@@ -3646,9 +3646,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://186.219.52.187/gazeta/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVGazin.br@SD",
@@ -3899,9 +3899,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://186.219.52.187/pai_eterno/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVPantanalMS.br@SD",
@@ -4031,9 +4031,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSolComunidade.br@SD",
