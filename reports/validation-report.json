@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-14T12:48:15.028219+00:00",
+  "updated_at": "2026-11-15T13:15:55.506835+00:00",
   "total_tested": 398,
-  "total_media_detected": 267,
+  "total_media_detected": 270,
   "results": {
-    "media_detected": 267,
-    "unavailable": 101,
+    "media_detected": 270,
+    "unavailable": 98,
     "blocked": 29,
     "unknown": 1
   },
@@ -863,9 +863,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://186.219.52.187/zoomoo/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ElementalChannel.br@SD",
@@ -1655,9 +1655,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://186.219.52.187/novo_tempo/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "NTV.br@SD",
@@ -2546,9 +2546,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://186.219.52.187/rede_familia/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeGlobo.br@SD",
@@ -2645,9 +2645,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://186.219.52.187/seculo21/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeSPTV.br@SD",
@@ -3393,9 +3393,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVCamara.br@SD",
@@ -3646,9 +3646,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://186.219.52.187/gazeta/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVGazin.br@SD",
@@ -3899,9 +3899,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://186.219.52.187/pai_eterno/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVPantanalMS.br@SD",
@@ -4020,9 +4020,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4130,9 +4130,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVVilaReal.br@SD",
