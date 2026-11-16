@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T13:15:55.506835+00:00",
+  "updated_at": "2026-11-16T14:25:41.229326+00:00",
   "total_channels": 270,
   "channels": [
     {
@@ -575,6 +575,17 @@
       "format": "hls"
     },
     {
+      "id": "ElyTV.br@SD",
+      "name": "ElyTV (360p)",
+      "logo": "https://i.imgur.com/1eHNe91.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "ESPN.br@SD",
       "name": "ESPN (Brazil) (1080p)",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png",
@@ -889,17 +900,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://play.mbcbrasil.tv.br/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "MCMTop.fr@SD",
-      "name": "MCM Top (France)",
-      "logo": "https://i.imgur.com/EVtWQLd.png",
-      "category": "Music",
-      "source": "iptv-org",
-      "url": "http://185.228.163.146:8000/play/a00g/index.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -2379,17 +2379,6 @@
       "format": "hls"
     },
     {
-      "id": "TVAFolha.br@SD",
-      "name": "TV A Folha (720p)",
-      "logo": "https://i.imgur.com/I7XGMhj.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "TVAldeia.br@SD",
       "name": "TV Aldeia (720p)",
       "logo": "https://i.imgur.com/rsfnv4Z.png",
@@ -2445,6 +2434,17 @@
       "format": "hls"
     },
     {
+      "id": "TVBrusque.br@SD",
+      "name": "TV Brusque (720p)",
+      "logo": "https://i.imgur.com/J2EAZPS.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVCamara.br@SD",
       "name": "TV Camara (Brazil) (1080p)",
       "logo": "https://i.imgur.com/Sdou1Ab.png",
@@ -2489,6 +2489,17 @@
       "format": "hls"
     },
     {
+      "id": "TVComunitaria.br@SD",
+      "name": "TV Comunitaria (360p)",
+      "logo": "https://i.imgur.com/uxefHY3.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVCuruca.br@SD",
       "name": "TV Curuca (360p)",
       "logo": "https://i.imgur.com/JdCKNZ4.png",
@@ -2517,17 +2528,6 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "http://170.83.16.50/TV_EVANGELIZAR/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVFronteira.br@SD",
-      "name": "TV Fronteira (480i)",
-      "logo": "https://i.imgur.com/NtcoW6G.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2665,17 +2665,6 @@
       "format": "hls"
     },
     {
-      "id": "TVNatal.br@SD",
-      "name": "TV Natal (1080p)",
-      "logo": "https://i.imgur.com/wqQmQml.png",
-      "category": "Entertainment;General;News",
-      "source": "iptv-org",
-      "url": "http://185.228.163.146:8000/play/a01y/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "TVPadreCicero.br@SD",
       "name": "TV Padre Cicero (720p)",
       "logo": "https://i.imgur.com/Y7b29VG.png",
@@ -2783,6 +2772,17 @@
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVSulBahia.br@SD",
+      "name": "TV Sul Bahia (320p)",
+      "logo": "https://i.imgur.com/qM6nMWm.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {

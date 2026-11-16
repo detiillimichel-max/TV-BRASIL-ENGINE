@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T13:15:55.506835+00:00",
+  "updated_at": "2026-11-16T14:25:41.229326+00:00",
   "total_tested": 398,
   "total_media_detected": 270,
   "results": {
@@ -885,9 +885,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ESPN.br@SD",
@@ -1369,9 +1369,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://185.228.163.146:8000/play/a00g/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "MKKWebTV.br@SD",
@@ -3239,9 +3239,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVAdorar.br@SD",
@@ -3306,7 +3306,7 @@
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": null,
+      "http_status": 404,
       "format": null
     },
     {
@@ -3393,9 +3393,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVCamara.br@SD",
@@ -3492,9 +3492,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVCultura.br@SD",
@@ -3624,9 +3624,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://tvfronteira.brasilstream.com.br/hls/tvfronteira/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVFuturo.br@SD",
@@ -3877,9 +3877,9 @@
       "category": "Entertainment;General;News",
       "source": "iptv-org",
       "url": "http://185.228.163.146:8000/play/a01y/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVPadreCicero.br@SD",
@@ -4053,9 +4053,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVSuldeMinas.br@SD",
