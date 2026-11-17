@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-16T14:25:41.229326+00:00",
-  "total_tested": 398,
-  "total_media_detected": 270,
+  "updated_at": "2026-11-17T15:18:37.394468+00:00",
+  "total_tested": 397,
+  "total_media_detected": 269,
   "results": {
-    "media_detected": 270,
-    "unavailable": 98,
-    "blocked": 29,
+    "media_detected": 269,
+    "unavailable": 96,
+    "blocked": 31,
     "unknown": 1
   },
   "channels": [
@@ -566,9 +566,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "CatveFM.br@SD",
@@ -602,17 +602,6 @@
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
-    },
-    {
-      "id": "CazeTV.br@SD",
-      "name": "CazeTV (1080p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/64/Caz%C3%A9TV_logo.svg/1280px-Caz%C3%A9TV_logo.svg.png",
-      "category": "Sports",
-      "source": "iptv-org",
-      "url": "http://138.204.86.4:8080/CAZE_TV/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
     },
     {
       "id": "ChromaTV.br@SD",
@@ -841,9 +830,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "DiscoveryWorld.us@Brazil",
@@ -852,9 +841,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "DumDum.br@SD",
@@ -1358,9 +1347,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "MCMTop.fr@SD",
@@ -3162,9 +3151,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -3305,9 +3294,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3371,9 +3360,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3789,9 +3778,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVMackenzie.br@SD",
@@ -4020,9 +4009,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4031,9 +4020,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSolComunidade.br@SD",
@@ -4130,9 +4119,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVVilaReal.br@SD",
