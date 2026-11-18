@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-17T15:19:13.233009+00:00",
-  "total_retry_candidates": 139,
+  "updated_at": "2026-11-18T14:54:32.894903+00:00",
+  "total_retry_candidates": 135,
   "items": [
     {
       "id": "AratuOn.br@SD",
@@ -13,12 +13,12 @@
       "retry_reason": "invalid_playlist"
     },
     {
-      "id": "BoasNovas.br@SD",
-      "name": "Boas Novas (1080p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8",
+      "id": "Canal38.br@SD",
+      "name": "Canal 38 (720p)",
+      "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "Undefined",
+      "category": "News",
       "retry_stage": "hls",
       "retry_reason": "invalid_playlist"
     },
@@ -53,26 +53,6 @@
       "retry_reason": "http_error"
     },
     {
-      "id": "PlenaTV.br@SD",
-      "name": "Plena TV (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-9591/LVW9591_PmXtgATnaS/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "News",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
-    },
-    {
-      "id": "SBTInterior.br@SD",
-      "name": "SBT Interior (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "General",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
-    },
-    {
       "id": "SBTNacional.br@SD",
       "name": "SBT Nacional (1080p)",
       "url": "https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/chunklist.m3u8",
@@ -93,22 +73,22 @@
       "retry_reason": "invalid_playlist"
     },
     {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
+      "id": "TVAFolha.br@SD",
+      "name": "TV A Folha (720p)",
+      "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "hls",
+      "category": "News",
+      "retry_stage": "hls",
+      "retry_reason": "not_found"
+    },
+    {
+      "id": "TVBRICSPortuguese.br@SD",
+      "name": "TV BRICS Portuguese (1080p)",
+      "url": "https://porbrics.mediacdn.ru/cdn/brics/portuguese/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
       "category": "General",
-      "retry_stage": "hls",
-      "retry_reason": "blocked"
-    },
-    {
-      "id": "TVZoom.br@SD",
-      "name": "TV Zoom (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-9730/LVW9730_LmUwslM8jt/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "Entertainment;News",
       "retry_stage": "hls",
       "retry_reason": "invalid_playlist"
     },
@@ -333,16 +313,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Animation;Kids",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
       "id": "Combate.br@SD",
       "name": "Combate (720p)",
       "url": "http://143.14.134.107/167/index.m3u8",
@@ -371,26 +341,6 @@
       "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
-    },
-    {
-      "id": "DiscoveryKidsLatinAmerica.us@Brazil",
-      "name": "Discovery Kids Latin America Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Kids",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
-      "id": "DiscoveryWorld.us@Brazil",
-      "name": "Discovery World Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Entertainment",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
     },
     {
       "id": "ElementalChannel.br@SD",
@@ -883,16 +833,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TNTLatinAmerica.us@Brazil",
-      "name": "TNT Latin America Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Undefined",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
       "id": "TV3Curitiba.br@SD",
       "name": "TV 3 Curitiba (720p)",
       "url": "https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8",
@@ -901,16 +841,6 @@
       "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "blocked"
-    },
-    {
-      "id": "TVAFolha.br@SD",
-      "name": "TV A Folha (720p)",
-      "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "News",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
     },
     {
       "id": "TVAdorar.br@SD",
@@ -971,6 +901,16 @@
       "category": "Undefined",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVBrasilOeste.br@SD",
+      "name": "TV Brasil Oeste (720p)",
+      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "blocked"
     },
     {
       "id": "TVCamara2.br@SD",
@@ -1173,16 +1113,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TVLitoralRN.br@SD",
-      "name": "TV Litoral RN (720p)",
-      "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
       "id": "TVMackenzie.br@SD",
       "name": "TV Mackenzie (480p)",
       "url": "https://player.internetaovivo.com:8443/live_tvmackenzieabr/tvmackenzieabr/playlist.m3u8",
@@ -1303,12 +1233,42 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "TVVicosa.br@SD",
+      "name": "TV Vicosa (480p)",
+      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Entertainment",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "TVCRio.br@SD",
       "name": "TVC-Rio",
       "url": "https://video05.logicahost.com.br/comunitariario/comunitariario/playlist.m3u8",
       "source": "iptv-org",
       "format": "",
       "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVEBahia.br@SD",
+      "name": "TVE Bahia (1080p)",
+      "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Undefined",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVERS.br@SD",
+      "name": "TVE RS (1080p)",
+      "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Culture;Education",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },

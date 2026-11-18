@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-17T15:18:37.394468+00:00",
+  "updated_at": "2026-11-18T14:54:05.849981+00:00",
   "total_tested": 397,
-  "total_media_detected": 269,
+  "total_media_detected": 271,
   "results": {
-    "media_detected": 269,
-    "unavailable": 96,
-    "blocked": 31,
+    "media_detected": 271,
+    "unavailable": 97,
+    "blocked": 28,
     "unknown": 1
   },
   "channels": [
@@ -143,7 +143,7 @@
     },
     {
       "id": "ArarunaTV.br@SD",
-      "name": "Araruna TV",
+      "name": "Araruna TV (614p)",
       "logo": "https://i.imgur.com/jl39ula.png",
       "category": "General",
       "source": "iptv-org",
@@ -528,7 +528,7 @@
     },
     {
       "id": "CanalSete.br@SD",
-      "name": "Canal Sete",
+      "name": "Canal Sete (1080p)",
       "logo": "https://i.imgur.com/0cq0BPp.png",
       "category": "General",
       "source": "iptv-org",
@@ -566,9 +566,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CatveFM.br@SD",
@@ -830,9 +830,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "DiscoveryWorld.us@Brazil",
@@ -841,9 +841,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "DumDum.br@SD",
@@ -974,7 +974,7 @@
       "source": "iptv-org",
       "url": "http://190.128.214.97:64333/play/a006/index.m3u8",
       "validation": "unavailable",
-      "http_status": 404,
+      "http_status": null,
       "format": null
     },
     {
@@ -1727,7 +1727,7 @@
     },
     {
       "id": "PetloversTV.br@SD",
-      "name": "Petlovers TV",
+      "name": "Petlovers TV (720p)",
       "logo": "https://petloverstv.com.br/storage/357/config/yqP4nOugWRxRFCmgLqXF4gRKyM9ybsAOfHgUaqPt.png",
       "category": "Entertainment",
       "source": "iptv-org",
@@ -1760,7 +1760,7 @@
     },
     {
       "id": "PlenitudeTV.br@SD",
-      "name": "Plenitude TV",
+      "name": "Plenitude TV (1080p)",
       "logo": "",
       "category": "Religious",
       "source": "iptv-org",
@@ -2684,7 +2684,7 @@
     },
     {
       "id": "RedeTVParana.br@SD",
-      "name": "RedeTV! Parana",
+      "name": "RedeTV! Parana (1080p)",
       "logo": "https://i.imgur.com/D8R0Af4.png",
       "category": "Undefined",
       "source": "iptv-org",
@@ -2893,7 +2893,7 @@
     },
     {
       "id": "SOUTV.br@SD",
-      "name": "SOU TV",
+      "name": "SOU TV (720p)",
       "logo": "https://i.ibb.co/8cKmCNm/ezgif-com-gif-maker.png",
       "category": "General",
       "source": "iptv-org",
@@ -3151,9 +3151,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -3228,9 +3228,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVAdorar.br@SD",
@@ -3360,9 +3360,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3778,9 +3778,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVMackenzie.br@SD",
@@ -4119,9 +4119,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVVilaReal.br@SD",
@@ -4185,9 +4185,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVERS.br@SD",
@@ -4196,9 +4196,9 @@
       "category": "Culture;Education",
       "source": "iptv-org",
       "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVideoNews.br@SD",
