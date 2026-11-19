@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-18T14:54:05.849981+00:00",
+  "updated_at": "2026-11-19T15:00:03.694458+00:00",
   "total_tested": 397,
-  "total_media_detected": 271,
+  "total_media_detected": 267,
   "results": {
-    "media_detected": 271,
-    "unavailable": 97,
-    "blocked": 28,
+    "media_detected": 267,
+    "unavailable": 98,
+    "blocked": 31,
     "unknown": 1
   },
   "channels": [
@@ -27,9 +27,9 @@
       "category": "Shop",
       "source": "iptv-org",
       "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "AELatinAmerica.us@Brazil",
@@ -270,7 +270,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 200,
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -566,9 +566,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "CatveFM.br@SD",
@@ -830,9 +830,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "DiscoveryWorld.us@Brazil",
@@ -841,9 +841,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "DumDum.br@SD",
@@ -974,7 +974,7 @@
       "source": "iptv-org",
       "url": "http://190.128.214.97:64333/play/a006/index.m3u8",
       "validation": "unavailable",
-      "http_status": null,
+      "http_status": 404,
       "format": null
     },
     {
@@ -1347,9 +1347,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "MCMTop.fr@SD",
@@ -3025,14 +3025,14 @@
     },
     {
       "id": "TELE6.bo@SD",
-      "name": "TELE 6 (720p)",
+      "name": "TELE 6 (1080p)",
       "logo": "https://i.imgur.com/p7tt72X.png",
       "category": "General",
       "source": "iptv-org",
-      "url": "https://lbgo.bozztv.com/ssh101/ssh101/tele6/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 502,
-      "format": null
+      "url": "https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TelecineAction.br@SD",
@@ -3151,9 +3151,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -3360,9 +3360,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -4009,9 +4009,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4042,9 +4042,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVSuldeMinas.br@SD",
@@ -4064,9 +4064,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVThathi.br@SD",
@@ -4119,9 +4119,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVVilaReal.br@SD",
@@ -4185,9 +4185,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVERS.br@SD",
@@ -4196,9 +4196,9 @@
       "category": "Culture;Education",
       "source": "iptv-org",
       "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVideoNews.br@SD",

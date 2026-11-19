@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-18T14:54:05.849981+00:00",
-  "total_channels": 271,
+  "updated_at": "2026-11-19T15:00:03.694458+00:00",
+  "total_channels": 267,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -11,17 +11,6 @@
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
       "validation": "media_detected",
       "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "1001Noites.br@SD",
-      "name": "1001 Noites (480p)",
-      "logo": "https://i.imgur.com/dWA9y2J.png",
-      "category": "Shop",
-      "source": "iptv-org",
-      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
       "format": "hls"
     },
     {
@@ -164,7 +153,7 @@
       "source": "iptv-org",
       "url": "https://video09.logicahost.com.br/bemmaistv01/bemmaistv01/playlist.m3u8",
       "validation": "media_detected",
-      "http_status": 200,
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -308,17 +297,6 @@
       "url": "https://video24.mais.uol.com.br/live/6146.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
-      "category": "Animation;Kids",
-      "source": "iptv-org",
-      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -539,28 +517,6 @@
       "url": "https://jmp2.uk/plu-61f1d27a189ed10007b7393e.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "DiscoveryKidsLatinAmerica.us@Brazil",
-      "name": "Discovery Kids Latin America Brazil (720p) [Geo-blocked]",
-      "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png",
-      "category": "Kids",
-      "source": "iptv-org",
-      "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "DiscoveryWorld.us@Brazil",
-      "name": "Discovery World Brazil (720p) [Geo-blocked]",
-      "logo": "https://i.imgur.com/yNFmUkE.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {
@@ -900,17 +856,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://play.mbcbrasil.tv.br/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "MCMPop.fr@SD",
-      "name": "MCM Pop",
-      "logo": "https://i.imgur.com/j31lBL7.png",
-      "category": "Music",
-      "source": "iptv-org",
-      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -2236,6 +2181,17 @@
       "format": "hls"
     },
     {
+      "id": "TELE6.bo@SD",
+      "name": "TELE 6 (1080p)",
+      "logo": "https://i.imgur.com/p7tt72X.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TelecineAction.br@SD",
       "name": "Telecine Action (1080p)",
       "logo": "https://i.imgur.com/BHYWG0h.png",
@@ -2322,17 +2278,6 @@
       "validation": "media_detected",
       "http_status": 200,
       "format": "mpegts"
-    },
-    {
-      "id": "TNTLatinAmerica.us@Brazil",
-      "name": "TNT Latin America Brazil (720p) [Geo-blocked]",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -2451,6 +2396,17 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://hls1.sua.tv/live/globotvbahiafhdbr2/s.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVBrasilOeste.br@SD",
+      "name": "TV Brasil Oeste (720p)",
+      "logo": "https://i.imgur.com/noqGfuy.png",
+      "category": "General",
+      "source": "iptv-org",
+      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2797,39 +2753,6 @@
       "format": "hls"
     },
     {
-      "id": "TVSimCachoeiro.br@SD",
-      "name": "TV Sim Cachoeiro (720p)",
-      "logo": "https://i.imgur.com/t5oUK3C.png",
-      "category": "News",
-      "source": "iptv-org",
-      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVSulBahia.br@SD",
-      "name": "TV Sul Bahia (320p)",
-      "logo": "https://i.imgur.com/qM6nMWm.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "https://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "TVTerceiroAnjo.br@SD",
-      "name": "TV Terceiro Anjo (360p)",
-      "logo": "https://i.imgur.com/PExKWNv.png",
-      "category": "Religious",
-      "source": "iptv-org",
-      "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
-    },
-    {
       "id": "TVUFOP.br@HD",
       "name": "TV UFOP (1080p)",
       "logo": "https://raw.githubusercontent.com/daniloroxette/tvufop/refs/heads/main/images/tvufop_logo.png",
@@ -2849,6 +2772,17 @@
       "url": "https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "TVVicosa.br@SD",
+      "name": "TV Vicosa (480p)",
+      "logo": "https://i.imgur.com/TZF55f9.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -2891,6 +2825,28 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVEBahia.br@SD",
+      "name": "TVE Bahia (1080p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/960px-TVE_Bahia_logo.svg.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVERS.br@SD",
+      "name": "TVE RS (1080p)",
+      "logo": "https://i.imgur.com/MQ6lJpS.png",
+      "category": "Culture;Education",
+      "source": "iptv-org",
+      "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
