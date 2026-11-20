@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19T15:00:03.694458+00:00",
-  "total_channels": 267,
+  "updated_at": "2026-11-20T14:42:20.670517+00:00",
+  "total_channels": 274,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -11,6 +11,17 @@
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "1001Noites.br@SD",
+      "name": "1001 Noites (480p)",
+      "logo": "https://i.imgur.com/dWA9y2J.png",
+      "category": "Shop",
+      "source": "iptv-org",
+      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {
@@ -300,6 +311,17 @@
       "format": "hls"
     },
     {
+      "id": "CartoonNetworkLatinAmerica.us@Brazil",
+      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "CatveFM.br@SD",
       "name": "Catve FM (720p) [Not 24/7]",
       "logo": "https://i.imgur.com/w89yw36.png",
@@ -517,6 +539,28 @@
       "url": "https://jmp2.uk/plu-61f1d27a189ed10007b7393e.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "DiscoveryKidsLatinAmerica.us@Brazil",
+      "name": "Discovery Kids Latin America Brazil (720p) [Geo-blocked]",
+      "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Discovery_Kids_2021_2D_sin_wordmark.svg/960px-Discovery_Kids_2021_2D_sin_wordmark.svg.png",
+      "category": "Kids",
+      "source": "iptv-org",
+      "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "DiscoveryWorld.us@Brazil",
+      "name": "Discovery World Brazil (720p) [Geo-blocked]",
+      "logo": "https://i.imgur.com/yNFmUkE.png",
+      "category": "Entertainment",
+      "source": "iptv-org",
+      "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -856,6 +900,17 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://play.mbcbrasil.tv.br/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "MCMPop.fr@SD",
+      "name": "MCM Pop",
+      "logo": "https://i.imgur.com/j31lBL7.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -2280,6 +2335,17 @@
       "format": "mpegts"
     },
     {
+      "id": "TNTLatinAmerica.us@Brazil",
+      "name": "TNT Latin America Brazil (720p) [Geo-blocked]",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "Tokusato.us@Brazil",
       "name": "Tokusato",
       "logo": "https://i.imgur.com/tWpjXtl.png",
@@ -2288,6 +2354,17 @@
       "url": "https://jmp2.uk/plu-5ff609de50ab210008025c1b.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "Tooncast.us@Brazil",
+      "name": "Tooncast Brazil (720p)",
+      "logo": "https://i.imgur.com/3yXRbQy.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50:80/TOONCAST/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -2379,17 +2456,6 @@
       "format": "hls"
     },
     {
-      "id": "TVArapuan.br@SD",
-      "name": "TV Arapuan (720p)",
-      "logo": "https://i.imgur.com/3395A2h.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVBahia.br@HD",
       "name": "TV Bahia (1080i)",
       "logo": "https://i.imgur.com/sJOrvHg.png",
@@ -2473,17 +2539,6 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://5c483b9d1019c.streamlock.net/8186/8186/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVComunitaria.br@SD",
-      "name": "TV Comunitaria (360p)",
-      "logo": "https://i.imgur.com/uxefHY3.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -2750,6 +2805,28 @@
       "url": "https://stmv1.srvif.com/tvserie/tvserie/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVSimCachoeiro.br@SD",
+      "name": "TV Sim Cachoeiro (720p)",
+      "logo": "https://i.imgur.com/t5oUK3C.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TVTerceiroAnjo.br@SD",
+      "name": "TV Terceiro Anjo (360p)",
+      "logo": "https://i.imgur.com/PExKWNv.png",
+      "category": "Religious",
+      "source": "iptv-org",
+      "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
       "format": "hls"
     },
     {

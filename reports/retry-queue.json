@@ -1,11 +1,21 @@
 {
-  "updated_at": "2026-11-19T15:00:28.192521+00:00",
-  "total_retry_candidates": 140,
+  "updated_at": "2026-11-20T14:42:49.494152+00:00",
+  "total_retry_candidates": 135,
   "items": [
     {
-      "id": "Canal38.br@SD",
-      "name": "Canal 38 (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8",
+      "id": "1001Noites.br@SD",
+      "name": "1001 Noites (480p)",
+      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+      "source": "iptv-org",
+      "format": "hls",
+      "category": "Shop",
+      "retry_stage": "hls",
+      "retry_reason": "not_found"
+    },
+    {
+      "id": "AratuOn.br@SD",
+      "name": "Aratu On (1080p)",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
       "category": "News",
@@ -43,22 +53,22 @@
       "retry_reason": "http_error"
     },
     {
-      "id": "RBATV.br@SD",
-      "name": "RBATV (720p)",
-      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8",
+      "id": "RedeGospel.br@SD",
+      "name": "Rede Gospel (1080p)",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "General",
+      "category": "Religious",
       "retry_stage": "hls",
       "retry_reason": "invalid_playlist"
     },
     {
-      "id": "STZTV.br@SD",
-      "name": "STZ TV (1080p)",
-      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-12952/playlist/playlist.m3u8",
+      "id": "SBTNacional.br@SD",
+      "name": "SBT Nacional (1080p)",
+      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/chunklist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "Culture;News",
+      "category": "Undefined",
       "retry_stage": "hls",
       "retry_reason": "invalid_playlist"
     },
@@ -73,16 +83,6 @@
       "retry_reason": "not_found"
     },
     {
-      "id": "TVACritica.br@SD",
-      "name": "TV A Critica (1080p)",
-      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-20715/LVW20715_50E3x2MCm2/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "Undefined",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
-    },
-    {
       "id": "TVAFolha.br@SD",
       "name": "TV A Folha (720p)",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
@@ -93,24 +93,24 @@
       "retry_reason": "not_found"
     },
     {
-      "id": "TVZoom.br@SD",
-      "name": "TV Zoom (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-9730/LVW9730_LmUwslM8jt/playlist.m3u8",
+      "id": "TVPetropolis.br@SD",
+      "name": "TV Petropolis (720p)",
+      "url": "https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "Entertainment;News",
+      "category": "General",
       "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
+      "retry_reason": "not_found"
     },
     {
-      "id": "1001Noites.br@SD",
-      "name": "1001 Noites (480p)",
-      "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
+      "id": "TVNBN.br@SD",
+      "name": "TVNBN (720p)",
+      "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8",
       "source": "iptv-org",
-      "format": "",
-      "category": "Shop",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
+      "format": "hls",
+      "category": "General",
+      "retry_stage": "hls",
+      "retry_reason": "invalid_playlist"
     },
     {
       "id": "AgroBrasilTV.br@SD",
@@ -333,16 +333,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Animation;Kids",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
       "id": "Combate.br@SD",
       "name": "Combate (720p)",
       "url": "http://143.14.134.107/167/index.m3u8",
@@ -371,26 +361,6 @@
       "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
-    },
-    {
-      "id": "DiscoveryKidsLatinAmerica.us@Brazil",
-      "name": "Discovery Kids Latin America Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Kids",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
-      "id": "DiscoveryWorld.us@Brazil",
-      "name": "Discovery World Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Entertainment",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
     },
     {
       "id": "ElementalChannel.br@SD",
@@ -529,16 +499,6 @@
       "source": "iptv-org",
       "format": "",
       "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
-      "id": "MCMPop.fr@SD",
-      "name": "MCM Pop",
-      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Music",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -883,16 +843,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TNTLatinAmerica.us@Brazil",
-      "name": "TNT Latin America Brazil (720p) [Geo-blocked]",
-      "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Undefined",
-      "retry_stage": "stream_probe",
-      "retry_reason": "blocked"
-    },
-    {
       "id": "TV3Curitiba.br@SD",
       "name": "TV 3 Curitiba (720p)",
       "url": "https://stmv.webtvninjas.com.br/tv3/tv3/playlist.m3u8",
@@ -919,6 +869,16 @@
       "source": "iptv-org",
       "format": "",
       "category": "Religious",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVArapuan.br@SD",
+      "name": "TV Arapuan (720p)",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -999,6 +959,16 @@
       "source": "iptv-org",
       "format": "",
       "category": "Undefined",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVComunitaria.br@SD",
+      "name": "TV Comunitaria (360p)",
+      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -1233,16 +1203,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TVSimCachoeiro.br@SD",
-      "name": "TV Sim Cachoeiro (720p)",
-      "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "News",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
       "id": "TVSimSaoMateus.br@SD",
       "name": "TV Sim Sao Mateus (720p)",
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
@@ -1279,16 +1239,6 @@
       "source": "iptv-org",
       "format": "",
       "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
-      "id": "TVTerceiroAnjo.br@SD",
-      "name": "TV Terceiro Anjo (360p)",
-      "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "",
-      "category": "Religious",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },

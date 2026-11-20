@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-19T14:58:23.650391+00:00",
-  "total_channels": 397,
+  "updated_at": "2026-11-20T14:40:42.240818+00:00",
+  "total_channels": 398,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -2297,6 +2297,14 @@
       "category": "Animation",
       "source": "iptv-org",
       "url": "https://jmp2.uk/plu-5ff609de50ab210008025c1b.m3u8"
+    },
+    {
+      "id": "Tooncast.us@Brazil",
+      "name": "Tooncast Brazil (720p)",
+      "logo": "https://i.imgur.com/3yXRbQy.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50:80/TOONCAST/index.m3u8"
     },
     {
       "id": "TraceBrazuca.fr@HD",

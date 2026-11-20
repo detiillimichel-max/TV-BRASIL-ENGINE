@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-19T15:00:03.694458+00:00",
-  "total_tested": 397,
-  "total_media_detected": 267,
+  "updated_at": "2026-11-20T14:42:20.670517+00:00",
+  "total_tested": 398,
+  "total_media_detected": 274,
   "results": {
-    "media_detected": 267,
-    "unavailable": 98,
-    "blocked": 31,
+    "media_detected": 274,
+    "unavailable": 96,
+    "blocked": 27,
     "unknown": 1
   },
   "channels": [
@@ -27,9 +27,9 @@
       "category": "Shop",
       "source": "iptv-org",
       "url": "https://cpbr.appflux.com.br:2000/hls/1001noites/1001noites.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "AELatinAmerica.us@Brazil",
@@ -566,9 +566,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CatveFM.br@SD",
@@ -830,9 +830,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "DiscoveryWorld.us@Brazil",
@@ -841,9 +841,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "DumDum.br@SD",
@@ -1347,9 +1347,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "MCMTop.fr@SD",
@@ -3151,9 +3151,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -3164,6 +3164,17 @@
       "url": "https://jmp2.uk/plu-5ff609de50ab210008025c1b.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "Tooncast.us@Brazil",
+      "name": "Tooncast Brazil (720p)",
+      "logo": "https://i.imgur.com/3yXRbQy.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "http://170.83.16.50:80/TOONCAST/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -3294,9 +3305,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3481,9 +3492,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVCultura.br@SD",
@@ -4009,9 +4020,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSimSaoMateus.br@SD",
@@ -4064,9 +4075,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "TVThathi.br@SD",
