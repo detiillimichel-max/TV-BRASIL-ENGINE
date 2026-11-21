@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20T14:42:49.494152+00:00",
-  "total_retry_candidates": 135,
+  "updated_at": "2026-11-21T13:59:19.978469+00:00",
+  "total_retry_candidates": 143,
   "items": [
     {
       "id": "1001Noites.br@SD",
@@ -13,9 +13,9 @@
       "retry_reason": "not_found"
     },
     {
-      "id": "AratuOn.br@SD",
-      "name": "Aratu On (1080p)",
-      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-9359/LVW9359_XSyReL0QVf/playlist.m3u8",
+      "id": "Canal38.br@SD",
+      "name": "Canal 38 (720p)",
+      "url": "https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
       "category": "News",
@@ -43,6 +43,16 @@
       "retry_reason": "invalid_playlist"
     },
     {
+      "id": "NickOnlineBobEsponja.br@HD",
+      "name": "NickOnline Bob Esponja [Not 24/7]",
+      "url": "https://bob.x1colegal.com/hls/stream.m3u8",
+      "source": "iptv-org",
+      "format": "hls",
+      "category": "Animation;Kids",
+      "retry_stage": "hls",
+      "retry_reason": "http_error"
+    },
+    {
       "id": "NickOnline.br@HD",
       "name": "NickOnline HD (720p)",
       "url": "https://x1colegal.com/hls/stream.m3u8",
@@ -53,12 +63,22 @@
       "retry_reason": "http_error"
     },
     {
-      "id": "RedeGospel.br@SD",
-      "name": "Rede Gospel (1080p)",
-      "url": "https://cdn.live.br1.jmvstream.com/w/LVW-8719/LVW8719_AcLVAxWy5J/playlist.m3u8",
+      "id": "RedeTVMais.br@SD",
+      "name": "Rede TV! Mais (720p)",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/AVJ-15235/playlist/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
-      "category": "Religious",
+      "category": "General",
+      "retry_stage": "hls",
+      "retry_reason": "invalid_playlist"
+    },
+    {
+      "id": "SBTInterior.br@SD",
+      "name": "SBT Interior (720p)",
+      "url": "https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "hls",
+      "category": "General",
       "retry_stage": "hls",
       "retry_reason": "invalid_playlist"
     },
@@ -73,16 +93,6 @@
       "retry_reason": "invalid_playlist"
     },
     {
-      "id": "TCM10HD.br@SD",
-      "name": "TCM 10 HD (1080p)",
-      "url": "https://live.tcm10.com.br/tcm10hd/stream.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "News",
-      "retry_stage": "hls",
-      "retry_reason": "not_found"
-    },
-    {
       "id": "TVAFolha.br@SD",
       "name": "TV A Folha (720p)",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
@@ -93,24 +103,14 @@
       "retry_reason": "not_found"
     },
     {
-      "id": "TVPetropolis.br@SD",
-      "name": "TV Petropolis (720p)",
-      "url": "https://video02.logicahost.com.br/tvpetropolis/tvpetropolis/playlist.m3u8",
+      "id": "TVSaoRaimundo.br@SD",
+      "name": "TV Sao Raimundo (268p)",
+      "url": "https://stmv1.voxtvhd.com.br/9030/9030/playlist.m3u8",
       "source": "iptv-org",
       "format": "hls",
       "category": "General",
       "retry_stage": "hls",
       "retry_reason": "not_found"
-    },
-    {
-      "id": "TVNBN.br@SD",
-      "name": "TVNBN (720p)",
-      "url": "https://cdn.jmvstream.com/w/LVW-8410/LVW8410_uiZOVm6vz1/playlist.m3u8",
-      "source": "iptv-org",
-      "format": "hls",
-      "category": "General",
-      "retry_stage": "hls",
-      "retry_reason": "invalid_playlist"
     },
     {
       "id": "AgroBrasilTV.br@SD",
@@ -119,6 +119,16 @@
       "source": "iptv-org",
       "format": "",
       "category": "Outdoor",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "AgroCanal.br@SD",
+      "name": "AgroCanal (720p)",
+      "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Education;Outdoor",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -313,6 +323,16 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "CanalRural.br@SD",
+      "name": "Canal Rural (720p)",
+      "url": "http://170.83.49.66:8083/CANALRURALHD/index.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Outdoor",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "CanalSaude.br@SD",
       "name": "Canal Saude",
       "url": "https://eitv7.cdn.broadpeak.io/account351-i1495/event/canalsaude/format720p.m3u8",
@@ -473,6 +493,16 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "JovemPanNews.br@SD",
+      "name": "Jovem Pan News (720p)",
+      "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "News",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "KpopTVPlay.br@SD",
       "name": "KpopTV Play (576p)",
       "url": "https://giatv.bozztv.com/giatv/giatv-kpoptvplay/kpoptvplay/playlist.m3u8",
@@ -499,6 +529,16 @@
       "source": "iptv-org",
       "format": "",
       "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "MCMPop.fr@SD",
+      "name": "MCM Pop",
+      "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Music",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },
@@ -663,6 +703,16 @@
       "retry_reason": "blocked"
     },
     {
+      "id": "RedeCNTRiodeJaneiro.br@SD",
+      "name": "Rede CNT Rio de Janeiro (720p)",
+      "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Undefined",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "RedeCNTSalvador.br@SD",
       "name": "Rede CNT Salvador (576i)",
       "url": "http://168.205.87.198:8555/live/1368/123456/150.m3u8",
@@ -823,6 +873,16 @@
       "retry_reason": "blocked"
     },
     {
+      "id": "TELE6.bo@SD",
+      "name": "TELE 6 (1080p)",
+      "url": "https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "TerraViva.br@SD",
       "name": "Terra Viva (720p)",
       "url": "http://45.177.114.115/TERRAVIVA/index.m3u8",
@@ -963,16 +1023,6 @@
       "retry_reason": "unavailable"
     },
     {
-      "id": "TVComunitaria.br@SD",
-      "name": "TV Comunitaria (360p)",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "source": "iptv-org",
-      "format": "",
-      "category": "General",
-      "retry_stage": "stream_probe",
-      "retry_reason": "unavailable"
-    },
-    {
       "id": "TVCultura.br@SD",
       "name": "TV Cultura (720p)",
       "url": "http://45.177.114.115/TV_CULTURA/index.m3u8",
@@ -1093,6 +1143,16 @@
       "retry_reason": "unavailable"
     },
     {
+      "id": "TVGloboBrasilia.br@SD",
+      "name": "TV Globo Brasilia (1080p)",
+      "url": "http://79.127.238.228:14173",
+      "source": "iptv-org",
+      "format": "",
+      "category": "Undefined",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
       "id": "TVGloboSaoPaulo.br@SD",
       "name": "TV Globo Sao Paulo (720p)",
       "url": "http://170.84.165.204/Globo_HD/index.m3u8",
@@ -1106,6 +1166,16 @@
       "id": "TVGraoPara.br@SD",
       "name": "TV Grao Para (720p)",
       "url": "https://video01.kshost.com.br:4443/moises3834/moises3834/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVGuarapari.br@SD",
+      "name": "TV Guarapari (720p)",
+      "url": "https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8",
       "source": "iptv-org",
       "format": "",
       "category": "General",
@@ -1129,6 +1199,16 @@
       "source": "iptv-org",
       "format": "",
       "category": "Undefined",
+      "retry_stage": "stream_probe",
+      "retry_reason": "unavailable"
+    },
+    {
+      "id": "TVLitoralRN.br@SD",
+      "name": "TV Litoral RN (720p)",
+      "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
+      "source": "iptv-org",
+      "format": "",
+      "category": "General",
       "retry_stage": "stream_probe",
       "retry_reason": "unavailable"
     },

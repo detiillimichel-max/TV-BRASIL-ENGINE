@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-20T14:42:20.670517+00:00",
-  "total_tested": 398,
-  "total_media_detected": 274,
+  "updated_at": "2026-11-21T13:58:45.543395+00:00",
+  "total_tested": 399,
+  "total_media_detected": 267,
   "results": {
-    "media_detected": 274,
-    "unavailable": 96,
+    "media_detected": 267,
+    "unavailable": 104,
     "blocked": 27,
     "unknown": 1
   },
@@ -82,9 +82,9 @@
       "category": "Education;Outdoor",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "AgroMais.br@SD",
@@ -511,9 +511,9 @@
       "category": "Outdoor",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/CANALRURALHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "CanalSaude.br@SD",
@@ -1133,7 +1133,7 @@
     },
     {
       "id": "iCarly.us@BR",
-      "name": "iCarly (United States)",
+      "name": "iCarly",
       "logo": "https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png",
       "category": "Series",
       "source": "iptv-org",
@@ -1204,9 +1204,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "KenanKel.us@BR",
@@ -1309,7 +1309,7 @@
     },
     {
       "id": "MacGyver.us@BR",
-      "name": "MacGyver (United States)",
+      "name": "MacGyver",
       "logo": "https://images.pluto.tv/channels/63eb9dc84e83e70008abea92/colorLogoPNG.png",
       "category": "Classic",
       "source": "iptv-org",
@@ -1347,9 +1347,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://176.65.153.78:8201/play/a070/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "MCMTop.fr@SD",
@@ -1397,7 +1397,7 @@
     },
     {
       "id": "MTVCatfish.us@BR",
-      "name": "MTV Catfish (United States) BR (720p)",
+      "name": "MTV Catfish BR (720p)",
       "logo": "https://images.pluto.tv/channels/626c2a3502d84a0007cec817/colorLogoPNG.png",
       "category": "Entertainment",
       "source": "iptv-org",
@@ -1430,7 +1430,7 @@
     },
     {
       "id": "MTVDating.us@BR",
-      "name": "MTV Dating (United States)",
+      "name": "MTV Dating",
       "logo": "https://images.pluto.tv/channels/6851bb3426beced4f2f67ee6/colorLogoPNG_1750686926779.png",
       "category": "Series",
       "source": "iptv-org",
@@ -1474,7 +1474,7 @@
     },
     {
       "id": "MTVReality.us@BR",
-      "name": "MTV Reality (United States) (720p)",
+      "name": "MTV Reality (720p)",
       "logo": "https://images.pluto.tv/channels/6493f4f566e485000853d640/colorLogoPNG.png",
       "category": "Entertainment",
       "source": "iptv-org",
@@ -1551,7 +1551,7 @@
     },
     {
       "id": "NCIS.us@BR",
-      "name": "NCIS (United States)",
+      "name": "NCIS",
       "logo": "https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png",
       "category": "Series",
       "source": "iptv-org",
@@ -1616,6 +1616,17 @@
       "format": "hls"
     },
     {
+      "id": "NickOnlineBobEsponja.br@HD",
+      "name": "NickOnline Bob Esponja [Not 24/7]",
+      "logo": "https://x1colegal.com/nickonlinebobesponja.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "https://bob.x1colegal.com/hls/stream.m3u8",
+      "validation": "media_detected",
+      "http_status": 218,
+      "format": "hls"
+    },
+    {
       "id": "NickOnline.br@HD",
       "name": "NickOnline HD (720p)",
       "logo": "https://x1colegal.com/logo.png",
@@ -1661,7 +1672,7 @@
     },
     {
       "id": "Numbers.us@BR",
-      "name": "Numbers (United States)",
+      "name": "Numbers",
       "logo": "https://images.pluto.tv/channels/67f960c5441853fe50e7afc1/colorLogoPNG_1747430170532.png",
       "category": "Series",
       "source": "iptv-org",
@@ -2513,9 +2524,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "RedeCNTSalvador.br@SD",
@@ -3030,9 +3041,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TelecineAction.br@SD",
@@ -3306,7 +3317,7 @@
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": null,
+      "http_status": 404,
       "format": null
     },
     {
@@ -3492,9 +3503,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVCultura.br@SD",
@@ -3679,9 +3690,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://79.127.238.228:14173",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "mpegts"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVGloboSaoPaulo.br@SD",
@@ -3734,9 +3745,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video.welltecnologia.com.br/tvguarapari/tvguarapari/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVInterlagos.br@SD",
@@ -3789,9 +3800,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVMackenzie.br@SD",

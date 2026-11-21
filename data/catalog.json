@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20T14:40:42.240818+00:00",
-  "total_channels": 398,
+  "updated_at": "2026-11-21T13:57:09.545318+00:00",
+  "total_channels": 399,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -820,7 +820,7 @@
     },
     {
       "id": "iCarly.us@BR",
-      "name": "iCarly (United States)",
+      "name": "iCarly",
       "logo": "https://images.pluto.tv/channels/620ff46e0a576e0007dc2f89/colorLogoPNG.png",
       "category": "Series",
       "source": "iptv-org",
@@ -948,7 +948,7 @@
     },
     {
       "id": "MacGyver.us@BR",
-      "name": "MacGyver (United States)",
+      "name": "MacGyver",
       "logo": "https://images.pluto.tv/channels/63eb9dc84e83e70008abea92/colorLogoPNG.png",
       "category": "Classic",
       "source": "iptv-org",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": "MTVCatfish.us@BR",
-      "name": "MTV Catfish (United States) BR (720p)",
+      "name": "MTV Catfish BR (720p)",
       "logo": "https://images.pluto.tv/channels/626c2a3502d84a0007cec817/colorLogoPNG.png",
       "category": "Entertainment",
       "source": "iptv-org",
@@ -1036,7 +1036,7 @@
     },
     {
       "id": "MTVDating.us@BR",
-      "name": "MTV Dating (United States)",
+      "name": "MTV Dating",
       "logo": "https://images.pluto.tv/channels/6851bb3426beced4f2f67ee6/colorLogoPNG_1750686926779.png",
       "category": "Series",
       "source": "iptv-org",
@@ -1068,7 +1068,7 @@
     },
     {
       "id": "MTVReality.us@BR",
-      "name": "MTV Reality (United States) (720p)",
+      "name": "MTV Reality (720p)",
       "logo": "https://images.pluto.tv/channels/6493f4f566e485000853d640/colorLogoPNG.png",
       "category": "Entertainment",
       "source": "iptv-org",
@@ -1124,7 +1124,7 @@
     },
     {
       "id": "NCIS.us@BR",
-      "name": "NCIS (United States)",
+      "name": "NCIS",
       "logo": "https://images.pluto.tv/channels/63eb9fdda995710008991c54/colorLogoPNG.png",
       "category": "Series",
       "source": "iptv-org",
@@ -1171,6 +1171,14 @@
       "url": "https://jmp2.uk/plu-645951c0e94c38000802d2cb.m3u8"
     },
     {
+      "id": "NickOnlineBobEsponja.br@HD",
+      "name": "NickOnline Bob Esponja [Not 24/7]",
+      "logo": "https://x1colegal.com/nickonlinebobesponja.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "https://bob.x1colegal.com/hls/stream.m3u8"
+    },
+    {
       "id": "NickOnline.br@HD",
       "name": "NickOnline HD (720p)",
       "logo": "https://x1colegal.com/logo.png",
@@ -1204,7 +1212,7 @@
     },
     {
       "id": "Numbers.us@BR",
-      "name": "Numbers (United States)",
+      "name": "Numbers",
       "logo": "https://images.pluto.tv/channels/67f960c5441853fe50e7afc1/colorLogoPNG_1747430170532.png",
       "category": "Series",
       "source": "iptv-org",
