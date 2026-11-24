@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-23T16:57:44.735939+00:00",
-  "total_channels": 400,
+  "updated_at": "2026-11-24T16:46:04.617760+00:00",
+  "total_channels": 401,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -2473,6 +2473,14 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8"
+    },
+    {
+      "id": "TVCAJUIWEB.br@HD",
+      "name": "TV CAJUI WEB (720p)",
+      "logo": "https://github.com/user-attachments/assets/e7af691d-0d31-4576-a1eb-bcf85507c891",
+      "category": "Entertainment;General;Music;News;Religious",
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/tvcajui/playlist/playlist.m3u8"
     },
     {
       "id": "TVCamara.br@SD",

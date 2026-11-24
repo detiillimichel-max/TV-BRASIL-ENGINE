@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-23T16:59:26.293924+00:00",
-  "total_tested": 400,
-  "total_media_detected": 266,
+  "updated_at": "2026-11-24T16:47:43.001237+00:00",
+  "total_tested": 401,
+  "total_media_detected": 268,
   "results": {
-    "media_detected": 266,
+    "media_detected": 268,
     "unavailable": 104,
-    "blocked": 29,
+    "blocked": 28,
     "unknown": 1
   },
   "channels": [
@@ -126,9 +126,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/AMCHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "AngelTV.in@Portuguese",
@@ -324,9 +324,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "BobEsponjaCalcaQuadrada.us@BR",
@@ -346,9 +346,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/BOXKIDSHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "BR8TV.br@SD",
@@ -534,7 +534,7 @@
       "source": "iptv-org",
       "url": "http://play.canalsete.com.br:1935/canalsete/xpl-c7_source/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": null,
+      "http_status": 404,
       "format": null
     },
     {
@@ -764,9 +764,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://fpa-gateway.tvcultura.com.br:8181/memfs/606caef0-a290-413d-9f1f-8fcdb3a73831.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "CulturaPara.br@SD",
@@ -984,9 +984,9 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ForaTedioTV.br@SD",
@@ -1006,9 +1006,9 @@
       "category": "Education",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/FUTURAHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "Geekdot.br@SD",
@@ -1512,9 +1512,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "MyTimeMovieNetwork.br@SD",
@@ -2997,9 +2997,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://187.102.210.46/universo/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "STZTV.br@SD",
@@ -3206,9 +3206,9 @@
       "category": "Travel",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TurmadaMonica.us@Brazil",
@@ -3409,6 +3409,17 @@
       "format": "hls"
     },
     {
+      "id": "TVCAJUIWEB.br@HD",
+      "name": "TV CAJUI WEB (720p)",
+      "logo": "https://github.com/user-attachments/assets/e7af691d-0d31-4576-a1eb-bcf85507c891",
+      "category": "Entertainment;General;Music;News;Religious",
+      "source": "iptv-org",
+      "url": "https://cdn.live.br1.jmvstream.com/webtv/tvcajui/playlist/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
       "id": "TVCamara.br@SD",
       "name": "TV Camara (Brazil) (1080p)",
       "logo": "https://i.imgur.com/Sdou1Ab.png",
@@ -3503,9 +3514,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/8008/smil:8008.smil/playlist.m3u8?DVR=",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVCultura.br@SD",
@@ -3690,9 +3701,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://79.127.238.228:14173",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "mpegts"
     },
     {
       "id": "TVGloboSaoPaulo.br@SD",
