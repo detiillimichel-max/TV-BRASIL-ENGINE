@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-24T16:47:43.001237+00:00",
+  "updated_at": "2026-11-25T16:35:32.672691+00:00",
   "total_tested": 401,
-  "total_media_detected": 268,
+  "total_media_detected": 274,
   "results": {
-    "media_detected": 268,
-    "unavailable": 104,
+    "media_detected": 274,
+    "unavailable": 98,
     "blocked": 28,
     "unknown": 1
   },
@@ -82,9 +82,9 @@
       "category": "Education;Outdoor",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "AgroMais.br@SD",
@@ -346,9 +346,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/BOXKIDSHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "BR8TV.br@SD",
@@ -511,9 +511,9 @@
       "category": "Outdoor",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/CANALRURALHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "CanalSaude.br@SD",
@@ -874,9 +874,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "ESPN.br@SD",
@@ -1006,9 +1006,9 @@
       "category": "Education",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/FUTURAHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "Geekdot.br@SD",
@@ -1204,9 +1204,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "KenanKel.us@BR",
@@ -1512,9 +1512,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "MyTimeMovieNetwork.br@SD",
@@ -1622,9 +1622,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "https://bob.x1colegal.com/hls/stream.m3u8",
-      "validation": "media_detected",
-      "http_status": 218,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 530,
+      "format": null
     },
     {
       "id": "NickOnline.br@HD",
@@ -2524,9 +2524,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RedeCNTSalvador.br@SD",
@@ -3206,9 +3206,9 @@
       "category": "Travel",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TurmadaMonica.us@Brazil",

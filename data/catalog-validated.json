@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-24T16:47:43.001237+00:00",
-  "total_channels": 268,
+  "updated_at": "2026-11-25T16:35:32.672691+00:00",
+  "total_channels": 274,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -55,6 +55,17 @@
       "url": "https://jmp2.uk/plu-61b790b985706b00072cb797.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "AgroCanal.br@SD",
+      "name": "AgroCanal (720p)",
+      "logo": "https://i.imgur.com/5XyopHf.png",
+      "category": "Education;Outdoor",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -190,6 +201,17 @@
       "format": "hls"
     },
     {
+      "id": "BoxKidsTV.br@SD",
+      "name": "Box Kids TV (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/1/18/Boxkidstv.png",
+      "category": "Kids",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/BOXKIDSHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "Canal38.br@SD",
       "name": "Canal 38 (720p)",
       "logo": "https://i.imgur.com/co7TCWC.png",
@@ -240,6 +262,17 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://stmv5.samcast.com.br/claudio8701/claudio8701/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "CanalRural.br@SD",
+      "name": "Canal Rural (720p)",
+      "logo": "https://i.imgur.com/w9R9IIX.png",
+      "category": "Outdoor",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/CANALRURALHD/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -520,17 +553,6 @@
       "format": "hls"
     },
     {
-      "id": "ElyTV.br@SD",
-      "name": "ElyTV (360p)",
-      "logo": "https://i.imgur.com/1eHNe91.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "ESPN.br@SD",
       "name": "ESPN (Brazil) (1080p)",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png",
@@ -614,6 +636,17 @@
       "category": "Religious",
       "source": "iptv-org",
       "url": "https://59fb88a1b1108.streamlock.net/fonte/_definst_/fontetv/chunklist_w1224511652.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "Futura.br@SD",
+      "name": "Futura (720p)",
+      "logo": "https://i.ibb.co/Pz6Nqk7w/logo-futura-vazado.png",
+      "category": "Education",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/FUTURAHD/index.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"
@@ -726,6 +759,17 @@
       "url": "https://jmp2.uk/plu-69162b1ef189e235142b17ab.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "JovemPanNews.br@SD",
+      "name": "Jovem Pan News (720p)",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/960px-Jovem_Pan_logo_2018.svg.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
@@ -960,6 +1004,17 @@
       "format": "hls"
     },
     {
+      "id": "MusicBoxBrazil.br@SD",
+      "name": "Music Box Brazil (720p)",
+      "logo": "https://i.imgur.com/CDPCF2X.png",
+      "category": "Music",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "MyTimeMovieNetwork.br@SD",
       "name": "MyTime Movie Network (Brazil) (720p)",
       "logo": "https://i.imgur.com/aiGQtzI.png",
@@ -1045,17 +1100,6 @@
       "url": "https://jmp2.uk/plu-645951c0e94c38000802d2cb.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "NickOnlineBobEsponja.br@HD",
-      "name": "NickOnline Bob Esponja [Not 24/7]",
-      "logo": "https://x1colegal.com/nickonlinebobesponja.png",
-      "category": "Animation;Kids",
-      "source": "iptv-org",
-      "url": "https://bob.x1colegal.com/hls/stream.m3u8",
-      "validation": "media_detected",
-      "http_status": 218,
       "format": "hls"
     },
     {
@@ -1807,6 +1851,17 @@
       "format": "hls"
     },
     {
+      "id": "RedeCNTRiodeJaneiro.br@SD",
+      "name": "Rede CNT Rio de Janeiro (720p)",
+      "logo": "https://i.imgur.com/jcasAmw.png",
+      "category": "Undefined",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "RedeFamilia.br@SD",
       "name": "Rede Familia (720p)",
       "logo": "https://i.imgur.com/7KVFCrQ.png",
@@ -2277,6 +2332,17 @@
       "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01131-tracetv-tracebrazuca-samsungbr/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "TravelBoxBrazil.br@SD",
+      "name": "Travel Box Brazil (720p)",
+      "logo": "https://i.imgur.com/3tBJERH.png",
+      "category": "Travel",
+      "source": "iptv-org",
+      "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
       "format": "hls"
     },
     {
