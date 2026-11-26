@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-25T16:35:32.672691+00:00",
-  "total_channels": 274,
+  "updated_at": "2026-11-26T16:07:49.461688+00:00",
+  "total_channels": 272,
   "channels": [
     {
       "id": "PlusMaisUm.br@HD",
@@ -1983,17 +1983,6 @@
       "format": "hls"
     },
     {
-      "id": "RetroCartoon.br@SD",
-      "name": "Retro Cartoon (720p)",
-      "logo": "https://i.imgur.com/hIlEfhl.png",
-      "category": "Classic",
-      "source": "iptv-org",
-      "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "RITTV.br@SD",
       "name": "RIT TV (1080p)",
       "logo": "https://i.imgur.com/Unjs1wi.png",
@@ -2412,17 +2401,6 @@
       "format": "hls"
     },
     {
-      "id": "TVArapuan.br@SD",
-      "name": "TV Arapuan (720p)",
-      "logo": "https://i.imgur.com/3395A2h.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVBahia.br@HD",
       "name": "TV Bahia (1080i)",
       "logo": "https://i.imgur.com/sJOrvHg.png",
@@ -2808,6 +2786,17 @@
       "format": "hls"
     },
     {
+      "id": "TVSimSaoMateus.br@SD",
+      "name": "TV Sim Sao Mateus (720p)",
+      "logo": "https://i.imgur.com/t5oUK3C.png",
+      "category": "News",
+      "source": "iptv-org",
+      "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "TVSulBahia.br@SD",
       "name": "TV Sul Bahia (320p)",
       "logo": "https://i.imgur.com/qM6nMWm.png",
@@ -2849,17 +2838,6 @@
       "url": "https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 200,
-      "format": "hls"
-    },
-    {
-      "id": "TVVicosa.br@SD",
-      "name": "TV Vicosa (480p)",
-      "logo": "https://i.imgur.com/TZF55f9.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
       "format": "hls"
     },
     {

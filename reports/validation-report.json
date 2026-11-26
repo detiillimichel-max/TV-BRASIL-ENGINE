@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-25T16:35:32.672691+00:00",
+  "updated_at": "2026-11-26T16:07:49.461688+00:00",
   "total_tested": 401,
-  "total_media_detected": 274,
+  "total_media_detected": 272,
   "results": {
-    "media_detected": 274,
-    "unavailable": 98,
+    "media_detected": 272,
+    "unavailable": 100,
     "blocked": 28,
     "unknown": 1
   },
@@ -2711,9 +2711,9 @@
       "category": "Classic",
       "source": "iptv-org",
       "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "RITTV.br@SD",
@@ -3316,9 +3316,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -4064,9 +4064,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVSolComunidade.br@SD",
@@ -4163,9 +4163,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVVilaReal.br@SD",
