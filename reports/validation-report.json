@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-11-26T16:07:49.461688+00:00",
+  "updated_at": "2026-11-27T15:55:32.942172+00:00",
   "total_tested": 401,
-  "total_media_detected": 272,
+  "total_media_detected": 258,
   "results": {
-    "media_detected": 272,
-    "unavailable": 100,
-    "blocked": 28,
+    "unavailable": 111,
+    "media_detected": 258,
+    "blocked": 31,
     "unknown": 1
   },
   "channels": [
@@ -16,9 +16,9 @@
       "category": "Entertainment;General;Movies;Music",
       "source": "iptv-org",
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "1001Noites.br@SD",
@@ -82,9 +82,9 @@
       "category": "Education;Outdoor",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/AGROCANALHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "AgroMais.br@SD",
@@ -127,7 +127,7 @@
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/AMCHD/index.m3u8",
       "validation": "unavailable",
-      "http_status": 404,
+      "http_status": null,
       "format": null
     },
     {
@@ -346,9 +346,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/BOXKIDSHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "BR8TV.br@SD",
@@ -511,9 +511,9 @@
       "category": "Outdoor",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/CANALRURALHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "CanalSaude.br@SD",
@@ -566,9 +566,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "CatveFM.br@SD",
@@ -830,9 +830,9 @@
       "category": "Kids",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryKidsHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "DiscoveryWorld.us@Brazil",
@@ -841,9 +841,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/DiscoveryWorldHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "DumDum.br@SD",
@@ -874,9 +874,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "https://stmv1.srvsite.com/ely/ely/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "ESPN.br@SD",
@@ -1006,9 +1006,9 @@
       "category": "Education",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/FUTURAHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "Geekdot.br@SD",
@@ -1204,9 +1204,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/JOVEMPANNEWSHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "KenanKel.us@BR",
@@ -1512,9 +1512,9 @@
       "category": "Music",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/MUSICBOXBRASILHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "MyTimeMovieNetwork.br@SD",
@@ -1622,9 +1622,9 @@
       "category": "Animation;Kids",
       "source": "iptv-org",
       "url": "https://bob.x1colegal.com/hls/stream.m3u8",
-      "validation": "unavailable",
-      "http_status": 530,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 218,
+      "format": "hls"
     },
     {
       "id": "NickOnline.br@HD",
@@ -2524,9 +2524,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/REDECNTHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "RedeCNTSalvador.br@SD",
@@ -2697,7 +2697,7 @@
       "id": "RedeTVParana.br@SD",
       "name": "RedeTV! Parana (1080p)",
       "logo": "https://i.imgur.com/D8R0Af4.png",
-      "category": "Undefined",
+      "category": "General",
       "source": "iptv-org",
       "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
       "validation": "media_detected",
@@ -2711,9 +2711,9 @@
       "category": "Classic",
       "source": "iptv-org",
       "url": "https://stmv1.video.brstream.com.br/retrotv/retrotv/chunklist_w1069200121.m3u8",
-      "validation": "unavailable",
-      "http_status": null,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "RITTV.br@SD",
@@ -3063,9 +3063,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/64/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TelecineFun.br@SD",
@@ -3074,9 +3074,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/63/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TelecinePremium.br@SD",
@@ -3085,9 +3085,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/28/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TelecineTouch.br@SD",
@@ -3096,9 +3096,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/29/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TerraViva.br@SD",
@@ -3162,9 +3162,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://15.204.246.24:8080/TNTHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "Tokusato.us@Brazil",
@@ -3206,9 +3206,9 @@
       "category": "Travel",
       "source": "iptv-org",
       "url": "http://170.83.49.66:8083/TRAVELBOXHD/index.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TurmadaMonica.us@Brazil",
@@ -3250,9 +3250,9 @@
       "category": "News",
       "source": "iptv-org",
       "url": "https://video01.logicahost.com.br/tvafolha/tvafolha/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 200,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVAdorar.br@SD",
@@ -3316,9 +3316,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVAssembleiaCeara.br@SD",
@@ -3382,9 +3382,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3811,9 +3811,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/tvnordesteegmail.com/tvnordesteegmail.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVMaanaim.br@SD",
@@ -3943,9 +3943,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "https://5a2b083e9f360.streamlock.net/tvpantanal/tvpantanal.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVParaense.br@HD",
@@ -4163,9 +4163,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TVVilaReal.br@SD",

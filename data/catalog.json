@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-26T16:06:14.812024+00:00",
+  "updated_at": "2026-11-27T15:53:55.331823+00:00",
   "total_channels": 401,
   "channels": [
     {
@@ -1958,7 +1958,7 @@
       "id": "RedeTVParana.br@SD",
       "name": "RedeTV! Parana (1080p)",
       "logo": "https://i.imgur.com/D8R0Af4.png",
-      "category": "Undefined",
+      "category": "General",
       "source": "iptv-org",
       "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8"
     },
