@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-27T15:55:32.942172+00:00",
+  "updated_at": "2026-11-28T14:51:13.582341+00:00",
   "total_tested": 401,
-  "total_media_detected": 258,
+  "total_media_detected": 259,
   "results": {
-    "unavailable": 111,
-    "media_detected": 258,
+    "media_detected": 259,
+    "unavailable": 110,
     "blocked": 31,
     "unknown": 1
   },
@@ -16,9 +16,9 @@
       "category": "Entertainment;General;Movies;Music",
       "source": "iptv-org",
       "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "1001Noites.br@SD",
@@ -534,7 +534,7 @@
       "source": "iptv-org",
       "url": "http://play.canalsete.com.br:1935/canalsete/xpl-c7_source/playlist.m3u8",
       "validation": "unavailable",
-      "http_status": 404,
+      "http_status": null,
       "format": null
     },
     {
@@ -561,14 +561,14 @@
     },
     {
       "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
+      "name": "Cartoon Network Latin America Brazil",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
       "category": "Animation;Kids",
       "source": "iptv-org",
-      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8",
-      "validation": "blocked",
-      "http_status": 403,
-      "format": null
+      "url": "https://cdn-1.netplaygo.com.br/CARTOON_NETWORK/tracks-v1a1/mono.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
     },
     {
       "id": "CatveFM.br@SD",
@@ -2700,9 +2700,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "RetroCartoon.br@SD",
@@ -3063,9 +3063,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/64/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TelecineFun.br@SD",
@@ -3074,9 +3074,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/63/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TelecinePremium.br@SD",
@@ -3085,9 +3085,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/28/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TelecineTouch.br@SD",
@@ -3096,9 +3096,9 @@
       "category": "Movies",
       "source": "iptv-org",
       "url": "http://45.185.15.154:9080/stream/29/index.m3u8",
-      "validation": "unavailable",
-      "http_status": 404,
-      "format": null
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
     },
     {
       "id": "TerraViva.br@SD",
@@ -3382,9 +3382,9 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "blocked",
+      "http_status": 403,
+      "format": null
     },
     {
       "id": "TVBRICSPortuguese.br@SD",
@@ -3412,7 +3412,7 @@
       "id": "TVCAJUIWEB.br@HD",
       "name": "TV CAJUI WEB (720p)",
       "logo": "https://github.com/user-attachments/assets/e7af691d-0d31-4576-a1eb-bcf85507c891",
-      "category": "Entertainment;General;Music;News;Religious",
+      "category": "General",
       "source": "iptv-org",
       "url": "https://cdn.live.br1.jmvstream.com/webtv/tvcajui/playlist/playlist.m3u8",
       "validation": "media_detected",
@@ -4163,9 +4163,9 @@
       "category": "Entertainment",
       "source": "iptv-org",
       "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": 404,
+      "format": null
     },
     {
       "id": "TVVilaReal.br@SD",
@@ -4229,9 +4229,9 @@
       "category": "Undefined",
       "source": "iptv-org",
       "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVERS.br@SD",
@@ -4240,9 +4240,9 @@
       "category": "Culture;Education",
       "source": "iptv-org",
       "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
+      "validation": "unavailable",
+      "http_status": null,
+      "format": null
     },
     {
       "id": "TVideoNews.br@SD",

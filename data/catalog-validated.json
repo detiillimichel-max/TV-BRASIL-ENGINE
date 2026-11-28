@@ -1,7 +1,18 @@
 {
-  "updated_at": "2026-11-27T15:55:32.942172+00:00",
-  "total_channels": 258,
+  "updated_at": "2026-11-28T14:51:13.582341+00:00",
+  "total_channels": 259,
   "channels": [
+    {
+      "id": "PlusMaisUm.br@HD",
+      "name": "+MaisUm (720p)",
+      "logo": "https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png",
+      "category": "Entertainment;General;Movies;Music",
+      "source": "iptv-org",
+      "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
     {
       "id": "1001Noites.br@SD",
       "name": "1001 Noites (480p)",
@@ -240,6 +251,17 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://video24.mais.uol.com.br/live/6146.m3u8",
+      "validation": "media_detected",
+      "http_status": 200,
+      "format": "hls"
+    },
+    {
+      "id": "CartoonNetworkLatinAmerica.us@Brazil",
+      "name": "Cartoon Network Latin America Brazil",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
+      "category": "Animation;Kids",
+      "source": "iptv-org",
+      "url": "https://cdn-1.netplaygo.com.br/CARTOON_NETWORK/tracks-v1a1/mono.m3u8",
       "validation": "media_detected",
       "http_status": 200,
       "format": "hls"
@@ -1873,17 +1895,6 @@
       "format": "mpegts"
     },
     {
-      "id": "RedeTVParana.br@SD",
-      "name": "RedeTV! Parana (1080p)",
-      "logo": "https://i.imgur.com/D8R0Af4.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://tv01.zas.media:1936/redetvparana/redetvparana/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "RetroCartoon.br@SD",
       "name": "Retro Cartoon (720p)",
       "logo": "https://i.imgur.com/hIlEfhl.png",
@@ -2115,6 +2126,50 @@
       "format": "mpegts"
     },
     {
+      "id": "TelecineCult.br@SD",
+      "name": "Telecine Cult",
+      "logo": "https://i.imgur.com/6GuHXnr.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/64/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecineFun.br@SD",
+      "name": "Telecine Fun",
+      "logo": "https://i.imgur.com/MO2Ynki.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/63/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecinePremium.br@SD",
+      "name": "Telecine Premium",
+      "logo": "https://i.imgur.com/uVFgIr8.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/28/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
+      "id": "TelecineTouch.br@SD",
+      "name": "Telecine Touch",
+      "logo": "https://i.imgur.com/Nky0hRo.png",
+      "category": "Movies",
+      "source": "iptv-org",
+      "url": "http://45.185.15.154:9080/stream/29/index.m3u8",
+      "validation": "media_detected",
+      "http_status": 206,
+      "format": "hls"
+    },
+    {
       "id": "ThePetCollective.us@Brazil",
       "name": "The Pet Collective Brazil (720p)",
       "logo": "https://i.imgur.com/yH7n2dF.png",
@@ -2258,17 +2313,6 @@
       "format": "hls"
     },
     {
-      "id": "TVBrasilOeste.br@SD",
-      "name": "TV Brasil Oeste (720p)",
-      "logo": "https://i.imgur.com/noqGfuy.png",
-      "category": "General",
-      "source": "iptv-org",
-      "url": "https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVBRICSPortuguese.br@SD",
       "name": "TV BRICS Portuguese (1080p)",
       "logo": "https://i.imgur.com/vLpm8tN.png",
@@ -2294,7 +2338,7 @@
       "id": "TVCAJUIWEB.br@HD",
       "name": "TV CAJUI WEB (720p)",
       "logo": "https://github.com/user-attachments/assets/e7af691d-0d31-4576-a1eb-bcf85507c891",
-      "category": "Entertainment;General;Music;News;Religious",
+      "category": "General",
       "source": "iptv-org",
       "url": "https://cdn.live.br1.jmvstream.com/webtv/tvcajui/playlist/playlist.m3u8",
       "validation": "media_detected",
@@ -2676,17 +2720,6 @@
       "format": "hls"
     },
     {
-      "id": "TVVicosa.br@SD",
-      "name": "TV Vicosa (480p)",
-      "logo": "https://i.imgur.com/TZF55f9.png",
-      "category": "Entertainment",
-      "source": "iptv-org",
-      "url": "http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
       "id": "TVVilaReal.br@SD",
       "name": "TV Vila Real (720p)",
       "logo": "https://i.imgur.com/Z1uWe7g.png",
@@ -2726,28 +2759,6 @@
       "category": "General",
       "source": "iptv-org",
       "url": "https://srv5.zcast.com.br/tvcommaceio/tvcommaceio/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVEBahia.br@SD",
-      "name": "TVE Bahia (1080p)",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/960px-TVE_Bahia_logo.svg.png",
-      "category": "Undefined",
-      "source": "iptv-org",
-      "url": "http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8",
-      "validation": "media_detected",
-      "http_status": 206,
-      "format": "hls"
-    },
-    {
-      "id": "TVERS.br@SD",
-      "name": "TVE RS (1080p)",
-      "logo": "https://i.imgur.com/MQ6lJpS.png",
-      "category": "Culture;Education",
-      "source": "iptv-org",
-      "url": "https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8",
       "validation": "media_detected",
       "http_status": 206,
       "format": "hls"

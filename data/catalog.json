@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T15:53:55.331823+00:00",
+  "updated_at": "2026-11-28T14:49:38.734740+00:00",
   "total_channels": 401,
   "channels": [
     {
@@ -404,11 +404,11 @@
     },
     {
       "id": "CartoonNetworkLatinAmerica.us@Brazil",
-      "name": "Cartoon Network Latin America Brazil (720p) [Geo-blocked]",
+      "name": "Cartoon Network Latin America Brazil",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png",
       "category": "Animation;Kids",
       "source": "iptv-org",
-      "url": "http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8"
+      "url": "https://cdn-1.netplaygo.com.br/CARTOON_NETWORK/tracks-v1a1/mono.m3u8"
     },
     {
       "id": "CatveFM.br@SD",
@@ -2478,7 +2478,7 @@
       "id": "TVCAJUIWEB.br@HD",
       "name": "TV CAJUI WEB (720p)",
       "logo": "https://github.com/user-attachments/assets/e7af691d-0d31-4576-a1eb-bcf85507c891",
-      "category": "Entertainment;General;Music;News;Religious",
+      "category": "General",
       "source": "iptv-org",
       "url": "https://cdn.live.br1.jmvstream.com/webtv/tvcajui/playlist/playlist.m3u8"
     },
